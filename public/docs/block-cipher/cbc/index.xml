@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CBC on My New Hugo Site</title>
+    <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/</link>
+    <description>Recent content in CBC on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Dec 2023 14:25:21 +0530</lastBuildDate>
+    <atom:link href="https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/introduction/</link>
+      <pubDate>Sat, 02 Dec 2023 14:24:00 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lenght Extension</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/lenght-extension/</link>
+      <pubDate>Sat, 02 Dec 2023 14:32:05 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/lenght-extension/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mte Key Reuse</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/mte-key-reuse/</link>
+      <pubDate>Sat, 02 Dec 2023 14:31:42 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/mte-key-reuse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Etm Key Reuse</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/etm-key-reuse/</link>
+      <pubDate>Sat, 02 Dec 2023 14:31:32 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/etm-key-reuse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eam Key Reuse</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/eam-key-reuse/</link>
+      <pubDate>Sat, 02 Dec 2023 14:31:25 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/eam-key-reuse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Padding Oracle</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/padding-oracle/</link>
+      <pubDate>Sat, 02 Dec 2023 14:31:03 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/padding-oracle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Iv Recovery</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/iv-recovery/</link>
+      <pubDate>Sat, 02 Dec 2023 14:30:52 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/iv-recovery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bit Flipping</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/bit-flipping/</link>
+      <pubDate>Sat, 02 Dec 2023 14:30:38 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/bit-flipping/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

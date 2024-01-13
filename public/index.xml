@@ -1,11 +1,481 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CryptoLearn</title>
+    <title>My New Hugo Site</title>
     <link>https://victim1307.github.io/new-crypto-learn/</link>
-    <description>Recent content on CryptoLearn</description>
+    <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 02 Dec 2023 17:10:14 +0530</lastBuildDate>
     <atom:link href="https://victim1307.github.io/new-crypto-learn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Where To Begin</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/where-to-begin/</link>
+      <pubDate>Sat, 02 Dec 2023 08:48:12 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/where-to-begin/</guid>
+      <description>Hello world</description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/introduction/</link>
+      <pubDate>Sat, 02 Dec 2023 13:50:12 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Encoding</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/encoding/</link>
+      <pubDate>Sat, 02 Dec 2023 13:51:31 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/encoding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Encryption 101</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/encryption-101/</link>
+      <pubDate>Sat, 02 Dec 2023 13:51:50 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/encryption-101/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cryptosystem Classification</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/cryptosystem-classification/</link>
+      <pubDate>Sat, 02 Dec 2023 13:52:12 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/cryptosystem-classification/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bruteforce Attack</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/bruteforce-attack/</link>
+      <pubDate>Sat, 02 Dec 2023 13:52:30 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/bruteforce-attack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/introduction/</link>
+      <pubDate>Sat, 02 Dec 2023 14:14:21 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shift Cipher</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/shift-cipher/</link>
+      <pubDate>Sat, 02 Dec 2023 13:57:55 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/shift-cipher/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Affine Cipher</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/affine-cipher/</link>
+      <pubDate>Sat, 02 Dec 2023 13:58:12 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/affine-cipher/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Atbash Cipher</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/atbash-cipher/</link>
+      <pubDate>Sat, 02 Dec 2023 13:58:35 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/atbash-cipher/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Playfair Cipher</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/playfair-cipher/</link>
+      <pubDate>Sat, 02 Dec 2023 13:58:53 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/playfair-cipher/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/stream-cipher/introduction/</link>
+      <pubDate>Sat, 02 Dec 2023 14:36:54 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/stream-cipher/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Caesar Cipher</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/stream-cipher/caesar-cipher/</link>
+      <pubDate>Sat, 02 Dec 2023 14:07:13 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/stream-cipher/caesar-cipher/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Substitution Cipher</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/stream-cipher/substitution-cipher/</link>
+      <pubDate>Sat, 02 Dec 2023 14:07:31 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/stream-cipher/substitution-cipher/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Char XOR</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/stream-cipher/single-byte-char-xor/</link>
+      <pubDate>Sat, 02 Dec 2023 14:08:54 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/stream-cipher/single-byte-char-xor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Repeated Key XOR</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/stream-cipher/repeated-key-xor/</link>
+      <pubDate>Sat, 02 Dec 2023 14:09:16 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/stream-cipher/repeated-key-xor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/introduction/</link>
+      <pubDate>Sat, 02 Dec 2023 14:23:30 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/introduction/</link>
+      <pubDate>Sat, 02 Dec 2023 16:57:04 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smart Attack</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/smart-attack/</link>
+      <pubDate>Sat, 02 Dec 2023 17:05:59 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/smart-attack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Singular Curve Attack</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/singular-curve-attack/</link>
+      <pubDate>Sat, 02 Dec 2023 17:06:28 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/singular-curve-attack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mov Attack</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/mov-attack/</link>
+      <pubDate>Sat, 02 Dec 2023 17:06:43 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/mov-attack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fr Reduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/fr-reduction/</link>
+      <pubDate>Sat, 02 Dec 2023 17:06:56 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/fr-reduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lattice Based Signing</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/lattice-based-signing/</link>
+      <pubDate>Sat, 02 Dec 2023 17:07:18 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/lattice-based-signing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ecb/introduction/</link>
+      <pubDate>Sat, 02 Dec 2023 14:24:29 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ecb/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/introduction/</link>
+      <pubDate>Sat, 02 Dec 2023 14:24:00 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/introduction/</link>
+      <pubDate>Sat, 02 Dec 2023 14:24:22 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/introduction/</link>
+      <pubDate>Sat, 02 Dec 2023 16:59:44 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Brute Force</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/brute-force/</link>
+      <pubDate>Sat, 02 Dec 2023 17:00:12 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/brute-force/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bsgs</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/bsgs/</link>
+      <pubDate>Sat, 02 Dec 2023 17:00:26 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/bsgs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pollard Rho</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/pollard-rho/</link>
+      <pubDate>Sat, 02 Dec 2023 17:00:38 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/pollard-rho/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Index Calculus</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/index-calculus/</link>
+      <pubDate>Sat, 02 Dec 2023 17:00:59 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/index-calculus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pohling Hellman</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/pohling-hellman/</link>
+      <pubDate>Sat, 02 Dec 2023 17:01:17 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/pohling-hellman/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/misc/introduction/</link>
+      <pubDate>Sat, 02 Dec 2023 17:10:07 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/misc/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/factorization/introduction/</link>
+      <pubDate>Sat, 02 Dec 2023 17:09:47 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/factorization/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/diffie-hellman/introduction/</link>
+      <pubDate>Sat, 02 Dec 2023 16:56:09 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/diffie-hellman/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wiener_attack</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/wiener_attack/</link>
+      <pubDate>Sat, 02 Dec 2023 16:53:38 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/wiener_attack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stereotyped_message</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/stereotyped_message/</link>
+      <pubDate>Sat, 02 Dec 2023 16:53:29 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/stereotyped_message/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Related_message</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/related_message/</link>
+      <pubDate>Sat, 02 Dec 2023 16:53:20 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/related_message/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Partial_key_exposure</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/partial_key_exposure/</link>
+      <pubDate>Sat, 02 Dec 2023 16:53:11 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/partial_key_exposure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Non_coprime_exponent</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/non_coprime_exponent/</link>
+      <pubDate>Sat, 02 Dec 2023 16:53:03 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/non_coprime_exponent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nitaj_crt_rsa</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/nitaj_crt_rsa/</link>
+      <pubDate>Sat, 02 Dec 2023 16:52:53 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/nitaj_crt_rsa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Manger</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/manger/</link>
+      <pubDate>Sat, 02 Dec 2023 16:52:46 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/manger/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lsb_oracle</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/lsb_oracle/</link>
+      <pubDate>Sat, 02 Dec 2023 16:52:38 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/lsb_oracle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Low_exponent</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/low_exponent/</link>
+      <pubDate>Sat, 02 Dec 2023 16:52:29 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/low_exponent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Known_d</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/known_d/</link>
+      <pubDate>Sat, 02 Dec 2023 16:52:21 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/known_d/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Known_crt_exponents</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/known_crt_exponents/</link>
+      <pubDate>Sat, 02 Dec 2023 16:52:06 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/known_crt_exponents/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hastad_attack</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/hastad_attack/</link>
+      <pubDate>Sat, 02 Dec 2023 16:51:57 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/hastad_attack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Extended_wiener_attack</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/extended_wiener_attack/</link>
+      <pubDate>Sat, 02 Dec 2023 16:51:38 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/extended_wiener_attack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Esmedt_odlyzko</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/esmedt_odlyzko/</link>
+      <pubDate>Sat, 02 Dec 2023 16:50:57 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/esmedt_odlyzko/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>D_fault_attack</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/d_fault_attack/</link>
+      <pubDate>Sat, 02 Dec 2023 16:50:45 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/d_fault_attack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crt_fault_attack</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/crt_fault_attack/</link>
+      <pubDate>Sat, 02 Dec 2023 16:50:29 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/crt_fault_attack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Common_modulus</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/common_modulus/</link>
+      <pubDate>Sat, 02 Dec 2023 16:50:15 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/common_modulus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cherkaoui_semmouni</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/cherkaoui_semmouni/</link>
+      <pubDate>Sat, 02 Dec 2023 16:49:59 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/cherkaoui_semmouni/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Boneh_durfee</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/boneh_durfee/</link>
+      <pubDate>Sat, 02 Dec 2023 16:49:42 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/boneh_durfee/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bleichenbacher</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/bleichenbacher/</link>
+      <pubDate>Sat, 02 Dec 2023 16:49:27 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/bleichenbacher/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/rsa/introduction/</link>
+      <pubDate>Sat, 02 Dec 2023 16:49:02 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/rsa/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Separator Oracle</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/separator-oracle/</link>
+      <pubDate>Sat, 02 Dec 2023 14:33:06 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/separator-oracle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crime</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/crime/</link>
+      <pubDate>Sat, 02 Dec 2023 14:32:40 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/crime/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bit Flipping</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/bit-flipping/</link>
+      <pubDate>Sat, 02 Dec 2023 14:32:23 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/bit-flipping/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lenght Extension</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/lenght-extension/</link>
+      <pubDate>Sat, 02 Dec 2023 14:32:05 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/lenght-extension/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mte Key Reuse</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/mte-key-reuse/</link>
+      <pubDate>Sat, 02 Dec 2023 14:31:42 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/mte-key-reuse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Etm Key Reuse</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/etm-key-reuse/</link>
+      <pubDate>Sat, 02 Dec 2023 14:31:32 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/etm-key-reuse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eam Key Reuse</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/eam-key-reuse/</link>
+      <pubDate>Sat, 02 Dec 2023 14:31:25 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/eam-key-reuse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Padding Oracle</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/padding-oracle/</link>
+      <pubDate>Sat, 02 Dec 2023 14:31:03 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/padding-oracle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Iv Recovery</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/iv-recovery/</link>
+      <pubDate>Sat, 02 Dec 2023 14:30:52 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/iv-recovery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bit Flipping</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/bit-flipping/</link>
+      <pubDate>Sat, 02 Dec 2023 14:30:38 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/bit-flipping/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Plaintext Recovery</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ecb/plaintext-recovery/</link>
+      <pubDate>Sat, 02 Dec 2023 14:30:08 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ecb/plaintext-recovery/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

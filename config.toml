@@ -1,6 +1,7 @@
-baseURL = 'https://victim1307.github.io/new-crypto-learn/'
+baseURL = "https://victim1307.github.io/new-crypto-learn/"
 languageCode = 'en-us'
-title = 'CryptoLearn'
+title = 'My New Hugo Site'
+
 [module]
     [[module.imports]]
         path = "github.com/colinwilson/lotusdocs"
@@ -8,6 +9,14 @@ title = 'CryptoLearn'
     [[module.imports]]
         path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
         disable = false
-    [[module.imports]]
-        path = 'github.com/hugomods/images'
-        disable = false
+
+[markup.goldmark.renderer]
+    unsafe = true
+
+[[menu.primary]]
+    name  = "Docs"
+    url = "/docs/"
+    identifier = "docs"
+    weight = 10
+
+publishDir = "public"

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Block Cipher on My New Hugo Site</title>
+    <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/</link>
+    <description>Recent content in Block Cipher on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Dec 2023 14:22:44 +0530</lastBuildDate>
+    <atom:link href="https://victim1307.github.io/new-crypto-learn/docs/block-cipher/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/introduction/</link>
+      <pubDate>Sat, 02 Dec 2023 14:23:30 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/introduction/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

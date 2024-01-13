@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.css",
-	"sourceRoot": "/Users/siddhu/Desktop/workspace/test/my-docs-site",
+	"sourceRoot": "/Users/siddhu/Desktop/workspace/test/new-crypto-learn",
 	"sources": [
 		"/Users/siddhu/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/colinwilson/lotusdocs@v0.1.0/assets/docs/scss/style.scss",
 		"../../../../Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/colinwilson/lotusdocs@v0.1.0/assets/docs/scss/custom/plugins/icons/_google-material.scss",

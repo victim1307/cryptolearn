@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Classic Cryptography on My New Hugo Site</title>
+    <link>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/</link>
+    <description>Recent content in Classic Cryptography on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Dec 2023 13:53:45 +0530</lastBuildDate>
+    <atom:link href="https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/introduction/</link>
+      <pubDate>Sat, 02 Dec 2023 14:14:21 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shift Cipher</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/shift-cipher/</link>
+      <pubDate>Sat, 02 Dec 2023 13:57:55 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/shift-cipher/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Affine Cipher</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/affine-cipher/</link>
+      <pubDate>Sat, 02 Dec 2023 13:58:12 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/affine-cipher/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Atbash Cipher</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/atbash-cipher/</link>
+      <pubDate>Sat, 02 Dec 2023 13:58:35 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/atbash-cipher/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Playfair Cipher</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/playfair-cipher/</link>
+      <pubDate>Sat, 02 Dec 2023 13:58:53 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/playfair-cipher/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

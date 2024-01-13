@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Basic Concepts on My New Hugo Site</title>
+    <link>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/</link>
+    <description>Recent content in Basic Concepts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Dec 2023 11:08:58 +0530</lastBuildDate>
+    <atom:link href="https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/introduction/</link>
+      <pubDate>Sat, 02 Dec 2023 13:50:12 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Encoding</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/encoding/</link>
+      <pubDate>Sat, 02 Dec 2023 13:51:31 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/encoding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Encryption 101</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/encryption-101/</link>
+      <pubDate>Sat, 02 Dec 2023 13:51:50 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/encryption-101/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cryptosystem Classification</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/cryptosystem-classification/</link>
+      <pubDate>Sat, 02 Dec 2023 13:52:12 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/cryptosystem-classification/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bruteforce Attack</title>
+      <link>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/bruteforce-attack/</link>
+      <pubDate>Sat, 02 Dec 2023 13:52:30 +0530</pubDate>
+      <guid>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/bruteforce-attack/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
