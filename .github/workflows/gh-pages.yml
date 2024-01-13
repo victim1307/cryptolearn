@@ -35,8 +35,7 @@ build:
     HUGO_VERSION: 0.118.2
     steps:
     - name: Install Hugo CLI
-        run: wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-        && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+        run: wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb && sudo dpkg -i ${{ runner.temp }}/hugo.deb
     - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -52,10 +51,7 @@ build:
         # For maximum backward compatibility with Hugo modules
         HUGO_ENVIRONMENT: production
         HUGO_ENV: production
-        run: hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
     - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
