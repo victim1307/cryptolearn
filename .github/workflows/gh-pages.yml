@@ -37,8 +37,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-        submodules: recursive
-        fetch-depth: 0
+          submodules: recursive
+          fetch-depth: 0
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
@@ -47,15 +47,15 @@ jobs:
       - name: Build with Hugo
         env:
         # For maximum backward compatibility with Hugo modules
-        HUGO_ENVIRONMENT: production
-        HUGO_ENV: production
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
         run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./public
   deploy:
-    environment:
+    #environment:
     name: github-pages
     url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
