@@ -23,8 +23,8 @@ concurrency:
 
 # Default to bash
 defaults:
-run:
-  shell: bash
+  run:
+    shell: bash
 
 jobs:
   build:
