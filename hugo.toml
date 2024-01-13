@@ -1,4 +1,5 @@
-baseURL = 'https://victim1307.github.io/new-crypto-learn'
+baseURL = 'https://victim1307.github.io/new-crypto-learn/
+'
 languageCode = 'en-us'
 title = 'CryptoLearn'
 [module]
