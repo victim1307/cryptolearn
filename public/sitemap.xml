@@ -2,254 +2,254 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/where-to-begin/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/where-to-begin/</loc>
     <lastmod>2023-12-02T08:48:12+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/basic-concepts/</loc>
     <lastmod>2023-12-02T11:08:58+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/classic-cryptography/</loc>
     <lastmod>2023-12-02T13:53:45+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/stream-cipher/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/stream-cipher/</loc>
     <lastmod>2023-12-02T14:06:44+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/</loc>
     <lastmod>2023-12-02T14:22:44+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/factorization/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/factorization/</loc>
     <lastmod>2023-12-02T17:09:39+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/</loc>
     <lastmod>2023-12-02T16:49:08+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/diffie-hellman/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/diffie-hellman/</loc>
     <lastmod>2023-12-02T16:55:56+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/ecc/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/ecc/</loc>
     <lastmod>2023-12-02T16:56:57+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/misc/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/misc/</loc>
     <lastmod>2023-12-02T17:10:14+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/introduction/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/basic-concepts/introduction/</loc>
     <lastmod>2023-12-02T13:50:12+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/encoding/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/basic-concepts/encoding/</loc>
     <lastmod>2023-12-02T13:51:31+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/encryption-101/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/basic-concepts/encryption-101/</loc>
     <lastmod>2023-12-02T13:51:50+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/cryptosystem-classification/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/basic-concepts/cryptosystem-classification/</loc>
     <lastmod>2023-12-02T13:52:12+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/basic-concepts/bruteforce-attack/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/basic-concepts/bruteforce-attack/</loc>
     <lastmod>2023-12-02T13:52:30+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/introduction/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/classic-cryptography/introduction/</loc>
     <lastmod>2023-12-02T14:14:21+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/shift-cipher/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/classic-cryptography/shift-cipher/</loc>
     <lastmod>2023-12-02T13:57:55+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/affine-cipher/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/classic-cryptography/affine-cipher/</loc>
     <lastmod>2023-12-02T13:58:12+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/atbash-cipher/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/classic-cryptography/atbash-cipher/</loc>
     <lastmod>2023-12-02T13:58:35+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/classic-cryptography/playfair-cipher/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/classic-cryptography/playfair-cipher/</loc>
     <lastmod>2023-12-02T13:58:53+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/stream-cipher/introduction/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/stream-cipher/introduction/</loc>
     <lastmod>2023-12-02T14:36:54+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/stream-cipher/caesar-cipher/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/stream-cipher/caesar-cipher/</loc>
     <lastmod>2023-12-02T14:07:13+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/stream-cipher/substitution-cipher/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/stream-cipher/substitution-cipher/</loc>
     <lastmod>2023-12-02T14:07:31+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/stream-cipher/single-byte-char-xor/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/stream-cipher/single-byte-char-xor/</loc>
     <lastmod>2023-12-02T14:08:54+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/stream-cipher/repeated-key-xor/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/stream-cipher/repeated-key-xor/</loc>
     <lastmod>2023-12-02T14:09:16+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/introduction/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/introduction/</loc>
     <lastmod>2023-12-02T14:23:30+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ecb/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/ecb/</loc>
     <lastmod>2023-12-02T14:25:35+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/cbc/</loc>
     <lastmod>2023-12-02T14:25:21+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/ctr/</loc>
     <lastmod>2023-12-02T14:25:27+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/ecc/introduction/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/ecc/introduction/</loc>
     <lastmod>2023-12-02T16:57:04+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/</loc>
     <lastmod>2023-12-02T16:59:37+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/ecc/smart-attack/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/ecc/smart-attack/</loc>
     <lastmod>2023-12-02T17:05:59+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/ecc/singular-curve-attack/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/ecc/singular-curve-attack/</loc>
     <lastmod>2023-12-02T17:06:28+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/ecc/mov-attack/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/ecc/mov-attack/</loc>
     <lastmod>2023-12-02T17:06:43+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/ecc/fr-reduction/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/ecc/fr-reduction/</loc>
     <lastmod>2023-12-02T17:06:56+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/ecc/lattice-based-signing/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/ecc/lattice-based-signing/</loc>
     <lastmod>2023-12-02T17:07:18+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ecb/introduction/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/ecb/introduction/</loc>
     <lastmod>2023-12-02T14:24:29+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/introduction/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/cbc/introduction/</loc>
     <lastmod>2023-12-02T14:24:00+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/introduction/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/ctr/introduction/</loc>
     <lastmod>2023-12-02T14:24:22+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/introduction/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/introduction/</loc>
     <lastmod>2023-12-02T16:59:44+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/brute-force/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/brute-force/</loc>
     <lastmod>2023-12-02T17:00:12+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/bsgs/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/bsgs/</loc>
     <lastmod>2023-12-02T17:00:26+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/pollard-rho/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/pollard-rho/</loc>
     <lastmod>2023-12-02T17:00:38+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/index-calculus/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/index-calculus/</loc>
     <lastmod>2023-12-02T17:00:59+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/pohling-hellman/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/pohling-hellman/</loc>
     <lastmod>2023-12-02T17:01:17+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/misc/introduction/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/misc/introduction/</loc>
     <lastmod>2023-12-02T17:10:07+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/factorization/introduction/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/factorization/introduction/</loc>
     <lastmod>2023-12-02T17:09:47+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/diffie-hellman/introduction/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/diffie-hellman/introduction/</loc>
     <lastmod>2023-12-02T16:56:09+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/wiener_attack/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/wiener_attack/</loc>
     <lastmod>2023-12-02T16:53:38+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/stereotyped_message/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/stereotyped_message/</loc>
     <lastmod>2023-12-02T16:53:29+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/related_message/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/related_message/</loc>
     <lastmod>2023-12-02T16:53:20+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/partial_key_exposure/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/partial_key_exposure/</loc>
     <lastmod>2023-12-02T16:53:11+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/non_coprime_exponent/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/non_coprime_exponent/</loc>
     <lastmod>2023-12-02T16:53:03+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/nitaj_crt_rsa/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/nitaj_crt_rsa/</loc>
     <lastmod>2023-12-02T16:52:53+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/manger/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/manger/</loc>
     <lastmod>2023-12-02T16:52:46+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/lsb_oracle/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/lsb_oracle/</loc>
     <lastmod>2023-12-02T16:52:38+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/low_exponent/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/low_exponent/</loc>
     <lastmod>2023-12-02T16:52:29+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/known_d/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/known_d/</loc>
     <lastmod>2023-12-02T16:52:21+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/known_crt_exponents/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/known_crt_exponents/</loc>
     <lastmod>2023-12-02T16:52:06+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/hastad_attack/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/hastad_attack/</loc>
     <lastmod>2023-12-02T16:51:57+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/extended_wiener_attack/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/extended_wiener_attack/</loc>
     <lastmod>2023-12-02T16:51:38+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/esmedt_odlyzko/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/esmedt_odlyzko/</loc>
     <lastmod>2023-12-02T16:50:57+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/d_fault_attack/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/d_fault_attack/</loc>
     <lastmod>2023-12-02T16:50:45+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/crt_fault_attack/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/crt_fault_attack/</loc>
     <lastmod>2023-12-02T16:50:29+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/common_modulus/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/common_modulus/</loc>
     <lastmod>2023-12-02T16:50:15+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/cherkaoui_semmouni/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/cherkaoui_semmouni/</loc>
     <lastmod>2023-12-02T16:49:59+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/boneh_durfee/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/boneh_durfee/</loc>
     <lastmod>2023-12-02T16:49:42+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/bleichenbacher/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/bleichenbacher/</loc>
     <lastmod>2023-12-02T16:49:27+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/rsa/introduction/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/rsa/introduction/</loc>
     <lastmod>2023-12-02T16:49:02+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/separator-oracle/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/ctr/separator-oracle/</loc>
     <lastmod>2023-12-02T14:33:06+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/crime/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/ctr/crime/</loc>
     <lastmod>2023-12-02T14:32:40+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/bit-flipping/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/ctr/bit-flipping/</loc>
     <lastmod>2023-12-02T14:32:23+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/lenght-extension/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/cbc/lenght-extension/</loc>
     <lastmod>2023-12-02T14:32:05+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/mte-key-reuse/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/cbc/mte-key-reuse/</loc>
     <lastmod>2023-12-02T14:31:42+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/etm-key-reuse/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/cbc/etm-key-reuse/</loc>
     <lastmod>2023-12-02T14:31:32+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/eam-key-reuse/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/cbc/eam-key-reuse/</loc>
     <lastmod>2023-12-02T14:31:25+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/padding-oracle/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/cbc/padding-oracle/</loc>
     <lastmod>2023-12-02T14:31:03+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/iv-recovery/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/cbc/iv-recovery/</loc>
     <lastmod>2023-12-02T14:30:52+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/cbc/bit-flipping/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/cbc/bit-flipping/</loc>
     <lastmod>2023-12-02T14:30:38+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ecb/plaintext-recovery/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/block-cipher/ecb/plaintext-recovery/</loc>
     <lastmod>2023-12-02T14:30:08+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/docs/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/docs/</loc>
     <lastmod>2023-12-02T17:10:14+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/</loc>
     <lastmod>2023-12-02T17:10:14+05:30</lastmod>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/categories/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/categories/</loc>
   </url><url>
-    <loc>https://victim1307.github.io/new-crypto-learn/tags/</loc>
+    <loc>https://victim1307.github.io/cryptolearn/tags/</loc>
   </url>
 </urlset>

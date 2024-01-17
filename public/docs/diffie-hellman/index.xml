@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Diffie Hellman on My New Hugo Site</title>
-    <link>https://victim1307.github.io/new-crypto-learn/docs/diffie-hellman/</link>
+    <link>https://victim1307.github.io/cryptolearn/docs/diffie-hellman/</link>
     <description>Recent content in Diffie Hellman on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 02 Dec 2023 16:55:56 +0530</lastBuildDate>
-    <atom:link href="https://victim1307.github.io/new-crypto-learn/docs/diffie-hellman/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://victim1307.github.io/cryptolearn/docs/diffie-hellman/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction</title>
-      <link>https://victim1307.github.io/new-crypto-learn/docs/diffie-hellman/introduction/</link>
+      <link>https://victim1307.github.io/cryptolearn/docs/diffie-hellman/introduction/</link>
       <pubDate>Sat, 02 Dec 2023 16:56:09 +0530</pubDate>
-      <guid>https://victim1307.github.io/new-crypto-learn/docs/diffie-hellman/introduction/</guid>
+      <guid>https://victim1307.github.io/cryptolearn/docs/diffie-hellman/introduction/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CTR on My New Hugo Site</title>
-    <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/</link>
+    <link>https://victim1307.github.io/cryptolearn/docs/block-cipher/ctr/</link>
     <description>Recent content in CTR on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 02 Dec 2023 14:25:27 +0530</lastBuildDate>
-    <atom:link href="https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://victim1307.github.io/cryptolearn/docs/block-cipher/ctr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction</title>
-      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/introduction/</link>
+      <link>https://victim1307.github.io/cryptolearn/docs/block-cipher/ctr/introduction/</link>
       <pubDate>Sat, 02 Dec 2023 14:24:22 +0530</pubDate>
-      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/introduction/</guid>
+      <guid>https://victim1307.github.io/cryptolearn/docs/block-cipher/ctr/introduction/</guid>
       <description></description>
     </item>
     <item>
       <title>Separator Oracle</title>
-      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/separator-oracle/</link>
+      <link>https://victim1307.github.io/cryptolearn/docs/block-cipher/ctr/separator-oracle/</link>
       <pubDate>Sat, 02 Dec 2023 14:33:06 +0530</pubDate>
-      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/separator-oracle/</guid>
+      <guid>https://victim1307.github.io/cryptolearn/docs/block-cipher/ctr/separator-oracle/</guid>
       <description></description>
     </item>
     <item>
       <title>Crime</title>
-      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/crime/</link>
+      <link>https://victim1307.github.io/cryptolearn/docs/block-cipher/ctr/crime/</link>
       <pubDate>Sat, 02 Dec 2023 14:32:40 +0530</pubDate>
-      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/crime/</guid>
+      <guid>https://victim1307.github.io/cryptolearn/docs/block-cipher/ctr/crime/</guid>
       <description></description>
     </item>
     <item>
       <title>Bit Flipping</title>
-      <link>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/bit-flipping/</link>
+      <link>https://victim1307.github.io/cryptolearn/docs/block-cipher/ctr/bit-flipping/</link>
       <pubDate>Sat, 02 Dec 2023 14:32:23 +0530</pubDate>
-      <guid>https://victim1307.github.io/new-crypto-learn/docs/block-cipher/ctr/bit-flipping/</guid>
+      <guid>https://victim1307.github.io/cryptolearn/docs/block-cipher/ctr/bit-flipping/</guid>
       <description></description>
     </item>
   </channel>

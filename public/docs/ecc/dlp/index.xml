@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dlp on My New Hugo Site</title>
-    <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/</link>
+    <link>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/</link>
     <description>Recent content in Dlp on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 02 Dec 2023 16:59:37 +0530</lastBuildDate>
-    <atom:link href="https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://victim1307.github.io/cryptolearn/docs/ecc/dlp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction</title>
-      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/introduction/</link>
+      <link>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/introduction/</link>
       <pubDate>Sat, 02 Dec 2023 16:59:44 +0530</pubDate>
-      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/introduction/</guid>
+      <guid>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/introduction/</guid>
       <description></description>
     </item>
     <item>
       <title>Brute Force</title>
-      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/brute-force/</link>
+      <link>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/brute-force/</link>
       <pubDate>Sat, 02 Dec 2023 17:00:12 +0530</pubDate>
-      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/brute-force/</guid>
+      <guid>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/brute-force/</guid>
       <description></description>
     </item>
     <item>
       <title>Bsgs</title>
-      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/bsgs/</link>
+      <link>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/bsgs/</link>
       <pubDate>Sat, 02 Dec 2023 17:00:26 +0530</pubDate>
-      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/bsgs/</guid>
+      <guid>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/bsgs/</guid>
       <description></description>
     </item>
     <item>
       <title>Pollard Rho</title>
-      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/pollard-rho/</link>
+      <link>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/pollard-rho/</link>
       <pubDate>Sat, 02 Dec 2023 17:00:38 +0530</pubDate>
-      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/pollard-rho/</guid>
+      <guid>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/pollard-rho/</guid>
       <description></description>
     </item>
     <item>
       <title>Index Calculus</title>
-      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/index-calculus/</link>
+      <link>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/index-calculus/</link>
       <pubDate>Sat, 02 Dec 2023 17:00:59 +0530</pubDate>
-      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/index-calculus/</guid>
+      <guid>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/index-calculus/</guid>
       <description></description>
     </item>
     <item>
       <title>Pohling Hellman</title>
-      <link>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/pohling-hellman/</link>
+      <link>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/pohling-hellman/</link>
       <pubDate>Sat, 02 Dec 2023 17:01:17 +0530</pubDate>
-      <guid>https://victim1307.github.io/new-crypto-learn/docs/ecc/dlp/pohling-hellman/</guid>
+      <guid>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/pohling-hellman/</guid>
       <description></description>
     </item>
   </channel>
