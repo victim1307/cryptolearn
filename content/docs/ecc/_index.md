@@ -1,6 +1,6 @@
 ---
 weight: 9
-title: "Ecc"
+title: "ECC"
 description: ""
 icon: "article"
 date: "2023-12-02T16:56:57+05:30"

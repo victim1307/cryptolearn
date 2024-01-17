@@ -11,4 +11,4 @@ toc: true
 
 Hello world
 
-![Crypto](/images/crypto.webp)
+<!-- ![Crypto](/images/crypto.webp) -->
