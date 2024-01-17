@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>CryptoLearn</title>
     <link>https://victim1307.github.io/cryptolearn/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on CryptoLearn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 02 Dec 2023 17:10:14 +0530</lastBuildDate>
@@ -125,7 +125,7 @@
       <link>https://victim1307.github.io/cryptolearn/docs/block-cipher/introduction/</link>
       <pubDate>Sat, 02 Dec 2023 14:23:30 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/block-cipher/introduction/</guid>
-      <description></description>
+      <description>Stream ciphers and block ciphers are two common types of symmetric encryption algorithms.&#xA;A stream cipher encrypts plaintext one bit or byte at a time, while a block cipher encrypts plaintext in fixed-size blocks, typically 128 or 256 bits at a time.&#xA;Stream ciphers are used in real-time applications where data is transmitted continuously, such as in wireless communications or streaming audio and video. They are efficient in terms of computation and memory usage and can encrypt data quickly and securely.</description>
     </item>
     <item>
       <title>Introduction</title>
@@ -244,7 +244,7 @@
       <link>https://victim1307.github.io/cryptolearn/docs/factorization/introduction/</link>
       <pubDate>Sat, 02 Dec 2023 17:09:47 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/factorization/introduction/</guid>
-      <description></description>
+      <description>Fermat&amp;rsquo;s Factorisation Method linkFermat&amp;rsquo;s factorization is an algorithm for factoring integers that is based on Fermat&amp;rsquo;s Little Theorem. The theorem states that if p is a prime number, then for any integer a, the number a^p - a is an integer multiple of p. The algorithm for factoring an integer N is to find two integers a and b such that a^2 - Nb^2 = 1. If such integers are found, then N is the product of the two factors a+b and a-b.</description>
     </item>
     <item>
       <title>Introduction</title>
@@ -254,11 +254,11 @@
       <description></description>
     </item>
     <item>
-      <title>Wiener_attack</title>
+      <title>Wiener Attack</title>
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/wiener_attack/</link>
       <pubDate>Sat, 02 Dec 2023 16:53:38 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/wiener_attack/</guid>
-      <description></description>
+      <description>The Wiener attack is a method for attacking RSA encryption when the private exponent (d) is small relative to the modulus (n). This method is named after mathematician David Wiener, who first described it in a 1990 paper.&#xA;The Wiener attack takes advantage of the fact that the private exponent (d) is typically much smaller than the modulus (n) in RSA encryption. If the private exponent (d) is small enough, it is possible to calculate the private key using the relationship between the private exponent (d) and the public exponent (e) in RSA.</description>
     </item>
     <item>
       <title>Stereotyped_message</title>
@@ -366,11 +366,11 @@
       <description></description>
     </item>
     <item>
-      <title>Common_modulus</title>
+      <title>Common Modulus Attack</title>
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/common_modulus/</link>
       <pubDate>Sat, 02 Dec 2023 16:50:15 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/common_modulus/</guid>
-      <description></description>
+      <description>A common modulus attack on RSA is a type of cryptographic attack that takes advantage of the properties of RSA encryption when the same modulus is used for multiple encryptions.&#xA;In RSA, encryption is performed by raising the plaintext message to the power of the public exponent (e) and taking the remainder when divided by the modulus (n). Similarly, decryption is performed by raising the ciphertext to the power of the private exponent (d) and taking the remainder when divided by the modulus (n).</description>
     </item>
     <item>
       <title>Cherkaoui_semmouni</title>
@@ -398,7 +398,7 @@
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/introduction/</link>
       <pubDate>Sat, 02 Dec 2023 16:49:02 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/introduction/</guid>
-      <description></description>
+      <description>RSA is a widely-used public-key encryption system that is based on the mathematical properties of large prime numbers. It was one of the first practical public-key cryptosystems and is widely used for secure data transmission.&#xA;The RSA encryption process consists of two parts: key generation and encryption/decryption.&#xA;Key Generation:&#xA;Select two large prime numbers, p and q. Compute n = p*q. n is used as the modulus for both the public and private keys.</description>
     </item>
     <item>
       <title>Separator Oracle</title>
