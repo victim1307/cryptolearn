@@ -214,6 +214,11 @@
                                             <li class=" "><a class="sidebar-nested-link" href="https://victim1307.github.io/cryptolearn/docs/stream-cipher/repeated-key-xor/">Repeated Key XOR</a></li>
                                         
                                     
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="https://victim1307.github.io/cryptolearn/docs/stream-cipher/transposition/">Transposition Cipher</a></li>
+                                        
+                                    
                                 </ul>
                             </div>
                         </li>
@@ -1694,6 +1699,13 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
 
 
     
@@ -1849,8 +1861,8 @@
                 id:  16 ,
                 href: "\/cryptolearn\/docs\/classic-cryptography\/shift-cipher\/",
                 title: "Shift Cipher",
-                description: "",
-                content: ""
+                description: "A shift cipher, also known as a Caesar cipher, is a simple encryption technique that replaces each letter of a plaintext message with a letter a fixed number of positions down the alphabet. For example, if the shift value is 3, the letter ‘A’ would be replaced by ‘D’, ‘B’ would be replaced by ‘E’, and so on.\nThe shift value is also known as the key, and it determines the encryption and decryption process.",
+                content: "A shift cipher, also known as a Caesar cipher, is a simple encryption technique that replaces each letter of a plaintext message with a letter a fixed number of positions down the alphabet. For example, if the shift value is 3, the letter ‘A’ would be replaced by ‘D’, ‘B’ would be replaced by ‘E’, and so on.\nThe shift value is also known as the key, and it determines the encryption and decryption process. The same key is used for both encryption and decryption. The encryption process is simply a shift to the right, and the decryption process is a shift to the left, using the same key value.\nThe formula for a shift cipher encryption is as follows: link C ≡ (P + K) mod 26 where: C = the ciphertext (the encrypted message) P = the plaintext (the original message) K = the shift value (the key) mod 26 = the modulo operation that brings the result of the addition within the range of 0 to 25, corresponding to the 26 letters of the alphabet. The formula for a shift cipher decryption is as follows: link P ≡ (C - K + 26) mod 26 where: P = the plaintext (the original message) C = the ciphertext (the encrypted message) K = the shift value (the key) mod 26 = the modulo operation that brings the result of the subtraction within the range of 0 to 25, corresponding to the 26 letters of the alphabet. Code link def shift_cipher_encryption(plaintext, key): # create an empty list to store the ciphertext ciphertext = [] for letter in plaintext: # only encrypt letters, not spaces or other characters if letter.isalpha(): # shift the letter by the key value shifted_letter = chr((ord(letter) - ord('A') + key) % 26 + ord('A')) ciphertext.append(shifted_letter) else: ciphertext.append(letter) return ''.join(ciphertext) def shift_cipher_decryption(ciphertext, key): # create an empty list to store the plaintext plaintext = [] for letter in ciphertext: # only decrypt letters, not spaces or other characters if letter.isalpha(): # shift the letter by the negative of the key value shifted_letter = chr((ord(letter) - ord('A') - key + 26) % 26 + ord('A')) plaintext.append(shifted_letter) else: plaintext.append(letter) return ''.join(plaintext) # example usage plaintext = \"HELLO WORLD\" key = 3 ciphertext = shift_cipher_encryption(plaintext, key) print(\"Ciphertext:\", ciphertext) decrypted_text = shift_cipher_decryption(ciphertext, key) print(\"Decrypted text:\", decrypted_text) "
             }
         );
     index.add(
@@ -1858,8 +1870,8 @@
                 id:  17 ,
                 href: "\/cryptolearn\/docs\/classic-cryptography\/affine-cipher\/",
                 title: "Affine Cipher",
-                description: "",
-                content: ""
+                description: "An Affine cipher is a type of monoalphabetic substitution cipher, in which each letter in the plaintext is mapped to a unique fixed letter in the ciphertext. This mapping is based on a mathematical function, called the Affine function, that takes two inputs: the letter of the plaintext and two encryption keys, “a” and “b”.\nThe encryption function is defined as: link C = (a*P + b) mod 26 Where: C = the ciphertext letter (the encrypted letter) P = the plaintext letter (the original letter) a, b = the encryption keys mod 26 = the modulo operation that brings the result of the multiplication and addition within the range of 0 to 25, corresponding to the 26 letters of the alphabet.",
+                content: "An Affine cipher is a type of monoalphabetic substitution cipher, in which each letter in the plaintext is mapped to a unique fixed letter in the ciphertext. This mapping is based on a mathematical function, called the Affine function, that takes two inputs: the letter of the plaintext and two encryption keys, “a” and “b”.\nThe encryption function is defined as: link C = (a*P + b) mod 26 Where: C = the ciphertext letter (the encrypted letter) P = the plaintext letter (the original letter) a, b = the encryption keys mod 26 = the modulo operation that brings the result of the multiplication and addition within the range of 0 to 25, corresponding to the 26 letters of the alphabet. To decrypt the ciphertext, the function uses the inverse of the encryption key ‘a’ and the encryption key ‘b’ to obtain the plaintext.\nThe decryption function is defined as: link P = (a^-1 * (C - b)) mod 26 Where: P = the plaintext letter (the original letter) C = the ciphertext letter (the encrypted letter) a^-1 = the modular inverse of a (a^-1 * a = 1 mod 26) b = the encryption key mod 26 = the modulo operation that brings the result of the multiplication and subtraction within the range of 0 to 25, corresponding to the 26 letters of the alphabet. The encryption and decryption keys “a” and “b” must be chosen such that “a” is relatively prime to 26 (i.e. it has no factors in common with 26) and that the modular inverse of “a” exists.\nCode link def affine_cipher_encryption(plaintext, a, b): # create an empty list to store the ciphertext ciphertext = [] for letter in plaintext: # only encrypt letters, not spaces or other characters if letter.isalpha(): # encrypt the letter using the Affine function encrypted_letter = chr(((a * (ord(letter) - ord('A'))) + b) % 26 + ord('A')) ciphertext.append(encrypted_letter) else: ciphertext.append(letter) return ''.join(ciphertext) def affine_cipher_decryption(ciphertext, a, b): # calculate the modular inverse of a a_inv = inverse_mod(a, 26) # create an empty list to store the plaintext plaintext = [] for letter in ciphertext: # only decrypt letters, not spaces or other characters if letter.isalpha(): # decrypt the letter using the inverse Affine function decrypted_letter = chr((a_inv * ((ord(letter) - ord('A')) - b)) % 26 + ord('A')) plaintext.append(decrypted_letter) else: plaintext.append(letter) return ''.join(plaintext) # example usage plaintext = \"HELLO WORLD\" a = 5 b = 8 ciphertext = affine_cipher_encryption(plaintext, a, b) print(\"Ciphertext:\", ciphertext) decrypted_text = affine_cipher_decryption(ciphertext, a, b) print(\"Decrypted text:\", decrypted_text) "
             }
         );
     index.add(
@@ -1867,8 +1879,8 @@
                 id:  18 ,
                 href: "\/cryptolearn\/docs\/classic-cryptography\/atbash-cipher\/",
                 title: "Atbash Cipher",
-                description: "",
-                content: ""
+                description: "The Atbash Cipher is a simple form of monoalphabetic substitution cipher that uses the reverse of the alphabet as the key.\nTo encrypt a message, the first step is to reverse the alphabet. This can be done by writing down the alphabet, A-Z or a-z, in the usual order and then writing it down again in reverse order. Then, for each letter in the plaintext message, the corresponding letter in the reversed alphabet is used to encrypt it.",
+                content: "The Atbash Cipher is a simple form of monoalphabetic substitution cipher that uses the reverse of the alphabet as the key.\nTo encrypt a message, the first step is to reverse the alphabet. This can be done by writing down the alphabet, A-Z or a-z, in the usual order and then writing it down again in reverse order. Then, for each letter in the plaintext message, the corresponding letter in the reversed alphabet is used to encrypt it.\nFor example, to encrypt the letter “A”, the letter “Z” would be used. To encrypt the letter “B”, the letter “Y” would be used, and so on. The encryption process is done letter by letter in this way, and the resulting encrypted message is the ciphertext.\nThe decryption process is similar, it’s just the reverse of the encryption process, the decryption key is the original alphabet.\nAtbash Cipher is a very simple encryption method, it’s easy to implement and understand, but it is easily broken by frequency analysis. It’s not suitable for use in modern encryption scenarios.\nThe Atbash Cipher encryption process is as follows: link The first step is to create a reversed alphabet, for example, if we are using the English alphabet, it would be “ZYXWVUTSRQPONMLKJIHGFEDCBA” The plaintext message is then converted letter by letter into the corresponding letter in the reversed alphabet. The resulting letters form the ciphertext message. For example, if the plaintext message is “HELLO” and the reversed alphabet is “ZYXWVUTSRQPONMLKJIHGFEDCBA”, the ciphertext message would be “SVOOL”.\nThe Atbash Cipher decryption process is as follows: link The first step is to use the original alphabet. The ciphertext message is then converted letter by letter into the corresponding letter in the original alphabet. The resulting letters form the plaintext message. For example, if the ciphertext message is “SVOOL” and the original alphabet is “ABCDEFGHIJKLMNOPQRSTUVWXYZ”, the plaintext message would be “HELLO”.\nIt’s important to note that this method can be applied to different alphabets and languages, it’s just reversing the order of the letters in the alphabet.\nCode link def atbash_cipher_encryption(plaintext): alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' reversed_alphabet = alphabet[::-1] ciphertext = [] for letter in plaintext: if letter.isalpha(): index = alphabet.index(letter.upper()) ciphertext.append(reversed_alphabet[index]) else: ciphertext.append(letter) return ''.join(ciphertext) def atbash_cipher_decryption(ciphertext): alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' reversed_alphabet = alphabet[::-1] plaintext = [] for letter in ciphertext: if letter.isalpha(): index = reversed_alphabet.index(letter.upper()) plaintext.append(alphabet[index]) else: plaintext.append(letter) return ''.join(plaintext) "
             }
         );
     index.add(
@@ -1876,8 +1888,8 @@
                 id:  19 ,
                 href: "\/cryptolearn\/docs\/classic-cryptography\/playfair-cipher\/",
                 title: "Playfair Cipher",
-                description: "",
-                content: ""
+                description: "The Playfair Cipher is a polygraphic substitution cipher that encrypts pairs of letters instead of single letters. It uses a 5x5 grid of letters (called the key square or tableau) to encrypt pairs of letters.\nTo encrypt a message, the first step is to create the key square. This is done by choosing a keyword and writing it in a 5x5 grid, filling the remaining spaces with the remaining letters of the alphabet in alphabetical order, omitting the letter ‘J’.",
+                content: "The Playfair Cipher is a polygraphic substitution cipher that encrypts pairs of letters instead of single letters. It uses a 5x5 grid of letters (called the key square or tableau) to encrypt pairs of letters.\nTo encrypt a message, the first step is to create the key square. This is done by choosing a keyword and writing it in a 5x5 grid, filling the remaining spaces with the remaining letters of the alphabet in alphabetical order, omitting the letter ‘J’.\nFor example, using the keyword “PLAYFAIR”, the grid would be:\nP L A Y F I R B C D E G H K M N O Q S T U V W X Z Then the plaintext message is divided into pairs of letters, if the message has an odd length, the last letter is padded with an “X” or any other letter.\nThe encryption process is done by following these steps: link If both letters of the pair are the same, an “X” or any other letter is added to the second letter to make them different. If the letters are in the same row of the key square, the letters to the right of each one are used (wrapping around to the left side of the row if necessary) If the letters are in the same column of the key square, the letters below each one are used (wrapping around to the top of the column if necessary) If the letters are in different rows and columns, the letters at the intersections of the same row and column as each letter are used. For example, using the key square above and the plaintext “HELLO”, the ciphertext would be “CENNR”. The Playfair Cipher decryption process is similar to the encryption process, but the opposite operations are applied.\nTo decrypt a message that was encrypted using the Playfair Cipher, the first step is to create the key square using the same keyword that was used to encrypt the message.\nThen, the ciphertext message is divided into pairs of letters, just as it was done during the encryption process.\nThe decryption process is done by following these steps: link If the letters are in the same row of the key square, the letters to the left of each one are used (wrapping around to the right side of the row if necessary) If the letters are in the same column of the key square, the letters above each one are used (wrapping around to the bottom of the column if necessary) If the letters are in different rows and columns, the letters at the intersections of the same row and column as each letter are used. For example, using the key square created with the keyword “PLAYFAIR” and the ciphertext “CENNR”, the plaintext would be “HELLO”. It’s important to note that this decryption process assumes that the key square was created using the same keyword as the one used to encrypt the message and that the plaintext message was padded with “X” or any other letter if necessary.\nCode link import re def textCleaning(text): text = text.upper() text = re.sub(r'\\s*\\d+\\s*', '', text) text = re.sub(r'[^\\w\\s]', '', text) text = text.replace(' ', '') return text def postProcess(text): text = [text[i:i+5] for i in range(0, len(text), 5)] text = ' '.join(text) return text def matrix(x, y, initial): return [[initial for i in range(x)] for j in range(y)] def locateIndex(c, playFairMatrix): # get location of each character loc = list() if c == 'J': c = 'I' for i, j in enumerate(playFairMatrix): for k, l in enumerate(j): if c == l: loc.append(i) loc.append(k) return loc def encrypt(text, playFairMatrix): text = textCleaning(text) cipher = '' i = 0 for s in range(0, len(text)+1, 2): if s \u003c len(text)-1: if text[s] == text[s+1]: text = text[:s+1]+'X'+text[s+1:] if len(text) % 2 != 0: text = text[:]+'X' # print(\"CIPHER TEXT:\", end='') while i \u003c len(text): loc = list() loc = locateIndex(text[i], playFairMatrix) loc1 = list() loc1 = locateIndex(text[i+1], playFairMatrix) if loc[1] == loc1[1]: cipher += playFairMatrix[(loc[0]+1)%5][loc[1]] + playFairMatrix[(loc1[0]+1)%5][loc1[1]] # print(\"{}{}\".format(playFairMatrix[(loc[0]+1)%5][loc[1]],playFairMatrix[(loc1[0]+1)%5][loc1[1]]),end=' ') elif loc[0] == loc1[0]: cipher += playFairMatrix[loc[0]][(loc[1]+1) % 5] + playFairMatrix[loc1[0]][(loc1[1]+1) % 5] # print(\"{}{}\".format(playFairMatrix[loc[0]][(loc[1]+1)%5],playFairMatrix[loc1[0]][(loc1[1]+1)%5]),end=' ') else: cipher += playFairMatrix[loc[0]][loc1[1]] + playFairMatrix[loc1[0]][loc[1]] # print(\"{}{}\".format(playFairMatrix[loc[0]][loc1[1]],playFairMatrix[loc1[0]][loc[1]]),end=' ') i = i+2 cipher = postProcess(cipher) return cipher def decrypt(cipher, playFairMatrix): # decryption cipher = textCleaning(cipher) plainText = '' # print(\"PLAIN TEXT:\", end=' ') i = 0 while i \u003c len(cipher): loc = list() loc = locateIndex(cipher[i], playFairMatrix) loc1 = list() loc1 = locateIndex(cipher[i+1], playFairMatrix) if loc[1] == loc1[1]: plainText += playFairMatrix[(loc[0]-1) % 5][loc[1]] + \\ playFairMatrix[(loc1[0]-1) % 5][loc1[1]] # print(\"{}{}\".format(playFairMatrix[(loc[0]-1)%5][loc[1]],playFairMatrix[(loc1[0]-1)%5][loc1[1]]),end=' ') elif loc[0] == loc1[0]: plainText += playFairMatrix[loc[0]][(loc[1]-1) % 5] + playFairMatrix[loc1[0]][(loc1[1]-1) % 5] # print(\"{}{}\".format(playFairMatrix[loc[0]][(loc[1]-1)%5],playFairMatrix[loc1[0]][(loc1[1]-1)%5]),end=' ') else: plainText += playFairMatrix[loc[0]][loc1[1] ] + playFairMatrix[loc1[0]][loc[1]] # print(\"{}{}\".format(playFairMatrix[loc[0]][loc1[1]],playFairMatrix[loc1[0]][loc[1]]),end=' ') i = i+2 plainText = postProcess(plainText) return plainText def generatePlayfairSquare(key): key = key.upper() result = list() for c in key: # storing key if c not in result: if c == 'J': # replacing j with i result.append('I') else: result.append(c) flag = 0 for i in range(65, 91): # storing other character if chr(i) not in result: if i == 73 and chr(74) not in result: result.append(\"I\") flag = 1 elif flag == 0 and i == 73 or i == 74: pass else: result.append(chr(i)) k = 0 my_matrix = matrix(5, 5, 0) # initialize matrix for i in range(0, 5): # making matrix for j in range(0, 5): my_matrix[i][j] = result[k] k += 1 return my_matrix def main(): while(1): choice=int(input(\"\\n 1.Encryption \\n 2.Decryption: \\n 3.EXIT \\n\")) key=input(\"Enter key : \") key = textCleaning(key) PS = generatePlayfairSquare(key) if choice==1: plainText = input(\"Enter Plaintext : \") plainText = textCleaning(plainText) print(encrypt(plainText, PS)) elif choice==2: cipher = input('Enter cipher : ') cipher = textCleaning(cipher) print(decrypt(cipher,PS)) elif choice==3: exit() else: print(\"Choose correct choice\") return 0 if __name__ == '__main__': main() "
             }
         );
     index.add(
@@ -1912,8 +1924,8 @@
                 id:  23 ,
                 href: "\/cryptolearn\/docs\/stream-cipher\/single-byte-char-xor\/",
                 title: "Char XOR",
-                description: "",
-                content: ""
+                description: "Single-Byte XOR, also known as Single Character XOR, is a simple form of XOR encryption that encrypts each byte of the plaintext message using a single byte key. The encryption process is done by applying the XOR operation between the plaintext byte and the key byte.\nThe decryption process is the same as the encryption process, it’s just the reverse of the encryption process, the decryption key is the same key used for encryption.",
+                content: "Single-Byte XOR, also known as Single Character XOR, is a simple form of XOR encryption that encrypts each byte of the plaintext message using a single byte key. The encryption process is done by applying the XOR operation between the plaintext byte and the key byte.\nThe decryption process is the same as the encryption process, it’s just the reverse of the encryption process, the decryption key is the same key used for encryption.\nHere’s an example of how you might implement Single-Byte XOR encryption and decryption in Sage:\ndef single_byte_xor_encryption(plaintext, key): ciphertext = \"\" for i in range(len(plaintext)): ciphertext += chr(ord(plaintext[i]) ^ ord(key[i % len(key)])) return ciphertext def single_byte_xor_decryption(ciphertext, key): plaintext = \"\" for i in range(len(ciphertext)): plaintext += chr(ord(ciphertext[i]) ^ ord(key[i % len(key)])) return plaintext It’s important to note that Single-Byte XOR is not considered a secure encryption method and should not be used in real-world scenarios, it can be easily broken by frequency analysis, and other methods.\n"
             }
         );
     index.add(
@@ -1921,8 +1933,8 @@
                 id:  24 ,
                 href: "\/cryptolearn\/docs\/stream-cipher\/repeated-key-xor\/",
                 title: "Repeated Key XOR",
-                description: "",
-                content: ""
+                description: "Repeated Key XOR is a type of encryption that uses the XOR operation to encrypt plaintext by repeatedly applying a secret key to it. In this method, the key is repeated as many times as necessary to match the length of the plaintext. The encryption process works by taking each plaintext byte and the corresponding byte of the key, and applying the XOR operation between them. The result is the ciphertext.",
+                content: "Repeated Key XOR is a type of encryption that uses the XOR operation to encrypt plaintext by repeatedly applying a secret key to it. In this method, the key is repeated as many times as necessary to match the length of the plaintext. The encryption process works by taking each plaintext byte and the corresponding byte of the key, and applying the XOR operation between them. The result is the ciphertext.\nDecryption is the inverse process of encryption, it takes the ciphertext and the same key used for encryption and applies the XOR operation between them, which results in the original plaintext.\ndef repeated_key_xor_encryption(plaintext:str, key:str): ciphertext = \"\" for i in range(len(plaintext)): ciphertext += chr(ord(plaintext[i]) ^ ord(key[i % len(key)])) return ciphertext def repeated_key_xor_decryption(ciphertext:str, key:str): plaintext = \"\" for i in range(len(ciphertext)): plaintext += chr(ord(ciphertext[i]) ^ ord(key[i % len(key)])) return plaintext "
             }
         );
     index.add(
@@ -2108,6 +2120,15 @@
     index.add(
             {
                 id:  45 ,
+                href: "\/cryptolearn\/docs\/stream-cipher\/transposition\/",
+                title: "Transposition Cipher",
+                description: "Transposition ciphers are a type of encryption technique that rearrange the positions of the letters in the plaintext to produce the ciphertext. The plaintext is rearranged according to a specific rule or method, such as a regular pattern or a secret key. The process of encryption is reversible, meaning that the original plaintext can be obtained by rearranging the ciphertext using the same rule or method.\nThere are several types of transposition ciphers, such as:",
+                content: "Transposition ciphers are a type of encryption technique that rearrange the positions of the letters in the plaintext to produce the ciphertext. The plaintext is rearranged according to a specific rule or method, such as a regular pattern or a secret key. The process of encryption is reversible, meaning that the original plaintext can be obtained by rearranging the ciphertext using the same rule or method.\nThere are several types of transposition ciphers, such as:\nColumnar Transposition: This cipher rearranges the letters of the plaintext by writing them in a grid and then reading the columns in a specific order.\nRail Fence: This cipher rearranges the letters of the plaintext by writing them in a zigzag pattern along a set number of “rails” and then reading the letters off in a specific order.\nRoute Cipher: This cipher rearranges the letters of the plaintext by writing them in a grid and then reading the letters off in a specific route, such as a snake-like pattern.\nBook Cipher: This cipher rearranges the letters of the plaintext by assigning each letter a number and then using a book or other prearranged text to look up the corresponding ciphertext letter.\nIt’s important to note that transposition ciphers are not considered very secure encryption method and can be easily broken by frequency analysis and other methods. They are mainly used to provide an additional layer of security on top of another encryption method.\ndef columnar_transposition_encryption(plaintext:str, key:str): ciphertext = \"\" grid = [] for i in range(len(plaintext)): grid.append(plaintext[i]) for i in range(len(key)): ciphertext += grid[i::len(key)] return ciphertext def columnar_transposition_decryption(ciphertext:str, key:str): plaintext = \"\" grid = [] for i in range(len(ciphertext)): grid.append(ciphertext[i]) for i in range(len(key)): plaintext += grid[i::len(key)] return plaintext "
+            }
+        );
+    index.add(
+            {
+                id:  46 ,
                 href: "\/cryptolearn\/docs\/misc\/introduction\/",
                 title: "Introduction",
                 description: "",
@@ -2116,7 +2137,7 @@
         );
     index.add(
             {
-                id:  46 ,
+                id:  47 ,
                 href: "\/cryptolearn\/docs\/factorization\/introduction\/",
                 title: "Introduction",
                 description: "Fermat’s Factorisation Method linkFermat’s factorization is an algorithm for factoring integers that is based on Fermat’s Little Theorem. The theorem states that if p is a prime number, then for any integer a, the number a^p - a is an integer multiple of p. The algorithm for factoring an integer N is to find two integers a and b such that a^2 - Nb^2 = 1. If such integers are found, then N is the product of the two factors a+b and a-b.",
@@ -2125,7 +2146,7 @@
         );
     index.add(
             {
-                id:  47 ,
+                id:  48 ,
                 href: "\/cryptolearn\/docs\/diffie-hellman\/introduction\/",
                 title: "Introduction",
                 description: "",
@@ -2134,7 +2155,7 @@
         );
     index.add(
             {
-                id:  48 ,
+                id:  49 ,
                 href: "\/cryptolearn\/docs\/rsa\/wiener_attack\/",
                 title: "Wiener Attack",
                 description: "The Wiener attack is a method for attacking RSA encryption when the private exponent (d) is small relative to the modulus (n). This method is named after mathematician David Wiener, who first described it in a 1990 paper.\nThe Wiener attack takes advantage of the fact that the private exponent (d) is typically much smaller than the modulus (n) in RSA encryption. If the private exponent (d) is small enough, it is possible to calculate the private key using the relationship between the private exponent (d) and the public exponent (e) in RSA.",
@@ -2143,7 +2164,7 @@
         );
     index.add(
             {
-                id:  49 ,
+                id:  50 ,
                 href: "\/cryptolearn\/docs\/rsa\/stereotyped_message\/",
                 title: "Stereotyped_message",
                 description: "",
@@ -2152,7 +2173,7 @@
         );
     index.add(
             {
-                id:  50 ,
+                id:  51 ,
                 href: "\/cryptolearn\/docs\/rsa\/related_message\/",
                 title: "Related_message",
                 description: "",
@@ -2161,7 +2182,7 @@
         );
     index.add(
             {
-                id:  51 ,
+                id:  52 ,
                 href: "\/cryptolearn\/docs\/rsa\/partial_key_exposure\/",
                 title: "Partial_key_exposure",
                 description: "",
@@ -2170,7 +2191,7 @@
         );
     index.add(
             {
-                id:  52 ,
+                id:  53 ,
                 href: "\/cryptolearn\/docs\/rsa\/non_coprime_exponent\/",
                 title: "Non_coprime_exponent",
                 description: "",
@@ -2179,7 +2200,7 @@
         );
     index.add(
             {
-                id:  53 ,
+                id:  54 ,
                 href: "\/cryptolearn\/docs\/rsa\/nitaj_crt_rsa\/",
                 title: "Nitaj_crt_rsa",
                 description: "",
@@ -2188,7 +2209,7 @@
         );
     index.add(
             {
-                id:  54 ,
+                id:  55 ,
                 href: "\/cryptolearn\/docs\/rsa\/manger\/",
                 title: "Manger",
                 description: "",
@@ -2197,7 +2218,7 @@
         );
     index.add(
             {
-                id:  55 ,
+                id:  56 ,
                 href: "\/cryptolearn\/docs\/rsa\/lsb_oracle\/",
                 title: "Lsb_oracle",
                 description: "",
@@ -2206,7 +2227,7 @@
         );
     index.add(
             {
-                id:  56 ,
+                id:  57 ,
                 href: "\/cryptolearn\/docs\/rsa\/low_exponent\/",
                 title: "Low_exponent",
                 description: "",
@@ -2215,7 +2236,7 @@
         );
     index.add(
             {
-                id:  57 ,
+                id:  58 ,
                 href: "\/cryptolearn\/docs\/rsa\/known_d\/",
                 title: "Known_d",
                 description: "",
@@ -2224,7 +2245,7 @@
         );
     index.add(
             {
-                id:  58 ,
+                id:  59 ,
                 href: "\/cryptolearn\/docs\/rsa\/known_crt_exponents\/",
                 title: "Known_crt_exponents",
                 description: "",
@@ -2233,7 +2254,7 @@
         );
     index.add(
             {
-                id:  59 ,
+                id:  60 ,
                 href: "\/cryptolearn\/docs\/rsa\/hastad_attack\/",
                 title: "Hastad_attack",
                 description: "",
@@ -2242,7 +2263,7 @@
         );
     index.add(
             {
-                id:  60 ,
+                id:  61 ,
                 href: "\/cryptolearn\/docs\/rsa\/extended_wiener_attack\/",
                 title: "Extended_wiener_attack",
                 description: "",
@@ -2251,7 +2272,7 @@
         );
     index.add(
             {
-                id:  61 ,
+                id:  62 ,
                 href: "\/cryptolearn\/docs\/rsa\/esmedt_odlyzko\/",
                 title: "Esmedt_odlyzko",
                 description: "",
@@ -2260,7 +2281,7 @@
         );
     index.add(
             {
-                id:  62 ,
+                id:  63 ,
                 href: "\/cryptolearn\/docs\/rsa\/d_fault_attack\/",
                 title: "D_fault_attack",
                 description: "",
@@ -2269,7 +2290,7 @@
         );
     index.add(
             {
-                id:  63 ,
+                id:  64 ,
                 href: "\/cryptolearn\/docs\/rsa\/crt_fault_attack\/",
                 title: "Crt_fault_attack",
                 description: "",
@@ -2278,7 +2299,7 @@
         );
     index.add(
             {
-                id:  64 ,
+                id:  65 ,
                 href: "\/cryptolearn\/docs\/rsa\/common_modulus\/",
                 title: "Common Modulus Attack",
                 description: "A common modulus attack on RSA is a type of cryptographic attack that takes advantage of the properties of RSA encryption when the same modulus is used for multiple encryptions.\nIn RSA, encryption is performed by raising the plaintext message to the power of the public exponent (e) and taking the remainder when divided by the modulus (n). Similarly, decryption is performed by raising the ciphertext to the power of the private exponent (d) and taking the remainder when divided by the modulus (n).",
@@ -2287,7 +2308,7 @@
         );
     index.add(
             {
-                id:  65 ,
+                id:  66 ,
                 href: "\/cryptolearn\/docs\/rsa\/cherkaoui_semmouni\/",
                 title: "Cherkaoui_semmouni",
                 description: "",
@@ -2296,7 +2317,7 @@
         );
     index.add(
             {
-                id:  66 ,
+                id:  67 ,
                 href: "\/cryptolearn\/docs\/rsa\/boneh_durfee\/",
                 title: "Boneh_durfee",
                 description: "",
@@ -2305,7 +2326,7 @@
         );
     index.add(
             {
-                id:  67 ,
+                id:  68 ,
                 href: "\/cryptolearn\/docs\/rsa\/bleichenbacher\/",
                 title: "Bleichenbacher",
                 description: "",
@@ -2314,7 +2335,7 @@
         );
     index.add(
             {
-                id:  68 ,
+                id:  69 ,
                 href: "\/cryptolearn\/docs\/rsa\/introduction\/",
                 title: "Introduction",
                 description: "RSA is a widely-used public-key encryption system that is based on the mathematical properties of large prime numbers. It was one of the first practical public-key cryptosystems and is widely used for secure data transmission.\nThe RSA encryption process consists of two parts: key generation and encryption/decryption.\nKey Generation:\nSelect two large prime numbers, p and q. Compute n = p*q. n is used as the modulus for both the public and private keys.",
@@ -2323,7 +2344,7 @@
         );
     index.add(
             {
-                id:  69 ,
+                id:  70 ,
                 href: "\/cryptolearn\/docs\/block-cipher\/ctr\/separator-oracle\/",
                 title: "Separator Oracle",
                 description: "",
@@ -2332,7 +2353,7 @@
         );
     index.add(
             {
-                id:  70 ,
+                id:  71 ,
                 href: "\/cryptolearn\/docs\/block-cipher\/ctr\/crime\/",
                 title: "Crime",
                 description: "",
@@ -2341,7 +2362,7 @@
         );
     index.add(
             {
-                id:  71 ,
+                id:  72 ,
                 href: "\/cryptolearn\/docs\/block-cipher\/ctr\/bit-flipping\/",
                 title: "Bit Flipping",
                 description: "",
@@ -2350,7 +2371,7 @@
         );
     index.add(
             {
-                id:  72 ,
+                id:  73 ,
                 href: "\/cryptolearn\/docs\/block-cipher\/cbc\/lenght-extension\/",
                 title: "Lenght Extension",
                 description: "",
@@ -2359,7 +2380,7 @@
         );
     index.add(
             {
-                id:  73 ,
+                id:  74 ,
                 href: "\/cryptolearn\/docs\/block-cipher\/cbc\/mte-key-reuse\/",
                 title: "Mte Key Reuse",
                 description: "",
@@ -2368,7 +2389,7 @@
         );
     index.add(
             {
-                id:  74 ,
+                id:  75 ,
                 href: "\/cryptolearn\/docs\/block-cipher\/cbc\/etm-key-reuse\/",
                 title: "Etm Key Reuse",
                 description: "",
@@ -2377,7 +2398,7 @@
         );
     index.add(
             {
-                id:  75 ,
+                id:  76 ,
                 href: "\/cryptolearn\/docs\/block-cipher\/cbc\/eam-key-reuse\/",
                 title: "Eam Key Reuse",
                 description: "",
@@ -2386,7 +2407,7 @@
         );
     index.add(
             {
-                id:  76 ,
+                id:  77 ,
                 href: "\/cryptolearn\/docs\/block-cipher\/cbc\/padding-oracle\/",
                 title: "Padding Oracle",
                 description: "",
@@ -2395,7 +2416,7 @@
         );
     index.add(
             {
-                id:  77 ,
+                id:  78 ,
                 href: "\/cryptolearn\/docs\/block-cipher\/cbc\/iv-recovery\/",
                 title: "Iv Recovery",
                 description: "",
@@ -2404,7 +2425,7 @@
         );
     index.add(
             {
-                id:  78 ,
+                id:  79 ,
                 href: "\/cryptolearn\/docs\/block-cipher\/cbc\/bit-flipping\/",
                 title: "Bit Flipping",
                 description: "",
@@ -2413,7 +2434,7 @@
         );
     index.add(
             {
-                id:  79 ,
+                id:  80 ,
                 href: "\/cryptolearn\/docs\/block-cipher\/ecb\/plaintext-recovery\/",
                 title: "Plaintext Recovery",
                 description: "",
@@ -2422,7 +2443,7 @@
         );
     index.add(
             {
-                id:  80 ,
+                id:  81 ,
                 href: "\/cryptolearn\/docs\/",
                 title: "Docs",
                 description: "",

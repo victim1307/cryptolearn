@@ -18,7 +18,7 @@
 
 <html lang="en-us"><head>
     <meta charset="utf-8" />
-    <title>Lsb_oracle | CryptoLearn</title>
+    <title>Transposition Cipher | CryptoLearn</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
     <meta name="author" content="Colin Wilson - Lotus Labs" />
@@ -32,15 +32,17 @@
 <link rel="icon" type="image/png" sizes="32x32" href="https://victim1307.github.io/cryptolearn/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://victim1307.github.io/cryptolearn/favicon-16x16.png">
 <link rel="manifest" crossorigin="use-credentials" href="https://victim1307.github.io/cryptolearn/site.webmanifest">
-<meta property="og:title" content="Lsb_oracle" />
-<meta property="og:description" content="" />
+<meta property="og:title" content="Transposition Cipher" />
+<meta property="og:description" content="Transposition ciphers are a type of encryption technique that rearrange the positions of the letters in the plaintext to produce the ciphertext. The plaintext is rearranged according to a specific rule or method, such as a regular pattern or a secret key. The process of encryption is reversible, meaning that the original plaintext can be obtained by rearranging the ciphertext using the same rule or method.
+There are several types of transposition ciphers, such as:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://victim1307.github.io/cryptolearn/docs/rsa/lsb_oracle/" /><meta property="og:image" content="https://victim1307.github.io/cryptolearn/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_16846249732510829764.png"/><meta property="article:section" content="docs" />
-<meta property="article:published_time" content="2023-12-02T16:52:38+05:30" />
-<meta property="article:modified_time" content="2023-12-02T16:52:38+05:30" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://victim1307.github.io/cryptolearn/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_16846249732510829764.png"/>
-<meta name="twitter:title" content="Lsb_oracle"/>
-<meta name="twitter:description" content=""/>
+<meta property="og:url" content="https://victim1307.github.io/cryptolearn/docs/stream-cipher/transposition/" /><meta property="og:image" content="https://victim1307.github.io/cryptolearn/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_11740938384116816101.png"/><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2024-01-18T12:45:39+05:30" />
+<meta property="article:modified_time" content="2024-01-18T12:45:39+05:30" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://victim1307.github.io/cryptolearn/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_11740938384116816101.png"/>
+<meta name="twitter:title" content="Transposition Cipher"/>
+<meta name="twitter:description" content="Transposition ciphers are a type of encryption technique that rearrange the positions of the letters in the plaintext to produce the ciphertext. The plaintext is rearranged according to a specific rule or method, such as a regular pattern or a secret key. The process of encryption is reversible, meaning that the original plaintext can be obtained by rearranging the ciphertext using the same rule or method.
+There are several types of transposition ciphers, such as:"/>
 
     
     <script>(()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script>
@@ -183,12 +185,12 @@
                 
                     
                     
-                        <li class="sidebar-dropdown  ">
+                        <li class="sidebar-dropdown  current active">
                             <button class="btn">
                                 <i class="material-icons me-2">article</i>
                                 Stream Cipher
                             </button>
-                            <div class="sidebar-submenu ">
+                            <div class="sidebar-submenu d-block">
                                 <ul>
                                     
                                         
@@ -218,7 +220,7 @@
                                     
                                         
                                         
-                                            <li class=" "><a class="sidebar-nested-link" href="https://victim1307.github.io/cryptolearn/docs/stream-cipher/transposition/">Transposition Cipher</a></li>
+                                            <li class="current "><a class="sidebar-nested-link" href="https://victim1307.github.io/cryptolearn/docs/stream-cipher/transposition/">Transposition Cipher</a></li>
                                         
                                     
                                 </ul>
@@ -383,12 +385,12 @@
                 
                     
                     
-                        <li class="sidebar-dropdown  current active">
+                        <li class="sidebar-dropdown  ">
                             <button class="btn">
                                 <i class="material-icons me-2">article</i>
                                 RSA
                             </button>
-                            <div class="sidebar-submenu d-block">
+                            <div class="sidebar-submenu ">
                                 <ul>
                                     
                                         
@@ -428,7 +430,7 @@
                                     
                                         
                                         
-                                            <li class="current "><a class="sidebar-nested-link" href="https://victim1307.github.io/cryptolearn/docs/rsa/lsb_oracle/">Lsb_oracle</a></li>
+                                            <li class=" "><a class="sidebar-nested-link" href="https://victim1307.github.io/cryptolearn/docs/rsa/lsb_oracle/">Lsb_oracle</a></li>
                                         
                                     
                                         
@@ -770,15 +772,15 @@
             
             
                 <li class="breadcrumb-item text-capitalize" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a itemprop="item" href="/cryptolearn/docs/rsa/">
-                        <span itemprop="name">RSA</span>
+                    <a itemprop="item" href="/cryptolearn/docs/stream-cipher/">
+                        <span itemprop="name">Stream Cipher</span>
                     </a>
                     <meta itemprop="position" content='2' />
                 </li>
             
         
             <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name">Lsb_oracle</span>
+                <span itemprop="name">Transposition Cipher</span>
                 <meta itemprop="position" content='3' />
             </li>
         
@@ -804,7 +806,7 @@
                                             <i class="material-icons title-icon me-2">article</i>
                                             
                                             <h1 class="content-title mb-0">
-                                                Lsb_oracle
+                                                Transposition Cipher
                                                 
                                                     <span class="badge bg-default fs-6 mb-1 align-middle">DRAFT</span>
                                                 
@@ -817,7 +819,50 @@
                                             
     
     <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
-        
+        <p>Transposition ciphers are a type of encryption technique that rearrange the positions of the letters in the plaintext to produce the ciphertext. The plaintext is rearranged according to a specific rule or method, such as a regular pattern or a secret key. The process of encryption is reversible, meaning that the original plaintext can be obtained by rearranging the ciphertext using the same rule or method.</p>
+<p>There are several types of transposition ciphers, such as:</p>
+<p>Columnar Transposition: This cipher rearranges the letters of the plaintext by writing them in a grid and then reading the columns in a specific order.</p>
+<p>Rail Fence: This cipher rearranges the letters of the plaintext by writing them in a zigzag pattern along a set number of &ldquo;rails&rdquo; and then reading the letters off in a specific order.</p>
+<p>Route Cipher: This cipher rearranges the letters of the plaintext by writing them in a grid and then reading the letters off in a specific route, such as a snake-like pattern.</p>
+<p>Book Cipher: This cipher rearranges the letters of the plaintext by assigning each letter a number and then using a book or other prearranged text to look up the corresponding ciphertext letter.</p>
+<p>It&rsquo;s important to note that transposition ciphers are not considered very secure encryption method and can be easily broken by frequency analysis and other methods. They are mainly used to provide an additional layer of security on top of another encryption method.</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="d34b6ad" class="language-python ">
+  <code>
+def columnar_transposition_encryption(plaintext:str, key:str):
+    ciphertext = &#34;&#34;
+    grid = []
+    for i in range(len(plaintext)):
+        grid.append(plaintext[i])
+    for i in range(len(key)):
+        ciphertext &#43;= grid[i::len(key)]
+    return ciphertext
+
+def columnar_transposition_decryption(ciphertext:str, key:str):
+    plaintext = &#34;&#34;
+    grid = []
+    for i in range(len(ciphertext)):
+        grid.append(ciphertext[i])
+    for i in range(len(key)):
+        plaintext &#43;= grid[i::len(key)]
+    return plaintext</code>
+  </pre>
+  </div>
+
     </div>
 
     
@@ -829,10 +874,10 @@
 
 	<div class="row flex-xl-nowrap ">
 	<div class="col-sm-6 pt-2 doc-next">
-		<a href="/cryptolearn/docs/rsa/manger/">
+		<a href="/cryptolearn/docs/ecc/dlp/pohling-hellman/">
 			<div class="card h-100 my-1">
 				<div class="card-body py-2">
-                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> Manger</p>
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> Pohling Hellman</p>
 					<p class="card-text ms-2"></p>
 					
 				</div>
@@ -840,10 +885,10 @@
 		</a>
         </div>
 	<div class="col-sm-6 pt-2 doc-prev">
-		<a class="ms-auto" href="/cryptolearn/docs/rsa/low_exponent/">
+		<a class="ms-auto" href="/cryptolearn/docs/misc/introduction/">
 			<div class="card h-100 my-1 text-end">
 				<div class="card-body py-2">
-                    <p class="card-title fs-5 fw-semibold lh-base mb-0">Low_exponent <i class="material-icons align-middle">navigate_next</i></p>
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0">Introduction <i class="material-icons align-middle">navigate_next</i></p>
 					<p class="card-text me-2"></p>
 					
 				</div>
