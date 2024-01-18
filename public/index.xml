@@ -6,7 +6,7 @@
     <description>Recent content on CryptoLearn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Dec 2023 17:10:14 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jan 2024 12:45:39 +0530</lastBuildDate>
     <atom:link href="https://victim1307.github.io/cryptolearn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Where To Begin</title>
@@ -62,28 +62,28 @@
       <link>https://victim1307.github.io/cryptolearn/docs/classic-cryptography/shift-cipher/</link>
       <pubDate>Sat, 02 Dec 2023 13:57:55 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/classic-cryptography/shift-cipher/</guid>
-      <description></description>
+      <description>A shift cipher, also known as a Caesar cipher, is a simple encryption technique that replaces each letter of a plaintext message with a letter a fixed number of positions down the alphabet. For example, if the shift value is 3, the letter &amp;lsquo;A&amp;rsquo; would be replaced by &amp;lsquo;D&amp;rsquo;, &amp;lsquo;B&amp;rsquo; would be replaced by &amp;lsquo;E&amp;rsquo;, and so on.&#xA;The shift value is also known as the key, and it determines the encryption and decryption process.</description>
     </item>
     <item>
       <title>Affine Cipher</title>
       <link>https://victim1307.github.io/cryptolearn/docs/classic-cryptography/affine-cipher/</link>
       <pubDate>Sat, 02 Dec 2023 13:58:12 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/classic-cryptography/affine-cipher/</guid>
-      <description></description>
+      <description>An Affine cipher is a type of monoalphabetic substitution cipher, in which each letter in the plaintext is mapped to a unique fixed letter in the ciphertext. This mapping is based on a mathematical function, called the Affine function, that takes two inputs: the letter of the plaintext and two encryption keys, &amp;ldquo;a&amp;rdquo; and &amp;ldquo;b&amp;rdquo;.&#xA;The encryption function is defined as: link C = (a*P + b) mod 26 Where: C = the ciphertext letter (the encrypted letter) P = the plaintext letter (the original letter) a, b = the encryption keys mod 26 = the modulo operation that brings the result of the multiplication and addition within the range of 0 to 25, corresponding to the 26 letters of the alphabet.</description>
     </item>
     <item>
       <title>Atbash Cipher</title>
       <link>https://victim1307.github.io/cryptolearn/docs/classic-cryptography/atbash-cipher/</link>
       <pubDate>Sat, 02 Dec 2023 13:58:35 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/classic-cryptography/atbash-cipher/</guid>
-      <description></description>
+      <description>The Atbash Cipher is a simple form of monoalphabetic substitution cipher that uses the reverse of the alphabet as the key.&#xA;To encrypt a message, the first step is to reverse the alphabet. This can be done by writing down the alphabet, A-Z or a-z, in the usual order and then writing it down again in reverse order. Then, for each letter in the plaintext message, the corresponding letter in the reversed alphabet is used to encrypt it.</description>
     </item>
     <item>
       <title>Playfair Cipher</title>
       <link>https://victim1307.github.io/cryptolearn/docs/classic-cryptography/playfair-cipher/</link>
       <pubDate>Sat, 02 Dec 2023 13:58:53 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/classic-cryptography/playfair-cipher/</guid>
-      <description></description>
+      <description>The Playfair Cipher is a polygraphic substitution cipher that encrypts pairs of letters instead of single letters. It uses a 5x5 grid of letters (called the key square or tableau) to encrypt pairs of letters.&#xA;To encrypt a message, the first step is to create the key square. This is done by choosing a keyword and writing it in a 5x5 grid, filling the remaining spaces with the remaining letters of the alphabet in alphabetical order, omitting the letter &amp;lsquo;J&amp;rsquo;.</description>
     </item>
     <item>
       <title>Introduction</title>
@@ -111,14 +111,14 @@
       <link>https://victim1307.github.io/cryptolearn/docs/stream-cipher/single-byte-char-xor/</link>
       <pubDate>Sat, 02 Dec 2023 14:08:54 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/stream-cipher/single-byte-char-xor/</guid>
-      <description></description>
+      <description>Single-Byte XOR, also known as Single Character XOR, is a simple form of XOR encryption that encrypts each byte of the plaintext message using a single byte key. The encryption process is done by applying the XOR operation between the plaintext byte and the key byte.&#xA;The decryption process is the same as the encryption process, it&amp;rsquo;s just the reverse of the encryption process, the decryption key is the same key used for encryption.</description>
     </item>
     <item>
       <title>Repeated Key XOR</title>
       <link>https://victim1307.github.io/cryptolearn/docs/stream-cipher/repeated-key-xor/</link>
       <pubDate>Sat, 02 Dec 2023 14:09:16 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/stream-cipher/repeated-key-xor/</guid>
-      <description></description>
+      <description>Repeated Key XOR is a type of encryption that uses the XOR operation to encrypt plaintext by repeatedly applying a secret key to it. In this method, the key is repeated as many times as necessary to match the length of the plaintext. The encryption process works by taking each plaintext byte and the corresponding byte of the key, and applying the XOR operation between them. The result is the ciphertext.</description>
     </item>
     <item>
       <title>Introduction</title>
@@ -231,6 +231,13 @@
       <pubDate>Sat, 02 Dec 2023 17:01:17 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/ecc/dlp/pohling-hellman/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Transposition Cipher</title>
+      <link>https://victim1307.github.io/cryptolearn/docs/stream-cipher/transposition/</link>
+      <pubDate>Thu, 18 Jan 2024 12:45:39 +0530</pubDate>
+      <guid>https://victim1307.github.io/cryptolearn/docs/stream-cipher/transposition/</guid>
+      <description>Transposition ciphers are a type of encryption technique that rearrange the positions of the letters in the plaintext to produce the ciphertext. The plaintext is rearranged according to a specific rule or method, such as a regular pattern or a secret key. The process of encryption is reversible, meaning that the original plaintext can be obtained by rearranging the ciphertext using the same rule or method.&#xA;There are several types of transposition ciphers, such as:</description>
     </item>
     <item>
       <title>Introduction</title>

@@ -48,6 +48,13 @@ publishDir = "public"
         prism           = true
         darkMode        = true
         prismTheme      = "twilight"
+
+        repoURL         = "https://github.com/victim1307/cryptolearn.git"  # Git repository URL for your site [support for GitHub, GitLab, and BitBucket]
+        repoBranch      = "main"
+        editPage        = true                                # enable 'Edit this page' feature - default false
+        lastMod         = true                                # enable 'Last modified' date on pages - default false
+        lastModRelative = true 
+
         sidebarIcons    = true
         breadcrumbs     = true                                # default is true
         backToTop       = true                                # enable back-to-top button? default true
