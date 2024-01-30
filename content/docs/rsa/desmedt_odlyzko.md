@@ -9,4 +9,4 @@ draft: true
 toc: true
 ---
 
-[source line](https://github.com/victim1307/cryptolearn/files/rsa/s00145-015-9205-5.pdf)
+{{< embed-pdf url="../files/s00145-015-9205-5.pdf">}}
