@@ -1,6 +1,6 @@
 ---
 weight: 999
-title: "Nitaj_crt_rsa"
+title: "Nitaj CRT RSA"
 description: ""
 icon: "article"
 date: "2023-12-02T16:52:53+05:30"

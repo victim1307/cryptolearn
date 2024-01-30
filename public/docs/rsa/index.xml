@@ -16,35 +16,35 @@
       <description>The Wiener attack is a method for attacking RSA encryption when the private exponent (d) is small relative to the modulus (n). This method is named after mathematician David Wiener, who first described it in a 1990 paper.&#xA;The Wiener attack takes advantage of the fact that the private exponent (d) is typically much smaller than the modulus (n) in RSA encryption. If the private exponent (d) is small enough, it is possible to calculate the private key using the relationship between the private exponent (d) and the public exponent (e) in RSA.</description>
     </item>
     <item>
-      <title>Stereotyped_message</title>
+      <title>Stereotyped Message</title>
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/stereotyped_message/</link>
       <pubDate>Sat, 02 Dec 2023 16:53:29 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/stereotyped_message/</guid>
       <description></description>
     </item>
     <item>
-      <title>Related_message</title>
+      <title>Related Message</title>
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/related_message/</link>
       <pubDate>Sat, 02 Dec 2023 16:53:20 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/related_message/</guid>
       <description></description>
     </item>
     <item>
-      <title>Partial_key_exposure</title>
+      <title>Partial Key Exposure</title>
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/partial_key_exposure/</link>
       <pubDate>Sat, 02 Dec 2023 16:53:11 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/partial_key_exposure/</guid>
       <description></description>
     </item>
     <item>
-      <title>Non_coprime_exponent</title>
+      <title>Non Co-prime Exponent</title>
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/non_coprime_exponent/</link>
       <pubDate>Sat, 02 Dec 2023 16:53:03 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/non_coprime_exponent/</guid>
       <description></description>
     </item>
     <item>
-      <title>Nitaj_crt_rsa</title>
+      <title>Nitaj CRT RSA</title>
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/nitaj_crt_rsa/</link>
       <pubDate>Sat, 02 Dec 2023 16:52:53 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/nitaj_crt_rsa/</guid>
@@ -58,42 +58,42 @@
       <description></description>
     </item>
     <item>
-      <title>Lsb_oracle</title>
+      <title>LSB Oracle</title>
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/lsb_oracle/</link>
       <pubDate>Sat, 02 Dec 2023 16:52:38 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/lsb_oracle/</guid>
       <description></description>
     </item>
     <item>
-      <title>Low_exponent</title>
+      <title>Low Exponent</title>
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/low_exponent/</link>
       <pubDate>Sat, 02 Dec 2023 16:52:29 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/low_exponent/</guid>
       <description></description>
     </item>
     <item>
-      <title>Known_d</title>
+      <title>Known D</title>
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/known_d/</link>
       <pubDate>Sat, 02 Dec 2023 16:52:21 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/known_d/</guid>
       <description></description>
     </item>
     <item>
-      <title>Known_crt_exponents</title>
+      <title>Known CRT Exponents</title>
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/known_crt_exponents/</link>
       <pubDate>Sat, 02 Dec 2023 16:52:06 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/known_crt_exponents/</guid>
       <description></description>
     </item>
     <item>
-      <title>Hastad_attack</title>
+      <title>Hastad Attack</title>
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/hastad_attack/</link>
       <pubDate>Sat, 02 Dec 2023 16:51:57 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/hastad_attack/</guid>
       <description></description>
     </item>
     <item>
-      <title>Extended_wiener_attack</title>
+      <title>Extended Wiener Attack</title>
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/extended_wiener_attack/</link>
       <pubDate>Sat, 02 Dec 2023 16:51:38 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/extended_wiener_attack/</guid>
@@ -104,17 +104,17 @@
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/desmedt_odlyzko/</link>
       <pubDate>Sat, 02 Dec 2023 16:50:57 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/desmedt_odlyzko/</guid>
-      <description> Previous Next &amp;nbsp; &amp;nbsp; / [pdf] View the PDF file here. </description>
+      <description>In Desmedt and Odlyzko&amp;rsquo;s attack, which is a type of existential forgery, the forger requests signatures on messages of their choosing from the legitimate owner of the private key d. After obtaining these signatures, the forger can then compute a signature on a new, arbitrary message that was never actually signed by the real owner of d. This allows the forger to produce a valid signature on any message, even a meaningless one.</description>
     </item>
     <item>
-      <title>D_fault_attack</title>
+      <title>D Fault Attack</title>
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/d_fault_attack/</link>
       <pubDate>Sat, 02 Dec 2023 16:50:45 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/d_fault_attack/</guid>
       <description></description>
     </item>
     <item>
-      <title>Crt_fault_attack</title>
+      <title>CRT Fault Attack</title>
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/crt_fault_attack/</link>
       <pubDate>Sat, 02 Dec 2023 16:50:29 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/crt_fault_attack/</guid>

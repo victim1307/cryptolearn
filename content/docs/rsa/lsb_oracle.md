@@ -1,6 +1,6 @@
 ---
 weight: 999
-title: "Lsb_oracle"
+title: "LSB Oracle"
 description: ""
 icon: "article"
 date: "2023-12-02T16:52:38+05:30"

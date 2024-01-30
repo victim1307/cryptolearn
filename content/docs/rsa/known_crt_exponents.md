@@ -1,6 +1,6 @@
 ---
 weight: 999
-title: "Known_crt_exponents"
+title: "Known CRT Exponents"
 description: ""
 icon: "article"
 date: "2023-12-02T16:52:06+05:30"

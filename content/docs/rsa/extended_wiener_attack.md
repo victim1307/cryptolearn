@@ -1,6 +1,6 @@
 ---
 weight: 999
-title: "Extended_wiener_attack"
+title: "Extended Wiener Attack"
 description: ""
 icon: "article"
 date: "2023-12-02T16:51:38+05:30"

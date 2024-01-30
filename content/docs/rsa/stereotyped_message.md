@@ -1,6 +1,6 @@
 ---
 weight: 999
-title: "Stereotyped_message"
+title: "Stereotyped Message"
 description: ""
 icon: "article"
 date: "2023-12-02T16:53:29+05:30"
