@@ -141,7 +141,6 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr (.Get 
         paginator = document.getElementById("pdf-paginator-{{ substr (.Get "url" | md5) 0 8 }}"),
         loadingWrapper = document.getElementById('pdf-loadingWrapper-{{ substr (.Get "url" | md5) 0 8 }}');
 
-
     // Attempt to show paginator and loader if enabled
     showPaginator();
     showLoader();
