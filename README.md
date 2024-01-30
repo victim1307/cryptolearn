@@ -1,1 +1,4 @@
 # new-crypto-learn
+bit-flipping, crime, separator-oracle, bit-flipping, etm-key-reuse
+
+eam-key-reuse, mte-key-reuse, lenght-extension, padding-oracle, iv-recovery, plaintext-recovery, partial-key-exposure, low-exponent, hastad-attack, d-fault-attack, esmedt-odlyzko, common-modulus, boneh-durfee, crt-fault-attack, manger, related-message, bleichenbacher, known-crt-exponents, non-coprime-exponent, extended-wiener-attack, lsb-oracle, stereotyped-message, nitaj-crt-rsa, cherkaoui-semmouni, known-d, wiener-attack, atbash-cipher, playfair-cipher, affine-cipher, shift-cipher, bruteforce-attack, encoding, cryptosystem-classification, encryption-101, mov-attack, singular-curve-attack, bsgs, brute-force, pohling-hellman, pollard-rho, index-calculus, lattice-based-signing, smart-attack, fr-reduction, where-to-begin, single-byte-char-XOR, transposition, repeated-key-XOR, caesar-cipher, substitution-cipher

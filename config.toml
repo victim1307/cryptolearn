@@ -24,7 +24,6 @@ title = 'CryptoLearn'
 publishDir = "public"
 
 [params]
-
   google_fonts = [
     ["Inter", "300, 400, 600, 700"],
     ["Fira Code", "500, 700"]
