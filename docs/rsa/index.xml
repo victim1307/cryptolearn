@@ -135,11 +135,11 @@
       <description></description>
     </item>
     <item>
-      <title>Boneh durfee</title>
+      <title>Boneh Durfee</title>
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/boneh_durfee/</link>
       <pubDate>Sat, 02 Dec 2023 16:49:42 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/boneh_durfee/</guid>
-      <description></description>
+      <description>The attack relies on the fact that if d is small, the prime factors p and q of the RSA modulus n must lie in a relatively narrow range that can be determined from d and n.&#xA;The steps of the Boneh-Durfee attack to factor RSA moduli when the private exponent d is small:&#xA;Estimate the number of bits k in the prime factors p and q of the RSA modulus n.</description>
     </item>
     <item>
       <title>Bleichenbacher</title>
