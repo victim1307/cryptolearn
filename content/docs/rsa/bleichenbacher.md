@@ -136,3 +136,44 @@ def attack(padding_oracle, n, e, c):
             s = _step_2c(padding_oracle, n, e, c0, B, s, a, b)
         M = _step_3(n, B, s, M)
 ```
+
+## Bleichenbacher Signature Forgery
+The attack exploits properties of the PKCS#1 v1.5 signature padding scheme. The signature is computed as:
+
+s = md^d mod n
+
+Where m is the padded message, d is the private key and n is the RSA modulus.
+
+The padding has a specific format that includes random non-zero bytes. The forged signature s' is iteratively constructed such that:
+
+1. The padding conforms to the expected format.
+2. When verified with the public key, the verification equation holds: (s')^e = m' mod n
+
+Where e is the public exponent and m' is the message chosen by the attacker.
+
+By observing the verification responses for manipulated signatures, the attacker can deduce boundary conditions on the padded message m. This allows constructing a properly formatted m' that verifies correctly with the public key but is not the actual signed message.
+
+The attack relies on flaws in the deterministic PKCS#1 v1.5 padding scheme rather than mathematical weaknesses in RSA itself. Using probabilistic padding schemes like PSS can mitigate the risk of forgery.
+
+Bleichenbacher's adaptive chosen ciphertext attack can be adapted to forge RSA signatures without knowing the private key by exploiting properties of the padding scheme.
+
+### Implementation
+{{% alert icon="" context="info" %}}
+#### Parameters Required:
+1. suffix: the suffix
+2. suffix_bit_length: the bit length of the suffix
+
+***Return: the number s***
+{{% /alert %}}
+
+```python
+def attack(suffix, suffix_bit_length):
+    assert suffix % 2 == 1, "Target suffix must be odd"
+
+    s = 1
+    for i in range(suffix_bit_length):
+        if (((s ** 3) >> i) & 1) != ((suffix >> i) & 1):
+            s |= (1 << i)
+
+    return s
+```

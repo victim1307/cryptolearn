@@ -18,7 +18,7 @@
 
 <html lang="en-us"><head>
     <meta charset="utf-8" />
-    <title>Boneh durfee | CryptoLearn</title>
+    <title>Boneh Durfee | CryptoLearn</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
     <meta name="author" content="Colin Wilson - Lotus Labs" />
@@ -32,15 +32,19 @@
 <link rel="icon" type="image/png" sizes="32x32" href="https://victim1307.github.io/cryptolearn/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://victim1307.github.io/cryptolearn/favicon-16x16.png">
 <link rel="manifest" crossorigin="use-credentials" href="https://victim1307.github.io/cryptolearn/site.webmanifest">
-<meta property="og:title" content="Boneh durfee" />
-<meta property="og:description" content="" />
+<meta property="og:title" content="Boneh Durfee" />
+<meta property="og:description" content="The attack relies on the fact that if d is small, the prime factors p and q of the RSA modulus n must lie in a relatively narrow range that can be determined from d and n.
+The steps of the Boneh-Durfee attack to factor RSA moduli when the private exponent d is small:
+Estimate the number of bits k in the prime factors p and q of the RSA modulus n." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://victim1307.github.io/cryptolearn/docs/rsa/boneh_durfee/" /><meta property="og:image" content="https://victim1307.github.io/cryptolearn/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_5143562772870655150.png"/><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://victim1307.github.io/cryptolearn/docs/rsa/boneh_durfee/" /><meta property="og:image" content="https://victim1307.github.io/cryptolearn/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_762622068553785234.png"/><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2023-12-02T16:49:42+05:30" />
 <meta property="article:modified_time" content="2023-12-02T16:49:42+05:30" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://victim1307.github.io/cryptolearn/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_5143562772870655150.png"/>
-<meta name="twitter:title" content="Boneh durfee"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:image" content="https://victim1307.github.io/cryptolearn/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_762622068553785234.png"/>
+<meta name="twitter:title" content="Boneh Durfee"/>
+<meta name="twitter:description" content="The attack relies on the fact that if d is small, the prime factors p and q of the RSA modulus n must lie in a relatively narrow range that can be determined from d and n.
+The steps of the Boneh-Durfee attack to factor RSA moduli when the private exponent d is small:
+Estimate the number of bits k in the prime factors p and q of the RSA modulus n."/>
 
     
     <script>(()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script>
@@ -483,7 +487,7 @@
                                     
                                         
                                         
-                                            <li class="current "><a class="sidebar-nested-link" href="https://victim1307.github.io/cryptolearn/docs/rsa/boneh_durfee/">Boneh durfee</a></li>
+                                            <li class="current "><a class="sidebar-nested-link" href="https://victim1307.github.io/cryptolearn/docs/rsa/boneh_durfee/">Boneh Durfee</a></li>
                                         
                                     
                                         
@@ -778,7 +782,7 @@
             
         
             <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name">Boneh durfee</span>
+                <span itemprop="name">Boneh Durfee</span>
                 <meta itemprop="position" content='3' />
             </li>
         
@@ -787,24 +791,40 @@
                                 
                                 <div class="row flex-xl-nowrap">
                                     
-                                    <div class="docs-toc col-xl-3  visually-hidden  d-xl-block"><toc>
+                                    <div class="docs-toc col-xl-3    d-xl-block"><toc>
     <div class="fw-bold text-uppercase mb-2">On this page</div>
-    <nav id="toc"></nav>
+    <nav id="toc">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#implementation">Implementation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </toc></div>
                                     
                                     
-                                    <div class="docs-toc-mobile  visually-hidden  d-print-none d-xl-none">
+                                    <div class="docs-toc-mobile    d-print-none d-xl-none">
                                         <button id="toc-dropdown-btn" class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-offset="0,0" aria-expanded="false">
                                             Table of Contents
                                         </button>
-<nav id="toc-mobile"></nav></div>
-                                    <div class="docs-content col-12  mt-0">
+<nav id="toc-mobile">
+  <ul class="dropdown-menu">
+    <li>
+      <ul>
+        <li><a href="#implementation">Implementation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                                    <div class="docs-content col-12 col-xl-9 mt-0">
                                         <div class="mb-0 d-flex">
                                             
                                             <i class="material-icons title-icon me-2">article</i>
                                             
                                             <h1 class="content-title mb-0">
-                                                Boneh durfee
+                                                Boneh Durfee
                                                 
                                                     <span class="badge bg-default fs-6 mb-1 align-middle">DRAFT</span>
                                                 
@@ -817,7 +837,399 @@
                                             
     
     <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
+        <p>The attack relies on the fact that if d is small, the prime factors p and q of the RSA modulus n must lie in a relatively narrow range that can be determined from d and n.</p>
+<p>The steps of the Boneh-Durfee attack to factor RSA moduli when the private exponent d is small:</p>
+<ol>
+<li>Estimate the number of bits k in the prime factors p and q of the RSA modulus n. This is approximately k = ceil(log(n, 2)) / 2.</li>
+<li>Use the knowledge that d is small to get an upper bound on p and q. Since p and q are roughly 2^k, we know p &lt; 2^k and q &lt; 2^k.</li>
+<li>Also use d to derive a lower bound on p and q. Based on the relationship between p, q, d and the Euler&rsquo;s totient function φ(n), we get: p ≥ 2^(k-d/2) and q ≥ 2^(k-d/2).</li>
+<li>Generate all prime numbers in the range [lower_bound, upper_bound]. This gives us a set of candidate values for p and q.</li>
+<li>Test each candidate p by computing q = n/p and checking if p*q = n. Additionally check that p &gt; q as required for RSA.</li>
+<li>If a valid factorization is found, we have recovered p and q. These can then be used to compute the private exponent and decrypt the ciphertext.</li>
+</ol>
+<p>The attack relies on d being small to significantly reduce the search space for p and q. By generating primes in this smaller range and testing candidates, the factorization can be recovered in feasible time.</p>
+<script type="text/javascript" src= '/cryptolearn/js/build/pdf.js'></script>
+
+<style>
+  #embed-pdf-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 20vh;
+     
+  }
+  
+  .pdf-canvas {
+    border: 1px solid black;
+    direction: ltr;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  #the-canvas {
+    border: 1px solid black;
+    direction: ltr;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  
+  .pdf-loadingWrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+  }
+  
+  .pdf-loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #d2d0d0;;
+    border-radius: 50%;
+    border-top-color: #383838;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  
+  
+  
+  
+  #overlayText {
+    word-wrap: break-word;
+    display: grid;
+    justify-content: end;
+  }
+  
+  #overlayText a {
+    position: relative;
+    top: 10px;
+    right: 4px;
+    color: #000;
+    margin: auto;
+    background-color: #eeeeee;
+    padding: 0.3em 1em;
+    border: solid 2px;
+    border-radius: 12px;
+    border-color: #00000030;
+    text-decoration: none;
+  }
+  
+  #overlayText svg {
+    height: clamp(1em, 2vw, 1.4em);
+    width:  clamp(1em, 2vw, 1.4em);
+  }
+  
+  
+  
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  </style><div class="embed-pdf-container" id="embed-pdf-container-30a24e3e">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-30a24e3e">
+        <div class="pdf-loading" id="pdf-loading-30a24e3e"></div>
+    </div>
+    <div id="overlayText">
+      <a href="../files/boneh_durfee.pdf" aria-label="Download" download>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+            <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+        </svg>
+      </a>
+    </div>
+    <canvas class="pdf-canvas" id="pdf-canvas-30a24e3e"></canvas>
+</div>
+
+<div class="pdf-paginator" id="pdf-paginator-30a24e3e">
+    <button id="pdf-prev-30a24e3e">Previous</button>
+    <button id="pdf-next-30a24e3e">Next</button> &nbsp; &nbsp;
+    <span>
+      <span class="pdf-pagenum" id="pdf-pagenum-30a24e3e"></span> / <span class="pdf-pagecount" id="pdf-pagecount-30a24e3e"></span>
+    </span>
+    <a class="pdf-source" id="pdf-source-30a24e3e" href="../files/boneh_durfee.pdf">[pdf]</a>
+</div>
+
+<noscript>
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-30a24e3e" href="../files/boneh_durfee.pdf">here</a>.
+</noscript>
+
+<script type="text/javascript">
+    (function(){
+    var url = '..\/files\/boneh_durfee.pdf';
+
+    var hidePaginator = "" === "true";
+    var hideLoader = "" === "true";
+    var selectedPageNum = parseInt("") || 1;
+
+    
+    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+    
+    if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "https:\/\/victim1307.github.io\/cryptolearn" + '/js/build/pdf.worker.js';
+
+    
+    var pdfDoc = null,
+        pageNum = selectedPageNum,
+        pageRendering = false,
+        pageNumPending = null,
+        scale = 3,
+        canvas = document.getElementById('pdf-canvas-30a24e3e'),
+        ctx = canvas.getContext('2d'),
+        paginator = document.getElementById("pdf-paginator-30a24e3e"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-30a24e3e');
+
+    
+    showPaginator();
+    showLoader();
+
+    
+
+    function renderPage(num) {
+      pageRendering = true;
+      
+      pdfDoc.getPage(num).then(function(page) {
+        var viewport = page.getViewport({scale: scale});
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
         
+        var renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+        var renderTask = page.render(renderContext);
+
+        
+        renderTask.promise.then(function() {
+          pageRendering = false;
+          showContent();
+
+          if (pageNumPending !== null) {
+            
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+
+      
+      document.getElementById('pdf-pagenum-30a24e3e').textContent = num;
+    }
+
+    
+
+    function showContent() {
+      loadingWrapper.style.display = 'none';
+      canvas.style.display = 'block';
+    }
+
+    
+
+    function showLoader() {
+      if(hideLoader) return
+      loadingWrapper.style.display = 'flex';
+      canvas.style.display = 'none';
+    }
+
+    
+
+    function showPaginator() {
+      if(hidePaginator) return
+      paginator.style.display = 'block';
+    }
+
+    
+
+    function queueRenderPage(num) {
+      if (pageRendering) {
+        pageNumPending = num;
+      } else {
+        renderPage(num);
+      }
+    }
+
+    
+
+    function onPrevPage() {
+      if (pageNum <= 1) {
+        return;
+      }
+      pageNum--;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-prev-30a24e3e').addEventListener('click', onPrevPage);
+
+    
+
+    function onNextPage() {
+      if (pageNum >= pdfDoc.numPages) {
+        return;
+      }
+      pageNum++;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-next-30a24e3e').addEventListener('click', onNextPage);
+
+    
+
+    pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+      pdfDoc = pdfDoc_;
+      var numPages = pdfDoc.numPages;
+      document.getElementById('pdf-pagecount-30a24e3e').textContent = numPages;
+
+      
+      if(pageNum > numPages) {
+        pageNum = numPages
+      }
+
+      
+      renderPage(pageNum);
+    });
+    })();
+</script>
+
+<h3 id="implementation">Implementation <a href="#implementation" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><div class="alert alert-info d-flex" role="alert">
+  <div class="flex-shrink-1 alert-icon">
+  <span class="material-icons size-20 me-2">
+  info
+  </span></div>
+  <div class="w-100">
+<h4 id="parameters-required">Parameters Required: <a href="#parameters-required" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h4><ol>
+<li>N: the modulus</li>
+<li>e: the public exponent</li>
+<li>factor_bit_length: the bit length of the prime factors</li>
+<li>partial_p: the partial prime factor p (PartialInteger) (default: None)</li>
+<li>delta: a predicted bound on the private exponent (d &lt; N^delta) (default: 0.25)</li>
+<li>m: the m value to use for the small roots method (default: 1)</li>
+<li>t: the t value to use for the small roots method (default: automatically computed using m)</li>
+</ol>
+<p><em><strong>Return: a tuple containing the prime factors, or None if the factors were not found</strong></em></p>
+  </div>
+  </div>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="b450073" class="language-python ">
+  <code>import logging
+import os
+import sys
+from math import gcd
+from math import isqrt
+from random import randrange
+from sage.all import RR
+from sage.all import ZZ
+from sage.all import is_prime
+
+
+def factorize(N, phi):
+    s = N &#43; 1 - phi
+    d = s ** 2 - 4 * N
+    p = int(s - isqrt(d)) // 2
+    q = int(s &#43; isqrt(d)) // 2
+    return p, q if p * q == N else None
+
+
+def factorize_multi_prime(N, phi):
+    prime_factors = set()
+    factors = [N]
+    while len(factors) &gt; 0:
+        # Element to factorize.
+        N = factors[0]
+
+        w = randrange(2, N - 1)
+        i = 1
+        while phi % (2 ** i) == 0:
+            sqrt_1 = pow(w, phi // (2 ** i), N)
+            if sqrt_1 &gt; 1 and sqrt_1 != N - 1:
+                # We can remove the element to factorize now, because we have a factorization.
+                factors = factors[1:]
+
+                p = gcd(N, sqrt_1 &#43; 1)
+                q = N // p
+
+                if is_prime(p):
+                    prime_factors.add(p)
+                elif p &gt; 1:
+                    factors.append(p)
+
+                if is_prime(q):
+                    prime_factors.add(q)
+                elif q &gt; 1:
+                    factors.append(q)
+
+                # Continue in the outer loop
+                break
+
+            i &#43;= 1
+
+    return tuple(prime_factors)
+
+def attack(N, e, factor_bit_length, partial_p=None, delta=0.25, m=1, t=None):
+    # Use additional information about factors to speed up Boneh-Durfee.
+    p_lsb, p_lsb_bit_length = (0, 0) if partial_p is None else partial_p.get_known_lsb()
+    q_lsb = (pow(p_lsb, -1, 2 ** p_lsb_bit_length) * N) % (2 ** p_lsb_bit_length)
+    A = ((N &gt;&gt; p_lsb_bit_length) &#43; pow(2, -p_lsb_bit_length, e) * (p_lsb * q_lsb - p_lsb - q_lsb &#43; 1))
+
+    x, y = ZZ[&#34;x&#34;, &#34;y&#34;].gens()
+    f = x * (A &#43; y) &#43; pow(2, -p_lsb_bit_length, e)
+    X = int(RR(e) ** delta)
+    Y = int(2 ** (factor_bit_length - p_lsb_bit_length &#43; 1))
+    t = int((1 - 2 * delta) * m) if t is None else t
+    logging.info(f&#34;Trying {m = }, {t = }...&#34;)
+    for x0, y0 in herrmann_may.modular_bivariate(f, e, m, t, X, Y):
+        z = int(f(x0, y0))
+        if z % e == 0:
+            k = pow(x0, -1, e)
+            s = (N &#43; 1 &#43; k) % e
+            phi = N - s &#43; 1
+            factors = known_phi.factorize(N, phi)
+            if factors:
+                return factors
+
+    return None
+
+
+def attack_multi_prime(N, e, factor_bit_length, factors, delta=0.25, m=1, t=None):
+    x, y = ZZ[&#34;x&#34;, &#34;y&#34;].gens()
+    A = N &#43; 1
+    f = x * (A &#43; y) &#43; 1
+    X = int(RR(e) ** delta)
+    Y = int(2 ** ((factors - 1) * factor_bit_length &#43; 1))
+    t = int((1 - 2 * delta) * m) if t is None else t
+    logging.info(f&#34;Trying {m = }, {t = }...&#34;)
+    for x0, y0 in herrmann_may.modular_bivariate(f, e, m, t, X, Y):
+        z = int(f(x0, y0))
+        if z % e == 0:
+            k = pow(x0, -1, e)
+            s = (N &#43; 1 &#43; k) % e
+            phi = N - s &#43; 1
+            factors = known_phi.factorize_multi_prime(N, phi)
+            if factors:
+                return factors
+
+    return None</code>
+  </pre>
+  </div>
+
     </div>
 
     
@@ -2198,9 +2610,9 @@
             {
                 id:  67 ,
                 href: "\/cryptolearn\/docs\/rsa\/boneh_durfee\/",
-                title: "Boneh durfee",
-                description: "",
-                content: ""
+                title: "Boneh Durfee",
+                description: "The attack relies on the fact that if d is small, the prime factors p and q of the RSA modulus n must lie in a relatively narrow range that can be determined from d and n.\nThe steps of the Boneh-Durfee attack to factor RSA moduli when the private exponent d is small:\nEstimate the number of bits k in the prime factors p and q of the RSA modulus n.",
+                content: "The attack relies on the fact that if d is small, the prime factors p and q of the RSA modulus n must lie in a relatively narrow range that can be determined from d and n.\nThe steps of the Boneh-Durfee attack to factor RSA moduli when the private exponent d is small:\nEstimate the number of bits k in the prime factors p and q of the RSA modulus n. This is approximately k = ceil(log(n, 2)) / 2. Use the knowledge that d is small to get an upper bound on p and q. Since p and q are roughly 2^k, we know p \u003c 2^k and q \u003c 2^k. Also use d to derive a lower bound on p and q. Based on the relationship between p, q, d and the Euler’s totient function φ(n), we get: p ≥ 2^(k-d/2) and q ≥ 2^(k-d/2). Generate all prime numbers in the range [lower_bound, upper_bound]. This gives us a set of candidate values for p and q. Test each candidate p by computing q = n/p and checking if p*q = n. Additionally check that p \u003e q as required for RSA. If a valid factorization is found, we have recovered p and q. These can then be used to compute the private exponent and decrypt the ciphertext. The attack relies on d being small to significantly reduce the search space for p and q. By generating primes in this smaller range and testing candidates, the factorization can be recovered in feasible time.\nPrevious Next / [pdf] View the PDF file here. Implementation link info Parameters Required: link N: the modulus e: the public exponent factor_bit_length: the bit length of the prime factors partial_p: the partial prime factor p (PartialInteger) (default: None) delta: a predicted bound on the private exponent (d \u003c N^delta) (default: 0.25) m: the m value to use for the small roots method (default: 1) t: the t value to use for the small roots method (default: automatically computed using m) Return: a tuple containing the prime factors, or None if the factors were not found\nimport logging import os import sys from math import gcd from math import isqrt from random import randrange from sage.all import RR from sage.all import ZZ from sage.all import is_prime def factorize(N, phi): s = N + 1 - phi d = s ** 2 - 4 * N p = int(s - isqrt(d)) // 2 q = int(s + isqrt(d)) // 2 return p, q if p * q == N else None def factorize_multi_prime(N, phi): prime_factors = set() factors = [N] while len(factors) \u003e 0: # Element to factorize. N = factors[0] w = randrange(2, N - 1) i = 1 while phi % (2 ** i) == 0: sqrt_1 = pow(w, phi // (2 ** i), N) if sqrt_1 \u003e 1 and sqrt_1 != N - 1: # We can remove the element to factorize now, because we have a factorization. factors = factors[1:] p = gcd(N, sqrt_1 + 1) q = N // p if is_prime(p): prime_factors.add(p) elif p \u003e 1: factors.append(p) if is_prime(q): prime_factors.add(q) elif q \u003e 1: factors.append(q) # Continue in the outer loop break i += 1 return tuple(prime_factors) def attack(N, e, factor_bit_length, partial_p=None, delta=0.25, m=1, t=None): # Use additional information about factors to speed up Boneh-Durfee. p_lsb, p_lsb_bit_length = (0, 0) if partial_p is None else partial_p.get_known_lsb() q_lsb = (pow(p_lsb, -1, 2 ** p_lsb_bit_length) * N) % (2 ** p_lsb_bit_length) A = ((N \u003e\u003e p_lsb_bit_length) + pow(2, -p_lsb_bit_length, e) * (p_lsb * q_lsb - p_lsb - q_lsb + 1)) x, y = ZZ[\"x\", \"y\"].gens() f = x * (A + y) + pow(2, -p_lsb_bit_length, e) X = int(RR(e) ** delta) Y = int(2 ** (factor_bit_length - p_lsb_bit_length + 1)) t = int((1 - 2 * delta) * m) if t is None else t logging.info(f\"Trying {m = }, {t = }...\") for x0, y0 in herrmann_may.modular_bivariate(f, e, m, t, X, Y): z = int(f(x0, y0)) if z % e == 0: k = pow(x0, -1, e) s = (N + 1 + k) % e phi = N - s + 1 factors = known_phi.factorize(N, phi) if factors: return factors return None def attack_multi_prime(N, e, factor_bit_length, factors, delta=0.25, m=1, t=None): x, y = ZZ[\"x\", \"y\"].gens() A = N + 1 f = x * (A + y) + 1 X = int(RR(e) ** delta) Y = int(2 ** ((factors - 1) * factor_bit_length + 1)) t = int((1 - 2 * delta) * m) if t is None else t logging.info(f\"Trying {m = }, {t = }...\") for x0, y0 in herrmann_may.modular_bivariate(f, e, m, t, X, Y): z = int(f(x0, y0)) if z % e == 0: k = pow(x0, -1, e) s = (N + 1 + k) % e phi = N - s + 1 factors = known_phi.factorize_multi_prime(N, phi) if factors: return factors return None "
             }
         );
     index.add(
@@ -2209,7 +2621,7 @@
                 href: "\/cryptolearn\/docs\/rsa\/bleichenbacher\/",
                 title: "Bleichenbacher",
                 description: "The attack exploits the way RSA ciphertext is formatted in PKCS#1 v1.5 padding. In this padding scheme, the plaintext is prefixed with random non-zero pad bytes before encrypting.\nThe steps are as follows:\nThe attacker sends manipulated ciphertexts to the target and observes the response to deduce information about the padding. The ciphertext is multiplied by a blinding factor and sent to the server. Based on whether the ciphertext is accepted or rejected, the possible interval for the plaintext is narrowed down.",
-                content: "The attack exploits the way RSA ciphertext is formatted in PKCS#1 v1.5 padding. In this padding scheme, the plaintext is prefixed with random non-zero pad bytes before encrypting.\nThe steps are as follows:\nThe attacker sends manipulated ciphertexts to the target and observes the response to deduce information about the padding. The ciphertext is multiplied by a blinding factor and sent to the server. Based on whether the ciphertext is accepted or rejected, the possible interval for the plaintext is narrowed down. By interacting with the server multiple times, the interval is narrowed down until only one possible plaintext remains. This reveals the original plaintext. The attacker never needs the private key as the padding format allows deducing the plaintext by observing the target’s responses. So in brief, the adaptive chosen ciphertext attack exploits flaws in the PKCS#1 v1.5 padding to decrypt the ciphertext without requiring the private key. Only the public key and access to the target server is needed to iteratively recover the plaintext.\nPrevious Next / [pdf] View the PDF file here. Implementation link info Parameters Required: link padding_oracle: the padding oracle taking integers, returns True if the PKCS #1 v1.5 padding is correct, False otherwise n: the modulus e: the public exponent c: the ciphertext (integer) Return: the plaintext (integer)\nimport logging import os import sys from random import randrange def ceil_div(a, b): return a // b + (a % b \u003e 0) def floor_div(a, b): return a // b def _insert(M, a, b): for i, (a_, b_) in enumerate(M): if a_ \u003c= b and a \u003c= b_: a = min(a, a_) b = max(b, b_) M[i] = (a, b) return M.append((a, b)) return # Step 1. def _step_1(padding_oracle, n, e, c): s0 = 1 c0 = c while not padding_oracle(c0): s0 = randrange(2, n) c0 = (c * pow(s0, e, n)) % n return s0, c0 # Step 2.a. def _step_2a(padding_oracle, n, e, c0, B): s = ceil_div(n, 3 * B) while not padding_oracle((c0 * pow(s, e, n)) % n): s += 1 return s # Step 2.b. def _step_2b(padding_oracle, n, e, c0, s): s += 1 while not padding_oracle((c0 * pow(s, e, n)) % n): s += 1 return s # Step 2.c. def _step_2c(padding_oracle, n, e, c0, B, s, a, b): r = ceil_div(2 * (b * s - 2 * B), n) while True: left = ceil_div(2 * B + r * n, b) right = floor_div(3 * B + r * n, a) for s in range(left, right + 1): if padding_oracle((c0 * pow(s, e, n)) % n): return s r += 1 # Step 3. def _step_3(n, B, s, M): M_ = [] for (a, b) in M: left = ceil_div(a * s - 3 * B + 1, n) right = floor_div(b * s - 2 * B, n) for r in range(left, right + 1): a_ = max(a, ceil_div(2 * B + r * n, s)) b_ = min(b, floor_div(3 * B - 1 + r * n, s)) _insert(M_, a_, b_) return M_ def attack(padding_oracle, n, e, c): k = ceil_div(n.bit_length(), 8) B = 2 ** (8 * (k - 2)) logging.info(\"Executing step 1...\") s0, c0 = _step_1(padding_oracle, n, e, c) M = [(2 * B, 3 * B - 1)] logging.info(\"Executing step 2.a...\") s = _step_2a(padding_oracle, n, e, c0, B) M = _step_3(n, B, s, M) logging.info(\"Starting while loop...\") while True: if len(M) \u003e 1: s = _step_2b(padding_oracle, n, e, c0, s) else: (a, b) = M[0] if a == b: m = (a * pow(s0, -1, n)) % n return m s = _step_2c(padding_oracle, n, e, c0, B, s, a, b) M = _step_3(n, B, s, M) "
+                content: "The attack exploits the way RSA ciphertext is formatted in PKCS#1 v1.5 padding. In this padding scheme, the plaintext is prefixed with random non-zero pad bytes before encrypting.\nThe steps are as follows:\nThe attacker sends manipulated ciphertexts to the target and observes the response to deduce information about the padding. The ciphertext is multiplied by a blinding factor and sent to the server. Based on whether the ciphertext is accepted or rejected, the possible interval for the plaintext is narrowed down. By interacting with the server multiple times, the interval is narrowed down until only one possible plaintext remains. This reveals the original plaintext. The attacker never needs the private key as the padding format allows deducing the plaintext by observing the target’s responses. So in brief, the adaptive chosen ciphertext attack exploits flaws in the PKCS#1 v1.5 padding to decrypt the ciphertext without requiring the private key. Only the public key and access to the target server is needed to iteratively recover the plaintext.\nPrevious Next / [pdf] View the PDF file here. Implementation link info Parameters Required: link padding_oracle: the padding oracle taking integers, returns True if the PKCS #1 v1.5 padding is correct, False otherwise n: the modulus e: the public exponent c: the ciphertext (integer) Return: the plaintext (integer)\nimport logging import os import sys from random import randrange def ceil_div(a, b): return a // b + (a % b \u003e 0) def floor_div(a, b): return a // b def _insert(M, a, b): for i, (a_, b_) in enumerate(M): if a_ \u003c= b and a \u003c= b_: a = min(a, a_) b = max(b, b_) M[i] = (a, b) return M.append((a, b)) return # Step 1. def _step_1(padding_oracle, n, e, c): s0 = 1 c0 = c while not padding_oracle(c0): s0 = randrange(2, n) c0 = (c * pow(s0, e, n)) % n return s0, c0 # Step 2.a. def _step_2a(padding_oracle, n, e, c0, B): s = ceil_div(n, 3 * B) while not padding_oracle((c0 * pow(s, e, n)) % n): s += 1 return s # Step 2.b. def _step_2b(padding_oracle, n, e, c0, s): s += 1 while not padding_oracle((c0 * pow(s, e, n)) % n): s += 1 return s # Step 2.c. def _step_2c(padding_oracle, n, e, c0, B, s, a, b): r = ceil_div(2 * (b * s - 2 * B), n) while True: left = ceil_div(2 * B + r * n, b) right = floor_div(3 * B + r * n, a) for s in range(left, right + 1): if padding_oracle((c0 * pow(s, e, n)) % n): return s r += 1 # Step 3. def _step_3(n, B, s, M): M_ = [] for (a, b) in M: left = ceil_div(a * s - 3 * B + 1, n) right = floor_div(b * s - 2 * B, n) for r in range(left, right + 1): a_ = max(a, ceil_div(2 * B + r * n, s)) b_ = min(b, floor_div(3 * B - 1 + r * n, s)) _insert(M_, a_, b_) return M_ def attack(padding_oracle, n, e, c): k = ceil_div(n.bit_length(), 8) B = 2 ** (8 * (k - 2)) logging.info(\"Executing step 1...\") s0, c0 = _step_1(padding_oracle, n, e, c) M = [(2 * B, 3 * B - 1)] logging.info(\"Executing step 2.a...\") s = _step_2a(padding_oracle, n, e, c0, B) M = _step_3(n, B, s, M) logging.info(\"Starting while loop...\") while True: if len(M) \u003e 1: s = _step_2b(padding_oracle, n, e, c0, s) else: (a, b) = M[0] if a == b: m = (a * pow(s0, -1, n)) % n return m s = _step_2c(padding_oracle, n, e, c0, B, s, a, b) M = _step_3(n, B, s, M) Bleichenbacher Signature Forgery linkThe attack exploits properties of the PKCS#1 v1.5 signature padding scheme. The signature is computed as:\ns = md^d mod n\nWhere m is the padded message, d is the private key and n is the RSA modulus.\nThe padding has a specific format that includes random non-zero bytes. The forged signature s’ is iteratively constructed such that:\nThe padding conforms to the expected format. When verified with the public key, the verification equation holds: (s’)^e = m’ mod n Where e is the public exponent and m’ is the message chosen by the attacker.\nBy observing the verification responses for manipulated signatures, the attacker can deduce boundary conditions on the padded message m. This allows constructing a properly formatted m’ that verifies correctly with the public key but is not the actual signed message.\nThe attack relies on flaws in the deterministic PKCS#1 v1.5 padding scheme rather than mathematical weaknesses in RSA itself. Using probabilistic padding schemes like PSS can mitigate the risk of forgery.\nBleichenbacher’s adaptive chosen ciphertext attack can be adapted to forge RSA signatures without knowing the private key by exploiting properties of the padding scheme.\nImplementation link info Parameters Required: link suffix: the suffix suffix_bit_length: the bit length of the suffix Return: the number s\ndef attack(suffix, suffix_bit_length): assert suffix % 2 == 1, \"Target suffix must be odd\" s = 1 for i in range(suffix_bit_length): if (((s ** 3) \u003e\u003e i) \u0026 1) != ((suffix \u003e\u003e i) \u0026 1): s |= (1 \u003c\u003c i) return s "
             }
         );
     index.add(
