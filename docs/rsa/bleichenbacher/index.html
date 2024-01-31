@@ -33,14 +33,18 @@
 <link rel="icon" type="image/png" sizes="16x16" href="https://victim1307.github.io/cryptolearn/favicon-16x16.png">
 <link rel="manifest" crossorigin="use-credentials" href="https://victim1307.github.io/cryptolearn/site.webmanifest">
 <meta property="og:title" content="Bleichenbacher" />
-<meta property="og:description" content=" Previous Next &nbsp; &nbsp; / [pdf] View the PDF file here. " />
+<meta property="og:description" content="The attack exploits the way RSA ciphertext is formatted in PKCS#1 v1.5 padding. In this padding scheme, the plaintext is prefixed with random non-zero pad bytes before encrypting.
+The steps are as follows:
+The attacker sends manipulated ciphertexts to the target and observes the response to deduce information about the padding. The ciphertext is multiplied by a blinding factor and sent to the server. Based on whether the ciphertext is accepted or rejected, the possible interval for the plaintext is narrowed down." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://victim1307.github.io/cryptolearn/docs/rsa/bleichenbacher/" /><meta property="og:image" content="https://victim1307.github.io/cryptolearn/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_8575996656641802684.png"/><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2023-12-02T16:49:27+05:30" />
 <meta property="article:modified_time" content="2023-12-02T16:49:27+05:30" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://victim1307.github.io/cryptolearn/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_8575996656641802684.png"/>
 <meta name="twitter:title" content="Bleichenbacher"/>
-<meta name="twitter:description" content=" Previous Next &nbsp; &nbsp; / [pdf] View the PDF file here. "/>
+<meta name="twitter:description" content="The attack exploits the way RSA ciphertext is formatted in PKCS#1 v1.5 padding. In this padding scheme, the plaintext is prefixed with random non-zero pad bytes before encrypting.
+The steps are as follows:
+The attacker sends manipulated ciphertexts to the target and observes the response to deduce information about the padding. The ciphertext is multiplied by a blinding factor and sent to the server. Based on whether the ciphertext is accepted or rejected, the possible interval for the plaintext is narrowed down."/>
 
     
     <script>(()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script>
@@ -787,18 +791,34 @@
                                 
                                 <div class="row flex-xl-nowrap">
                                     
-                                    <div class="docs-toc col-xl-3  visually-hidden  d-xl-block"><toc>
+                                    <div class="docs-toc col-xl-3    d-xl-block"><toc>
     <div class="fw-bold text-uppercase mb-2">On this page</div>
-    <nav id="toc"></nav>
+    <nav id="toc">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#implementation">Implementation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </toc></div>
                                     
                                     
-                                    <div class="docs-toc-mobile  visually-hidden  d-print-none d-xl-none">
+                                    <div class="docs-toc-mobile    d-print-none d-xl-none">
                                         <button id="toc-dropdown-btn" class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-offset="0,0" aria-expanded="false">
                                             Table of Contents
                                         </button>
-<nav id="toc-mobile"></nav></div>
-                                    <div class="docs-content col-12  mt-0">
+<nav id="toc-mobile">
+  <ul class="dropdown-menu">
+    <li>
+      <ul>
+        <li><a href="#implementation">Implementation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                                    <div class="docs-content col-12 col-xl-9 mt-0">
                                         <div class="mb-0 d-flex">
                                             
                                             <i class="material-icons title-icon me-2">article</i>
@@ -817,7 +837,16 @@
                                             
     
     <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
-        <script type="text/javascript" src= '/cryptolearn/js/build/pdf.js'></script>
+        <p>The attack exploits the way RSA ciphertext is formatted in PKCS#1 v1.5 padding. In this padding scheme, the plaintext is prefixed with random non-zero pad bytes before encrypting.</p>
+<p>The steps are as follows:</p>
+<ol>
+<li>The attacker sends manipulated ciphertexts to the target and observes the response to deduce information about the padding.</li>
+<li>The ciphertext is multiplied by a blinding factor and sent to the server. Based on whether the ciphertext is accepted or rejected, the possible interval for the plaintext is narrowed down.</li>
+<li>By interacting with the server multiple times, the interval is narrowed down until only one possible plaintext remains. This reveals the original plaintext.</li>
+<li>The attacker never needs the private key as the padding format allows deducing the plaintext by observing the target&rsquo;s responses.</li>
+</ol>
+<p>So in brief, the adaptive chosen ciphertext attack exploits flaws in the PKCS#1 v1.5 padding to decrypt the ciphertext without requiring the private key. Only the public key and access to the target server is needed to iteratively recover the plaintext.</p>
+<script type="text/javascript" src= '/cryptolearn/js/build/pdf.js'></script>
 
 <style>
   #embed-pdf-container {
@@ -1064,6 +1093,150 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-eebfa979" href="
     })();
 </script>
 
+<h3 id="implementation">Implementation <a href="#implementation" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><div class="alert alert-info d-flex" role="alert">
+  <div class="flex-shrink-1 alert-icon">
+  <span class="material-icons size-20 me-2">
+  info
+  </span></div>
+  <div class="w-100">
+<h4 id="parameters-required">Parameters Required: <a href="#parameters-required" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h4><ol>
+<li>padding_oracle: the padding oracle taking integers, returns True if the PKCS #1 v1.5 padding is correct, False otherwise</li>
+<li>n: the modulus</li>
+<li>e: the public exponent</li>
+<li>c: the ciphertext (integer)</li>
+</ol>
+<p><em><strong>Return: the plaintext (integer)</strong></em></p>
+  </div>
+  </div>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="8ddea38" class="language-python ">
+  <code>import logging
+import os
+import sys
+from random import randrange
+
+def ceil_div(a, b):
+    &#34;&#34;&#34;
+    Returns ceil(a / b), works with large integers.
+    :param a: a
+    :param b: b
+    :return: ceil(a / b)
+    &#34;&#34;&#34;
+    return a // b &#43; (a % b &gt; 0)
+
+def floor_div(a, b):
+    &#34;&#34;&#34;
+    Returns floor(a / b), works with large integers.
+    :param a: a
+    :param b: b
+    :return: floor(a / b)
+    &#34;&#34;&#34;
+    return a // b
+
+def _insert(M, a, b):
+    for i, (a_, b_) in enumerate(M):
+        if a_ &lt;= b and a &lt;= b_:
+            a = min(a, a_)
+            b = max(b, b_)
+            M[i] = (a, b)
+            return
+
+    M.append((a, b))
+    return
+
+
+# Step 1.
+def _step_1(padding_oracle, n, e, c):
+    s0 = 1
+    c0 = c
+    while not padding_oracle(c0):
+        s0 = randrange(2, n)
+        c0 = (c * pow(s0, e, n)) % n
+
+    return s0, c0
+
+
+# Step 2.a.
+def _step_2a(padding_oracle, n, e, c0, B):
+    s = ceil_div(n, 3 * B)
+    while not padding_oracle((c0 * pow(s, e, n)) % n):
+        s &#43;= 1
+
+    return s
+
+
+# Step 2.b.
+def _step_2b(padding_oracle, n, e, c0, s):
+    s &#43;= 1
+    while not padding_oracle((c0 * pow(s, e, n)) % n):
+        s &#43;= 1
+
+    return s
+
+
+# Step 2.c.
+def _step_2c(padding_oracle, n, e, c0, B, s, a, b):
+    r = ceil_div(2 * (b * s - 2 * B), n)
+    while True:
+        left = ceil_div(2 * B &#43; r * n, b)
+        right = floor_div(3 * B &#43; r * n, a)
+        for s in range(left, right &#43; 1):
+            if padding_oracle((c0 * pow(s, e, n)) % n):
+                return s
+
+        r &#43;= 1
+
+
+# Step 3.
+def _step_3(n, B, s, M):
+    M_ = []
+    for (a, b) in M:
+        left = ceil_div(a * s - 3 * B &#43; 1, n)
+        right = floor_div(b * s - 2 * B, n)
+        for r in range(left, right &#43; 1):
+            a_ = max(a, ceil_div(2 * B &#43; r * n, s))
+            b_ = min(b, floor_div(3 * B - 1 &#43; r * n, s))
+            _insert(M_, a_, b_)
+
+    return M_
+
+
+def attack(padding_oracle, n, e, c):
+    k = ceil_div(n.bit_length(), 8)
+    B = 2 ** (8 * (k - 2))
+    logging.info(&#34;Executing step 1...&#34;)
+    s0, c0 = _step_1(padding_oracle, n, e, c)
+    M = [(2 * B, 3 * B - 1)]
+    logging.info(&#34;Executing step 2.a...&#34;)
+    s = _step_2a(padding_oracle, n, e, c0, B)
+    M = _step_3(n, B, s, M)
+    logging.info(&#34;Starting while loop...&#34;)
+    while True:
+        if len(M) &gt; 1:
+            s = _step_2b(padding_oracle, n, e, c0, s)
+        else:
+            (a, b) = M[0]
+            if a == b:
+                m = (a * pow(s0, -1, n)) % n
+                return m
+            s = _step_2c(padding_oracle, n, e, c0, B, s, a, b)
+        M = _step_3(n, B, s, M)</code>
+  </pre>
+  </div>
 
     </div>
 
@@ -2455,8 +2628,8 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-eebfa979" href="
                 id:  68 ,
                 href: "\/cryptolearn\/docs\/rsa\/bleichenbacher\/",
                 title: "Bleichenbacher",
-                description: " Previous Next     / [pdf] View the PDF file here. ",
-                content: " Previous Next / [pdf] View the PDF file here. "
+                description: "The attack exploits the way RSA ciphertext is formatted in PKCS#1 v1.5 padding. In this padding scheme, the plaintext is prefixed with random non-zero pad bytes before encrypting.\nThe steps are as follows:\nThe attacker sends manipulated ciphertexts to the target and observes the response to deduce information about the padding. The ciphertext is multiplied by a blinding factor and sent to the server. Based on whether the ciphertext is accepted or rejected, the possible interval for the plaintext is narrowed down.",
+                content: "The attack exploits the way RSA ciphertext is formatted in PKCS#1 v1.5 padding. In this padding scheme, the plaintext is prefixed with random non-zero pad bytes before encrypting.\nThe steps are as follows:\nThe attacker sends manipulated ciphertexts to the target and observes the response to deduce information about the padding. The ciphertext is multiplied by a blinding factor and sent to the server. Based on whether the ciphertext is accepted or rejected, the possible interval for the plaintext is narrowed down. By interacting with the server multiple times, the interval is narrowed down until only one possible plaintext remains. This reveals the original plaintext. The attacker never needs the private key as the padding format allows deducing the plaintext by observing the target’s responses. So in brief, the adaptive chosen ciphertext attack exploits flaws in the PKCS#1 v1.5 padding to decrypt the ciphertext without requiring the private key. Only the public key and access to the target server is needed to iteratively recover the plaintext.\nPrevious Next / [pdf] View the PDF file here. Implementation link info Parameters Required: link padding_oracle: the padding oracle taking integers, returns True if the PKCS #1 v1.5 padding is correct, False otherwise n: the modulus e: the public exponent c: the ciphertext (integer) Return: the plaintext (integer)\nimport logging import os import sys from random import randrange def ceil_div(a, b): \"\"\" Returns ceil(a / b), works with large integers. :param a: a :param b: b :return: ceil(a / b) \"\"\" return a // b + (a % b \u003e 0) def floor_div(a, b): \"\"\" Returns floor(a / b), works with large integers. :param a: a :param b: b :return: floor(a / b) \"\"\" return a // b def _insert(M, a, b): for i, (a_, b_) in enumerate(M): if a_ \u003c= b and a \u003c= b_: a = min(a, a_) b = max(b, b_) M[i] = (a, b) return M.append((a, b)) return # Step 1. def _step_1(padding_oracle, n, e, c): s0 = 1 c0 = c while not padding_oracle(c0): s0 = randrange(2, n) c0 = (c * pow(s0, e, n)) % n return s0, c0 # Step 2.a. def _step_2a(padding_oracle, n, e, c0, B): s = ceil_div(n, 3 * B) while not padding_oracle((c0 * pow(s, e, n)) % n): s += 1 return s # Step 2.b. def _step_2b(padding_oracle, n, e, c0, s): s += 1 while not padding_oracle((c0 * pow(s, e, n)) % n): s += 1 return s # Step 2.c. def _step_2c(padding_oracle, n, e, c0, B, s, a, b): r = ceil_div(2 * (b * s - 2 * B), n) while True: left = ceil_div(2 * B + r * n, b) right = floor_div(3 * B + r * n, a) for s in range(left, right + 1): if padding_oracle((c0 * pow(s, e, n)) % n): return s r += 1 # Step 3. def _step_3(n, B, s, M): M_ = [] for (a, b) in M: left = ceil_div(a * s - 3 * B + 1, n) right = floor_div(b * s - 2 * B, n) for r in range(left, right + 1): a_ = max(a, ceil_div(2 * B + r * n, s)) b_ = min(b, floor_div(3 * B - 1 + r * n, s)) _insert(M_, a_, b_) return M_ def attack(padding_oracle, n, e, c): k = ceil_div(n.bit_length(), 8) B = 2 ** (8 * (k - 2)) logging.info(\"Executing step 1...\") s0, c0 = _step_1(padding_oracle, n, e, c) M = [(2 * B, 3 * B - 1)] logging.info(\"Executing step 2.a...\") s = _step_2a(padding_oracle, n, e, c0, B) M = _step_3(n, B, s, M) logging.info(\"Starting while loop...\") while True: if len(M) \u003e 1: s = _step_2b(padding_oracle, n, e, c0, s) else: (a, b) = M[0] if a == b: m = (a * pow(s0, -1, n)) % n return m s = _step_2c(padding_oracle, n, e, c0, B, s, a, b) M = _step_3(n, B, s, M) "
             }
         );
     index.add(
