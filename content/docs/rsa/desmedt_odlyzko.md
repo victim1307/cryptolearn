@@ -16,6 +16,18 @@ In Desmedt and Odlyzko's attack, which is a type of existential forgery, the for
 {{< embed-pdf url="../files/desmedt_odlyzko.pdf">}}
 
 ### Implementation
+{{% alert icon="" context="info" %}}
+#### Parameters Required:
+1. hash_oracle: the oracle taking integer messages, returns an integer representation of the hashed message
+2. sign_oracle: the oracle taking integer messages, returns an integer representation of the signature
+3. N: the modulus
+4. e: the public exponent
+5. target_m: the target message to sign (integer)
+
+***Return: the signature of the target message (integer)***
+{{% /alert %}}
+
+
 ```python
 import logging
 
@@ -28,14 +40,6 @@ from sage.all import vector
 
 
 def attack(hash_oracle, sign_oracle, N, e, target_m):
-    """
-    :param hash_oracle: the oracle taking integer messages, returns an integer representation of the hashed message
-    :param sign_oracle: the oracle taking integer messages, returns an integer representation of the signature
-    :param N: the modulus
-    :param e: the public exponent
-    :param target_m: the target message to sign (integer)
-    :return: the signature of the target message (integer)
-    """
     target_factors = factor(hash_oracle(target_m))
     B, _ = target_factors[-1]
 
