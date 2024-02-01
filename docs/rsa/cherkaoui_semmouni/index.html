@@ -33,14 +33,14 @@
 <link rel="icon" type="image/png" sizes="16x16" href="https://victim1307.github.io/cryptolearn/favicon-16x16.png">
 <link rel="manifest" crossorigin="use-credentials" href="https://victim1307.github.io/cryptolearn/site.webmanifest">
 <meta property="og:title" content="Cherkaoui Semmouni" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="Previous Next &nbsp; &nbsp; / [pdf] View the PDF file here. Implementation link info Parameters Required: link N: the modulus e: the exponent beta: the parameter beta such that |p - q| &lt;= N^beta delta: the parameter delta such that d &lt;= N^delta m: the m value to use for the small roots method (default: 1) t: the t value to use for the small roots method (default: automatically computed using m) check_bounds: perform bounds check (default: True) Return: a tuple containing the prime factors and the private exponent, or None if the factors could not be found" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://victim1307.github.io/cryptolearn/docs/rsa/cherkaoui_semmouni/" /><meta property="og:image" content="https://victim1307.github.io/cryptolearn/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_1649955994807098515.png"/><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2023-12-02T16:49:59+05:30" />
 <meta property="article:modified_time" content="2023-12-02T16:49:59+05:30" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://victim1307.github.io/cryptolearn/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_1649955994807098515.png"/>
 <meta name="twitter:title" content="Cherkaoui Semmouni"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="Previous Next &nbsp; &nbsp; / [pdf] View the PDF file here. Implementation link info Parameters Required: link N: the modulus e: the exponent beta: the parameter beta such that |p - q| &lt;= N^beta delta: the parameter delta such that d &lt;= N^delta m: the m value to use for the small roots method (default: 1) t: the t value to use for the small roots method (default: automatically computed using m) check_bounds: perform bounds check (default: True) Return: a tuple containing the prime factors and the private exponent, or None if the factors could not be found"/>
 
     
     <script>(()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script>
@@ -787,18 +787,34 @@
                                 
                                 <div class="row flex-xl-nowrap">
                                     
-                                    <div class="docs-toc col-xl-3  visually-hidden  d-xl-block"><toc>
+                                    <div class="docs-toc col-xl-3    d-xl-block"><toc>
     <div class="fw-bold text-uppercase mb-2">On this page</div>
-    <nav id="toc"></nav>
+    <nav id="toc">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#implementation">Implementation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </toc></div>
                                     
                                     
-                                    <div class="docs-toc-mobile  visually-hidden  d-print-none d-xl-none">
+                                    <div class="docs-toc-mobile    d-print-none d-xl-none">
                                         <button id="toc-dropdown-btn" class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-offset="0,0" aria-expanded="false">
                                             Table of Contents
                                         </button>
-<nav id="toc-mobile"></nav></div>
-                                    <div class="docs-content col-12  mt-0">
+<nav id="toc-mobile">
+  <ul class="dropdown-menu">
+    <li>
+      <ul>
+        <li><a href="#implementation">Implementation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                                    <div class="docs-content col-12 col-xl-9 mt-0">
                                         <div class="mb-0 d-flex">
                                             
                                             <i class="material-icons title-icon me-2">article</i>
@@ -817,7 +833,358 @@
                                             
     
     <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
+        <script type="text/javascript" src= '/cryptolearn/js/build/pdf.js'></script>
+
+<style>
+  #embed-pdf-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 20vh;
+     
+  }
+  
+  .pdf-canvas {
+    border: 1px solid black;
+    direction: ltr;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  #the-canvas {
+    border: 1px solid black;
+    direction: ltr;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  
+  .pdf-loadingWrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+  }
+  
+  .pdf-loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #d2d0d0;;
+    border-radius: 50%;
+    border-top-color: #383838;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  
+  
+  
+  
+  #overlayText {
+    word-wrap: break-word;
+    display: grid;
+    justify-content: end;
+  }
+  
+  #overlayText a {
+    position: relative;
+    top: 10px;
+    right: 4px;
+    color: #000;
+    margin: auto;
+    background-color: #eeeeee;
+    padding: 0.3em 1em;
+    border: solid 2px;
+    border-radius: 12px;
+    border-color: #00000030;
+    text-decoration: none;
+  }
+  
+  #overlayText svg {
+    height: clamp(1em, 2vw, 1.4em);
+    width:  clamp(1em, 2vw, 1.4em);
+  }
+  
+  
+  
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  </style><div class="embed-pdf-container" id="embed-pdf-container-1681b8c7">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-1681b8c7">
+        <div class="pdf-loading" id="pdf-loading-1681b8c7"></div>
+    </div>
+    <div id="overlayText">
+      <a href="../files/cherkaoui_semmouni.pdf" aria-label="Download" download>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+            <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+        </svg>
+      </a>
+    </div>
+    <canvas class="pdf-canvas" id="pdf-canvas-1681b8c7"></canvas>
+</div>
+
+<div class="pdf-paginator" id="pdf-paginator-1681b8c7">
+    <button id="pdf-prev-1681b8c7">Previous</button>
+    <button id="pdf-next-1681b8c7">Next</button> &nbsp; &nbsp;
+    <span>
+      <span class="pdf-pagenum" id="pdf-pagenum-1681b8c7"></span> / <span class="pdf-pagecount" id="pdf-pagecount-1681b8c7"></span>
+    </span>
+    <a class="pdf-source" id="pdf-source-1681b8c7" href="../files/cherkaoui_semmouni.pdf">[pdf]</a>
+</div>
+
+<noscript>
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-1681b8c7" href="../files/cherkaoui_semmouni.pdf">here</a>.
+</noscript>
+
+<script type="text/javascript">
+    (function(){
+    var url = '..\/files\/cherkaoui_semmouni.pdf';
+
+    var hidePaginator = "" === "true";
+    var hideLoader = "" === "true";
+    var selectedPageNum = parseInt("") || 1;
+
+    
+    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+    
+    if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "https:\/\/victim1307.github.io\/cryptolearn" + '/js/build/pdf.worker.js';
+
+    
+    var pdfDoc = null,
+        pageNum = selectedPageNum,
+        pageRendering = false,
+        pageNumPending = null,
+        scale = 3,
+        canvas = document.getElementById('pdf-canvas-1681b8c7'),
+        ctx = canvas.getContext('2d'),
+        paginator = document.getElementById("pdf-paginator-1681b8c7"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-1681b8c7');
+
+    
+    showPaginator();
+    showLoader();
+
+    
+
+    function renderPage(num) {
+      pageRendering = true;
+      
+      pdfDoc.getPage(num).then(function(page) {
+        var viewport = page.getViewport({scale: scale});
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
         
+        var renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+        var renderTask = page.render(renderContext);
+
+        
+        renderTask.promise.then(function() {
+          pageRendering = false;
+          showContent();
+
+          if (pageNumPending !== null) {
+            
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+
+      
+      document.getElementById('pdf-pagenum-1681b8c7').textContent = num;
+    }
+
+    
+
+    function showContent() {
+      loadingWrapper.style.display = 'none';
+      canvas.style.display = 'block';
+    }
+
+    
+
+    function showLoader() {
+      if(hideLoader) return
+      loadingWrapper.style.display = 'flex';
+      canvas.style.display = 'none';
+    }
+
+    
+
+    function showPaginator() {
+      if(hidePaginator) return
+      paginator.style.display = 'block';
+    }
+
+    
+
+    function queueRenderPage(num) {
+      if (pageRendering) {
+        pageNumPending = num;
+      } else {
+        renderPage(num);
+      }
+    }
+
+    
+
+    function onPrevPage() {
+      if (pageNum <= 1) {
+        return;
+      }
+      pageNum--;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-prev-1681b8c7').addEventListener('click', onPrevPage);
+
+    
+
+    function onNextPage() {
+      if (pageNum >= pdfDoc.numPages) {
+        return;
+      }
+      pageNum++;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-next-1681b8c7').addEventListener('click', onNextPage);
+
+    
+
+    pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+      pdfDoc = pdfDoc_;
+      var numPages = pdfDoc.numPages;
+      document.getElementById('pdf-pagecount-1681b8c7').textContent = numPages;
+
+      
+      if(pageNum > numPages) {
+        pageNum = numPages
+      }
+
+      
+      renderPage(pageNum);
+    });
+    })();
+</script>
+
+<h3 id="implementation">Implementation <a href="#implementation" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><div class="alert alert-info d-flex" role="alert">
+  <div class="flex-shrink-1 alert-icon">
+  <span class="material-icons size-20 me-2">
+  info
+  </span></div>
+  <div class="w-100">
+<h4 id="parameters-required">Parameters Required: <a href="#parameters-required" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h4><ol>
+<li>N: the modulus</li>
+<li>e: the exponent</li>
+<li>beta: the parameter beta such that |p - q| &lt;= N^beta</li>
+<li>delta: the parameter delta such that d &lt;= N^delta</li>
+<li>m: the m value to use for the small roots method (default: 1)</li>
+<li>t: the t value to use for the small roots method (default: automatically computed using m)</li>
+<li>check_bounds: perform bounds check (default: True)</li>
+</ol>
+<p><em><strong>Return: a tuple containing the prime factors and the private exponent, or None if the factors could not be found</strong></em></p>
+  </div>
+  </div>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="b324fee" class="language-python ">
+  <code>import logging
+import os
+import sys
+from math import isqrt
+from math import log
+from math import sqrt
+
+from sage.all import RR
+from sage.all import ZZ
+
+path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(os.path.abspath(__file__)))))
+if sys.path[1] != path:
+    sys.path.insert(1, path)
+
+
+def modular_bivariate(f, e, m, t, X, Y, roots_method=&#34;groebner&#34;):
+    f = f.change_ring(ZZ)
+
+    pr = ZZ[&#34;x&#34;, &#34;y&#34;, &#34;u&#34;]
+    x, y, u = pr.gens()
+    qr = pr.quotient(1 &#43; x * y - u)
+    U = X * Y
+
+    logging.debug(&#34;Generating shifts...&#34;)
+
+    shifts = []
+    for k in range(m &#43; 1):
+        for i in range(m - k &#43; 1):
+            g = x ** i * f ** k * e ** (m - k)
+            g = qr(g).lift()
+            shifts.append(g)
+
+    for j in range(1, t &#43; 1):
+        for k in range(m // t * j, m &#43; 1):
+            h = y ** j * f ** k * e ** (m - k)
+            h = qr(h).lift()
+            shifts.append(h)
+
+    L, monomials = small_roots.create_lattice(pr, shifts, [X, Y, U])
+    L = small_roots.reduce_lattice(L)
+
+    pr = f.parent()
+    x, y = pr.gens()
+
+    polynomials = small_roots.reconstruct_polynomials(L, f, None, monomials, [X, Y, U], preprocess_polynomial=lambda p: p(x, y, 1 &#43; x * y))
+    for roots in small_roots.find_roots(pr, polynomials, method=roots_method):
+        yield roots[x], roots[y]
+
+def attack(N, e, beta, delta, m=1, t=None, check_bounds=True):
+    alpha = log(e, N)
+    assert not check_bounds or delta &lt; 2 - sqrt(2 * alpha * beta), f&#34;Bounds check failed ({delta} &lt; {2 - sqrt(2 * alpha * beta)}).&#34;
+
+    x, y = ZZ[&#34;x&#34;, &#34;y&#34;].gens()
+    A = -(N - 1) ** 2
+    f = x * y &#43; A * x &#43; 1
+    X = int(2 * e * RR(N) ** (delta - 2))  # Equivalent to 2N^(alpha &#43; delta - 2)
+    Y = int(RR(N) ** (2 * beta))
+    t = int((2 - delta - 2 * beta) / (2 * beta) * m) if t is None else t
+    logging.info(f&#34;Trying {m = }, {t = }...&#34;)
+    for x0, y0 in modular_bivariate(f, e, m, t, X, Y):
+        s = isqrt(y0)
+        d = s ** 2 &#43; 4 * N
+        p = int(-s &#43; isqrt(d)) // 2
+        q = int(s &#43; isqrt(d)) // 2
+        d = int(f(x0, y0) // e)
+        return p, q, d
+
+    return None</code>
+  </pre>
+  </div>
+
     </div>
 
     
@@ -2190,8 +2557,8 @@
                 id:  66 ,
                 href: "\/cryptolearn\/docs\/rsa\/cherkaoui_semmouni\/",
                 title: "Cherkaoui Semmouni",
-                description: "",
-                content: ""
+                description: "Previous Next / [pdf] View the PDF file here. Implementation link info Parameters Required: link N: the modulus e: the exponent beta: the parameter beta such that |p - q| \u003c= N^beta delta: the parameter delta such that d \u003c= N^delta m: the m value to use for the small roots method (default: 1) t: the t value to use for the small roots method (default: automatically computed using m) check_bounds: perform bounds check (default: True) Return: a tuple containing the prime factors and the private exponent, or None if the factors could not be found",
+                content: " Previous Next / [pdf] View the PDF file here. Implementation link info Parameters Required: link N: the modulus e: the exponent beta: the parameter beta such that |p - q| \u003c= N^beta delta: the parameter delta such that d \u003c= N^delta m: the m value to use for the small roots method (default: 1) t: the t value to use for the small roots method (default: automatically computed using m) check_bounds: perform bounds check (default: True) Return: a tuple containing the prime factors and the private exponent, or None if the factors could not be found\nimport logging import os import sys from math import isqrt from math import log from math import sqrt from sage.all import RR from sage.all import ZZ path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(os.path.abspath(__file__))))) if sys.path[1] != path: sys.path.insert(1, path) def modular_bivariate(f, e, m, t, X, Y, roots_method=\"groebner\"): f = f.change_ring(ZZ) pr = ZZ[\"x\", \"y\", \"u\"] x, y, u = pr.gens() qr = pr.quotient(1 + x * y - u) U = X * Y logging.debug(\"Generating shifts...\") shifts = [] for k in range(m + 1): for i in range(m - k + 1): g = x ** i * f ** k * e ** (m - k) g = qr(g).lift() shifts.append(g) for j in range(1, t + 1): for k in range(m // t * j, m + 1): h = y ** j * f ** k * e ** (m - k) h = qr(h).lift() shifts.append(h) L, monomials = small_roots.create_lattice(pr, shifts, [X, Y, U]) L = small_roots.reduce_lattice(L) pr = f.parent() x, y = pr.gens() polynomials = small_roots.reconstruct_polynomials(L, f, None, monomials, [X, Y, U], preprocess_polynomial=lambda p: p(x, y, 1 + x * y)) for roots in small_roots.find_roots(pr, polynomials, method=roots_method): yield roots[x], roots[y] def attack(N, e, beta, delta, m=1, t=None, check_bounds=True): alpha = log(e, N) assert not check_bounds or delta \u003c 2 - sqrt(2 * alpha * beta), f\"Bounds check failed ({delta} \u003c {2 - sqrt(2 * alpha * beta)}).\" x, y = ZZ[\"x\", \"y\"].gens() A = -(N - 1) ** 2 f = x * y + A * x + 1 X = int(2 * e * RR(N) ** (delta - 2)) # Equivalent to 2N^(alpha + delta - 2) Y = int(RR(N) ** (2 * beta)) t = int((2 - delta - 2 * beta) / (2 * beta) * m) if t is None else t logging.info(f\"Trying {m = }, {t = }...\") for x0, y0 in modular_bivariate(f, e, m, t, X, Y): s = isqrt(y0) d = s ** 2 + 4 * N p = int(-s + isqrt(d)) // 2 q = int(s + isqrt(d)) // 2 d = int(f(x0, y0) // e) return p, q, d return None "
             }
         );
     index.add(
