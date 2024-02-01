@@ -132,7 +132,7 @@
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/cherkaoui_semmouni/</link>
       <pubDate>Sat, 02 Dec 2023 16:49:59 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/cherkaoui_semmouni/</guid>
-      <description></description>
+      <description>Previous Next &amp;nbsp; &amp;nbsp; / [pdf] View the PDF file here. Implementation link info Parameters Required: link N: the modulus e: the exponent beta: the parameter beta such that |p - q| &amp;lt;= N^beta delta: the parameter delta such that d &amp;lt;= N^delta m: the m value to use for the small roots method (default: 1) t: the t value to use for the small roots method (default: automatically computed using m) check_bounds: perform bounds check (default: True) Return: a tuple containing the prime factors and the private exponent, or None if the factors could not be found</description>
     </item>
     <item>
       <title>Boneh Durfee</title>
