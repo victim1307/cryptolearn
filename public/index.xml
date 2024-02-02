@@ -363,14 +363,14 @@
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/d_fault_attack/</link>
       <pubDate>Sat, 02 Dec 2023 16:50:45 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/d_fault_attack/</guid>
-      <description></description>
+      <description>import os import sys from math import log2 class PartialInteger: def __init__(self): self.bit_length = 0 self.unknowns = 0 self._components = [] def add_known(self, value, bit_length): self.bit_length &amp;#43;= bit_length self._components.append((value, bit_length)) return self def add_unknown(self, bit_length): self.bit_length &amp;#43;= bit_length self.unknowns &amp;#43;= 1 self._components.append((None, bit_length)) return self def get_known_lsb(self): lsb = 0 lsb_bit_length = 0 for value, bit_length in self._components: if value is None: return lsb, lsb_bit_length lsb = lsb &amp;#43; (value &amp;lt;&amp;lt; lsb_bit_length) lsb_bit_length &amp;#43;= bit_length return lsb, lsb_bit_length def get_known_msb(self): msb = 0 msb_bit_length = 0 for value, bit_length in reversed(self.</description>
     </item>
     <item>
       <title>CRT Fault Attack</title>
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/crt_fault_attack/</link>
       <pubDate>Sat, 02 Dec 2023 16:50:29 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/crt_fault_attack/</guid>
-      <description></description>
+      <description>Implementation link from math import gcd def attack_known_m(n, e, m, s): &amp;#34;&amp;#34;&amp;#34; Recovers the prime factors from a modulus using a known message and its faulty signature. :param n: the modulus :param e: the public exponent :param m: the message :param s: the faulty signature :return: a tuple containing the prime factors, or None if the signature wasn&amp;#39;t actually faulty &amp;#34;&amp;#34;&amp;#34; g = gcd(m - pow(s, e, n), n) return None if g == 1 else (g, n // g) def attack_unknown_m(n, e, sv, sf): &amp;#34;&amp;#34;&amp;#34; Recovers the prime factors from a modulus using a correct valid and a faulty signature from the same (unknown) message.</description>
     </item>
     <item>
       <title>Common Modulus Attack</title>
