@@ -97,7 +97,7 @@
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/extended_wiener_attack/</link>
       <pubDate>Sat, 02 Dec 2023 16:51:38 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/extended_wiener_attack/</guid>
-      <description></description>
+      <description>Implementation link info Parameters Required: link max_s: the amount of s values to try (default: 20000) max_r: the amount of r values to try for each s value (default: 100) N: the modulus e: the public exponent max_t: the amount of t values to try for each s value (default: 100) Return: a tuple containing the prime factors and the private exponent, or None if the private exponent was not found</description>
     </item>
     <item>
       <title>Desmedt Odlyzko</title>

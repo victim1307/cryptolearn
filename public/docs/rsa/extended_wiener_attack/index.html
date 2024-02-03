@@ -33,14 +33,14 @@
 <link rel="icon" type="image/png" sizes="16x16" href="https://victim1307.github.io/cryptolearn/favicon-16x16.png">
 <link rel="manifest" crossorigin="use-credentials" href="https://victim1307.github.io/cryptolearn/site.webmanifest">
 <meta property="og:title" content="Extended Wiener Attack" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="Implementation link info Parameters Required: link max_s: the amount of s values to try (default: 20000) max_r: the amount of r values to try for each s value (default: 100) N: the modulus e: the public exponent max_t: the amount of t values to try for each s value (default: 100) Return: a tuple containing the prime factors and the private exponent, or None if the private exponent was not found" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://victim1307.github.io/cryptolearn/docs/rsa/extended_wiener_attack/" /><meta property="og:image" content="https://victim1307.github.io/cryptolearn/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_8449203519094081047.png"/><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2023-12-02T16:51:38+05:30" />
 <meta property="article:modified_time" content="2023-12-02T16:51:38+05:30" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://victim1307.github.io/cryptolearn/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_8449203519094081047.png"/>
 <meta name="twitter:title" content="Extended Wiener Attack"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="Implementation link info Parameters Required: link max_s: the amount of s values to try (default: 20000) max_r: the amount of r values to try for each s value (default: 100) N: the modulus e: the public exponent max_t: the amount of t values to try for each s value (default: 100) Return: a tuple containing the prime factors and the private exponent, or None if the private exponent was not found"/>
 
     
     <script>(()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script>
@@ -787,18 +787,34 @@
                                 
                                 <div class="row flex-xl-nowrap">
                                     
-                                    <div class="docs-toc col-xl-3  visually-hidden  d-xl-block"><toc>
+                                    <div class="docs-toc col-xl-3    d-xl-block"><toc>
     <div class="fw-bold text-uppercase mb-2">On this page</div>
-    <nav id="toc"></nav>
+    <nav id="toc">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#implementation">Implementation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </toc></div>
                                     
                                     
-                                    <div class="docs-toc-mobile  visually-hidden  d-print-none d-xl-none">
+                                    <div class="docs-toc-mobile    d-print-none d-xl-none">
                                         <button id="toc-dropdown-btn" class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-offset="0,0" aria-expanded="false">
                                             Table of Contents
                                         </button>
-<nav id="toc-mobile"></nav></div>
-                                    <div class="docs-content col-12  mt-0">
+<nav id="toc-mobile">
+  <ul class="dropdown-menu">
+    <li>
+      <ul>
+        <li><a href="#implementation">Implementation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                                    <div class="docs-content col-12 col-xl-9 mt-0">
                                         <div class="mb-0 d-flex">
                                             
                                             <i class="material-icons title-icon me-2">article</i>
@@ -817,7 +833,98 @@
                                             
     
     <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
-        
+        <h3 id="implementation">Implementation <a href="#implementation" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><div class="alert alert-info d-flex" role="alert">
+  <div class="flex-shrink-1 alert-icon">
+  <span class="material-icons size-20 me-2">
+  info
+  </span></div>
+  <div class="w-100">
+<h4 id="parameters-required">Parameters Required: <a href="#parameters-required" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h4><ol>
+<li>max_s: the amount of s values to try (default: 20000)</li>
+<li>max_r: the amount of r values to try for each s value (default: 100)</li>
+<li>N: the modulus</li>
+<li>e: the public exponent</li>
+<li>max_t: the amount of t values to try for each s value (default: 100)</li>
+</ol>
+<p><em><strong>Return: a tuple containing the prime factors and the private exponent, or None if the private exponent was not found</strong></em></p>
+  </div>
+  </div>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="8595f36" class="language-python ">
+  <code>import os
+import sys
+
+from sage.all import RR
+from sage.all import ZZ
+from sage.all import continued_fraction
+
+from math import gcd
+from math import isqrt
+from random import randrange
+
+from sage.all import is_prime
+
+
+def factorize(N, phi):
+    s = N &#43; 1 - phi
+    d = s ** 2 - 4 * N
+    p = int(s - isqrt(d)) // 2
+    q = int(s &#43; isqrt(d)) // 2
+    return p, q if p * q == N else None
+
+
+
+def attack(n, e, max_s=20000, max_r=100, max_t=100):
+    i_n = ZZ(n)
+    i_e = ZZ(e)
+    threshold = i_e / i_n &#43; (RR(2.122) * i_e) / (i_n * i_n.sqrt())
+    convergents = continued_fraction(i_e / i_n).convergents()
+    for i in range(1, len(convergents) - 2, 2):
+        if convergents[i &#43; 2] &lt; threshold &lt; convergents[i]:
+            m = i
+            break
+    else:
+        return None
+
+    for s in range(max_s):
+        for r in range(max_r):
+            k = r * convergents[m &#43; 1].numerator() &#43; s * convergents[m &#43; 1].numerator()
+            d = r * convergents[m &#43; 1].denominator() &#43; s * convergents[m &#43; 1].denominator()
+            if pow(pow(2, e, n), d, n) != 2:
+                continue
+
+            phi = (e * d - 1) // k
+            factors = known_phi.factorize(n, phi)
+            if factors:
+                return *factors, int(d)
+
+        for t in range(max_t):
+            k = s * convergents[m &#43; 2].numerator() - t * convergents[m &#43; 1].numerator()
+            d = s * convergents[m &#43; 2].denominator() - t * convergents[m &#43; 1].denominator()
+            if pow(pow(2, e, n), d, n) != 2:
+                continue
+
+            phi = (e * d - 1) // k
+            factors = known_phi.factorize(n, phi)
+            if factors:
+                return *factors, int(d)</code>
+  </pre>
+  </div>
+
     </div>
 
     
@@ -2145,8 +2252,8 @@
                 id:  61 ,
                 href: "\/cryptolearn\/docs\/rsa\/extended_wiener_attack\/",
                 title: "Extended Wiener Attack",
-                description: "",
-                content: ""
+                description: "Implementation link info Parameters Required: link max_s: the amount of s values to try (default: 20000) max_r: the amount of r values to try for each s value (default: 100) N: the modulus e: the public exponent max_t: the amount of t values to try for each s value (default: 100) Return: a tuple containing the prime factors and the private exponent, or None if the private exponent was not found",
+                content: "Implementation link info Parameters Required: link max_s: the amount of s values to try (default: 20000) max_r: the amount of r values to try for each s value (default: 100) N: the modulus e: the public exponent max_t: the amount of t values to try for each s value (default: 100) Return: a tuple containing the prime factors and the private exponent, or None if the private exponent was not found\nimport os import sys from sage.all import RR from sage.all import ZZ from sage.all import continued_fraction from math import gcd from math import isqrt from random import randrange from sage.all import is_prime def factorize(N, phi): s = N + 1 - phi d = s ** 2 - 4 * N p = int(s - isqrt(d)) // 2 q = int(s + isqrt(d)) // 2 return p, q if p * q == N else None def attack(n, e, max_s=20000, max_r=100, max_t=100): i_n = ZZ(n) i_e = ZZ(e) threshold = i_e / i_n + (RR(2.122) * i_e) / (i_n * i_n.sqrt()) convergents = continued_fraction(i_e / i_n).convergents() for i in range(1, len(convergents) - 2, 2): if convergents[i + 2] \u003c threshold \u003c convergents[i]: m = i break else: return None for s in range(max_s): for r in range(max_r): k = r * convergents[m + 1].numerator() + s * convergents[m + 1].numerator() d = r * convergents[m + 1].denominator() + s * convergents[m + 1].denominator() if pow(pow(2, e, n), d, n) != 2: continue phi = (e * d - 1) // k factors = known_phi.factorize(n, phi) if factors: return *factors, int(d) for t in range(max_t): k = s * convergents[m + 2].numerator() - t * convergents[m + 1].numerator() d = s * convergents[m + 2].denominator() - t * convergents[m + 1].denominator() if pow(pow(2, e, n), d, n) != 2: continue phi = (e * d - 1) // k factors = known_phi.factorize(n, phi) if factors: return *factors, int(d) "
             }
         );
     index.add(
