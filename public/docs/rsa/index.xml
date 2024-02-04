@@ -90,7 +90,7 @@
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/hastad_attack/</link>
       <pubDate>Sat, 02 Dec 2023 16:51:57 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/hastad_attack/</guid>
-      <description></description>
+      <description>Implementation link info Parameters Required: link N: the modulus e: the public exponent c: the ciphertexts Return: the plaintext&#xA;import os import sys from math import gcd from sage.all import ZZ from sage.all import crt from math import lcm def fast_crt(X, M, segment_size=8): assert len(X) == len(M) assert len(X) &amp;gt; 0 while len(X) &amp;gt; 1: X_ = [] M_ = [] for i in range(0, len(X), segment_size): if i == len(X) - 1: X_.</description>
     </item>
     <item>
       <title>Extended Wiener Attack</title>
