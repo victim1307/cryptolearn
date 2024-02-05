@@ -12,8 +12,6 @@ toc: true
 {{< embed-pdf url="../files/known_crt.pdf">}}
 
 ### Implementation
-Generates possible prime factors for a modulus, if d_p and/or d_q are known.
-
 {{% alert icon="" context="info" %}}
 #### Parameters Required:
 1. e_start: the start value of the public exponent (inclusive)
