@@ -33,14 +33,14 @@
 <link rel="icon" type="image/png" sizes="16x16" href="https://victim1307.github.io/cryptolearn/favicon-16x16.png">
 <link rel="manifest" crossorigin="use-credentials" href="https://victim1307.github.io/cryptolearn/site.webmanifest">
 <meta property="og:title" content="Known CRT Exponents" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="Previous Next &nbsp; &nbsp; / [pdf] View the PDF file here. Implementation link info Parameters Required: link e_start: the start value of the public exponent (inclusive) e_end: the end value of the public exponent (exclusive) N: the modulus, will be used to check the factors if not None (default: None) dp: the d exponent for p, will be used to generate possible factors for p if not None (default: None) dq: the d exponent for q, will be used to generate possible factors for q if not None (default: None) p_bit_length: the bit length of p, will be used to check possible factors for p if not None (default: None) q_bit_length: the bit length of q, will be used to check possible factors for q if not None (default: None) Return: a generator generating tuples containing possible prime factors" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://victim1307.github.io/cryptolearn/docs/rsa/known_crt_exponents/" /><meta property="og:image" content="https://victim1307.github.io/cryptolearn/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_2196329977080527543.png"/><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2023-12-02T16:52:06+05:30" />
 <meta property="article:modified_time" content="2023-12-02T16:52:06+05:30" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://victim1307.github.io/cryptolearn/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_2196329977080527543.png"/>
 <meta name="twitter:title" content="Known CRT Exponents"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="Previous Next &nbsp; &nbsp; / [pdf] View the PDF file here. Implementation link info Parameters Required: link e_start: the start value of the public exponent (inclusive) e_end: the end value of the public exponent (exclusive) N: the modulus, will be used to check the factors if not None (default: None) dp: the d exponent for p, will be used to generate possible factors for p if not None (default: None) dq: the d exponent for q, will be used to generate possible factors for q if not None (default: None) p_bit_length: the bit length of p, will be used to check possible factors for p if not None (default: None) q_bit_length: the bit length of q, will be used to check possible factors for q if not None (default: None) Return: a generator generating tuples containing possible prime factors"/>
 
     
     <script>(()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script>
@@ -787,18 +787,36 @@
                                 
                                 <div class="row flex-xl-nowrap">
                                     
-                                    <div class="docs-toc col-xl-3  visually-hidden  d-xl-block"><toc>
+                                    <div class="docs-toc col-xl-3    d-xl-block"><toc>
     <div class="fw-bold text-uppercase mb-2">On this page</div>
-    <nav id="toc"></nav>
+    <nav id="toc">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#implementation">Implementation</a></li>
+        <li><a href="#implementation-1">Implementation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </toc></div>
                                     
                                     
-                                    <div class="docs-toc-mobile  visually-hidden  d-print-none d-xl-none">
+                                    <div class="docs-toc-mobile    d-print-none d-xl-none">
                                         <button id="toc-dropdown-btn" class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-offset="0,0" aria-expanded="false">
                                             Table of Contents
                                         </button>
-<nav id="toc-mobile"></nav></div>
-                                    <div class="docs-content col-12  mt-0">
+<nav id="toc-mobile">
+  <ul class="dropdown-menu">
+    <li>
+      <ul>
+        <li><a href="#implementation">Implementation</a></li>
+        <li><a href="#implementation-1">Implementation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                                    <div class="docs-content col-12 col-xl-9 mt-0">
                                         <div class="mb-0 d-flex">
                                             
                                             <i class="material-icons title-icon me-2">article</i>
@@ -817,7 +835,654 @@
                                             
     
     <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
+        <script type="text/javascript" src= '/cryptolearn/js/build/pdf.js'></script>
+
+<style>
+  #embed-pdf-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 20vh;
+     
+  }
+  
+  .pdf-canvas {
+    border: 1px solid black;
+    direction: ltr;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  #the-canvas {
+    border: 1px solid black;
+    direction: ltr;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  
+  .pdf-loadingWrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+  }
+  
+  .pdf-loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #d2d0d0;;
+    border-radius: 50%;
+    border-top-color: #383838;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  
+  
+  
+  
+  #overlayText {
+    word-wrap: break-word;
+    display: grid;
+    justify-content: end;
+  }
+  
+  #overlayText a {
+    position: relative;
+    top: 10px;
+    right: 4px;
+    color: #000;
+    margin: auto;
+    background-color: #eeeeee;
+    padding: 0.3em 1em;
+    border: solid 2px;
+    border-radius: 12px;
+    border-color: #00000030;
+    text-decoration: none;
+  }
+  
+  #overlayText svg {
+    height: clamp(1em, 2vw, 1.4em);
+    width:  clamp(1em, 2vw, 1.4em);
+  }
+  
+  
+  
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  </style><div class="embed-pdf-container" id="embed-pdf-container-cf8f598d">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-cf8f598d">
+        <div class="pdf-loading" id="pdf-loading-cf8f598d"></div>
+    </div>
+    <div id="overlayText">
+      <a href="../files/known_crt.pdf" aria-label="Download" download>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+            <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+        </svg>
+      </a>
+    </div>
+    <canvas class="pdf-canvas" id="pdf-canvas-cf8f598d"></canvas>
+</div>
+
+<div class="pdf-paginator" id="pdf-paginator-cf8f598d">
+    <button id="pdf-prev-cf8f598d">Previous</button>
+    <button id="pdf-next-cf8f598d">Next</button> &nbsp; &nbsp;
+    <span>
+      <span class="pdf-pagenum" id="pdf-pagenum-cf8f598d"></span> / <span class="pdf-pagecount" id="pdf-pagecount-cf8f598d"></span>
+    </span>
+    <a class="pdf-source" id="pdf-source-cf8f598d" href="../files/known_crt.pdf">[pdf]</a>
+</div>
+
+<noscript>
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-cf8f598d" href="../files/known_crt.pdf">here</a>.
+</noscript>
+
+<script type="text/javascript">
+    (function(){
+    var url = '..\/files\/known_crt.pdf';
+
+    var hidePaginator = "" === "true";
+    var hideLoader = "" === "true";
+    var selectedPageNum = parseInt("") || 1;
+
+    
+    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+    
+    if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "https:\/\/victim1307.github.io\/cryptolearn" + '/js/build/pdf.worker.js';
+
+    
+    var pdfDoc = null,
+        pageNum = selectedPageNum,
+        pageRendering = false,
+        pageNumPending = null,
+        scale = 3,
+        canvas = document.getElementById('pdf-canvas-cf8f598d'),
+        ctx = canvas.getContext('2d'),
+        paginator = document.getElementById("pdf-paginator-cf8f598d"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-cf8f598d');
+
+    
+    showPaginator();
+    showLoader();
+
+    
+
+    function renderPage(num) {
+      pageRendering = true;
+      
+      pdfDoc.getPage(num).then(function(page) {
+        var viewport = page.getViewport({scale: scale});
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
         
+        var renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+        var renderTask = page.render(renderContext);
+
+        
+        renderTask.promise.then(function() {
+          pageRendering = false;
+          showContent();
+
+          if (pageNumPending !== null) {
+            
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+
+      
+      document.getElementById('pdf-pagenum-cf8f598d').textContent = num;
+    }
+
+    
+
+    function showContent() {
+      loadingWrapper.style.display = 'none';
+      canvas.style.display = 'block';
+    }
+
+    
+
+    function showLoader() {
+      if(hideLoader) return
+      loadingWrapper.style.display = 'flex';
+      canvas.style.display = 'none';
+    }
+
+    
+
+    function showPaginator() {
+      if(hidePaginator) return
+      paginator.style.display = 'block';
+    }
+
+    
+
+    function queueRenderPage(num) {
+      if (pageRendering) {
+        pageNumPending = num;
+      } else {
+        renderPage(num);
+      }
+    }
+
+    
+
+    function onPrevPage() {
+      if (pageNum <= 1) {
+        return;
+      }
+      pageNum--;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-prev-cf8f598d').addEventListener('click', onPrevPage);
+
+    
+
+    function onNextPage() {
+      if (pageNum >= pdfDoc.numPages) {
+        return;
+      }
+      pageNum++;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-next-cf8f598d').addEventListener('click', onNextPage);
+
+    
+
+    pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+      pdfDoc = pdfDoc_;
+      var numPages = pdfDoc.numPages;
+      document.getElementById('pdf-pagecount-cf8f598d').textContent = numPages;
+
+      
+      if(pageNum > numPages) {
+        pageNum = numPages
+      }
+
+      
+      renderPage(pageNum);
+    });
+    })();
+</script>
+
+<h3 id="implementation">Implementation <a href="#implementation" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><div class="alert alert-info d-flex" role="alert">
+  <div class="flex-shrink-1 alert-icon">
+  <span class="material-icons size-20 me-2">
+  info
+  </span></div>
+  <div class="w-100">
+<h4 id="parameters-required">Parameters Required: <a href="#parameters-required" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h4><ol>
+<li>e_start: the start value of the public exponent (inclusive)</li>
+<li>e_end: the end value of the public exponent (exclusive)</li>
+<li>N: the modulus, will be used to check the factors if not None (default: None)</li>
+<li>dp: the d exponent for p, will be used to generate possible factors for p if not None (default: None)</li>
+<li>dq: the d exponent for q, will be used to generate possible factors for q if not None (default: None)</li>
+<li>p_bit_length: the bit length of p, will be used to check possible factors for p if not None (default: None)</li>
+<li>q_bit_length: the bit length of q, will be used to check possible factors for q if not None (default: None)</li>
+</ol>
+<p><em><strong>Return: a generator generating tuples containing possible prime factors</strong></em></p>
+  </div>
+  </div>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="1b8a2de" class="language-python ">
+  <code>import logging
+import os
+import sys
+from math import ceil
+from math import gcd
+from math import log
+
+from sage.all import Zmod
+from sage.all import is_prime
+
+from shared import ceil_div
+from shared.small_roots import herrmann_may
+from shared.small_roots import howgrave_graham
+
+
+def _get_possible_primes(e, d):
+    logging.debug(f&#34;Looking for possible primes for {e = }, {d = }&#34;)
+    mul = e * d - 1
+    for k in range(3, e):
+        if mul % k == 0:
+            p = (mul // k) &#43; 1
+            if is_prime(p):
+                yield p
+
+
+def attack(e_start, e_end, N=None, dp=None, dq=None, p_bit_length=None, q_bit_length=None):
+    assert not (dp is None and dq is None), &#34;At least one of the CRT private exponents should be known.&#34;
+
+    if dp is not None and dq is not None:
+        for e in range(e_start, e_end, 2):
+            for p in _get_possible_primes(e, dp):
+                for q in _get_possible_primes(e, dq):
+                    if (N is None or p * q == N) and (p_bit_length is None or p.bit_length() == p_bit_length) and (q_bit_length is None or q.bit_length() == q_bit_length):
+                        yield p, q
+
+        return None
+
+    if dp is not None:
+        for e in range(e_start, e_end, 2):
+            for p in _get_possible_primes(e, dp):
+                if p_bit_length is None or p.bit_length() == p_bit_length:
+                    if N is None:
+                        yield p
+                    elif N % p == 0:
+                        yield p, N // p
+
+        return None
+
+    if dq is not None:
+        for e in range(e_start, e_end, 2):
+            for q in _get_possible_primes(e, dq):
+                if q_bit_length is None or q.bit_length() == q_bit_length:
+                    if N is None:
+                        yield q
+                    elif N % q == 0:
+                        yield q, N // q
+
+        return None
+
+
+def _factor_msb(N, e, dpM, dp_unknown_lsb, k, m, t):
+    logging.info(f&#34;Trying {k = }&#34;)
+    g = gcd(e, k * N)
+    x = Zmod(k * N)[&#34;x&#34;].gen()
+    f = x &#43; (e * dpM * 2 ** dp_unknown_lsb &#43; k - 1) * pow(e, -1, k // g * N)
+    X = 2 ** dp_unknown_lsb
+    logging.info(f&#34;Trying {m = }, {t = }...&#34;)
+    for x0, in howgrave_graham.modular_univariate(f, k * N, m, t, X):
+        dp = int(f(x0))
+        p = gcd(dp, N)
+        if N % p == 0:
+            return p, N // p
+
+
+def _factor_lsb(N, e, dpL, dpL_bit_length, dp_unknown_msb, k, m, t):
+    logging.info(f&#34;Trying {k = }&#34;)
+    g = gcd(2 ** dpL_bit_length * e, k * N)
+    x = Zmod(k * N)[&#34;x&#34;].gen()
+    f = x &#43; (e * dpL &#43; k - 1) * pow(2 ** dpL_bit_length * e, -1, k // g * N)
+    X = 2 ** dp_unknown_msb
+    logging.info(f&#34;Trying {m = }, {t = }...&#34;)
+    for x0, in howgrave_graham.modular_univariate(f, k * N, m, t, X):
+        dp = int(f(x0))
+        p = gcd(dp, N)
+        if N % p == 0:
+            return p, N // p</code>
+  </pre>
+  </div>
+<div class="embed-pdf-container" id="embed-pdf-container-986d9a49">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-986d9a49">
+        <div class="pdf-loading" id="pdf-loading-986d9a49"></div>
+    </div>
+    <div id="overlayText">
+      <a href="../files/known_crt_2.pdf" aria-label="Download" download>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+            <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+        </svg>
+      </a>
+    </div>
+    <canvas class="pdf-canvas" id="pdf-canvas-986d9a49"></canvas>
+</div>
+
+<div class="pdf-paginator" id="pdf-paginator-986d9a49">
+    <button id="pdf-prev-986d9a49">Previous</button>
+    <button id="pdf-next-986d9a49">Next</button> &nbsp; &nbsp;
+    <span>
+      <span class="pdf-pagenum" id="pdf-pagenum-986d9a49"></span> / <span class="pdf-pagecount" id="pdf-pagecount-986d9a49"></span>
+    </span>
+    <a class="pdf-source" id="pdf-source-986d9a49" href="../files/known_crt_2.pdf">[pdf]</a>
+</div>
+
+<noscript>
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-986d9a49" href="../files/known_crt_2.pdf">here</a>.
+</noscript>
+
+<script type="text/javascript">
+    (function(){
+    var url = '..\/files\/known_crt_2.pdf';
+
+    var hidePaginator = "" === "true";
+    var hideLoader = "" === "true";
+    var selectedPageNum = parseInt("") || 1;
+
+    
+    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+    
+    if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "https:\/\/victim1307.github.io\/cryptolearn" + '/js/build/pdf.worker.js';
+
+    
+    var pdfDoc = null,
+        pageNum = selectedPageNum,
+        pageRendering = false,
+        pageNumPending = null,
+        scale = 3,
+        canvas = document.getElementById('pdf-canvas-986d9a49'),
+        ctx = canvas.getContext('2d'),
+        paginator = document.getElementById("pdf-paginator-986d9a49"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-986d9a49');
+
+    
+    showPaginator();
+    showLoader();
+
+    
+
+    function renderPage(num) {
+      pageRendering = true;
+      
+      pdfDoc.getPage(num).then(function(page) {
+        var viewport = page.getViewport({scale: scale});
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        
+        var renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+        var renderTask = page.render(renderContext);
+
+        
+        renderTask.promise.then(function() {
+          pageRendering = false;
+          showContent();
+
+          if (pageNumPending !== null) {
+            
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+
+      
+      document.getElementById('pdf-pagenum-986d9a49').textContent = num;
+    }
+
+    
+
+    function showContent() {
+      loadingWrapper.style.display = 'none';
+      canvas.style.display = 'block';
+    }
+
+    
+
+    function showLoader() {
+      if(hideLoader) return
+      loadingWrapper.style.display = 'flex';
+      canvas.style.display = 'none';
+    }
+
+    
+
+    function showPaginator() {
+      if(hidePaginator) return
+      paginator.style.display = 'block';
+    }
+
+    
+
+    function queueRenderPage(num) {
+      if (pageRendering) {
+        pageNumPending = num;
+      } else {
+        renderPage(num);
+      }
+    }
+
+    
+
+    function onPrevPage() {
+      if (pageNum <= 1) {
+        return;
+      }
+      pageNum--;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-prev-986d9a49').addEventListener('click', onPrevPage);
+
+    
+
+    function onNextPage() {
+      if (pageNum >= pdfDoc.numPages) {
+        return;
+      }
+      pageNum++;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-next-986d9a49').addEventListener('click', onNextPage);
+
+    
+
+    pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+      pdfDoc = pdfDoc_;
+      var numPages = pdfDoc.numPages;
+      document.getElementById('pdf-pagecount-986d9a49').textContent = numPages;
+
+      
+      if(pageNum > numPages) {
+        pageNum = numPages
+      }
+
+      
+      renderPage(pageNum);
+    });
+    })();
+</script>
+
+<h3 id="implementation-1">Implementation <a href="#implementation-1" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Recovers the prime factors from a modulus if the most or least significant bits of dp and dq are known</p>
+<div class="alert alert-info d-flex" role="alert">
+  <div class="flex-shrink-1 alert-icon">
+  <span class="material-icons size-20 me-2">
+  info
+  </span></div>
+  <div class="w-100">
+<h4 id="parameters-required-1">Parameters Required: <a href="#parameters-required-1" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h4><ol>
+<li>N: the modulus</li>
+<li>e: the exponent</li>
+<li>partial_dp: d mod (p - 1) (PartialInteger)</li>
+<li>partial_dq: d mod (q - 1) (PartialInteger)</li>
+<li>m: the parameter m for small roots (default: automatically calculated using beta = 0.5 and epsilon = 0.125)</li>
+<li>t: the parameter t for small roots (default: automatically calculated using beta = 0.5 and epsilon = 0.125)</li>
+<li>check_bounds: perform bounds check (default: True)
+<em><strong>Return: a tuple containing the prime factors, or None if the factors were not found</strong></em></li>
+</ol>
+  </div>
+  </div>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="cb13d1c" class="language-python ">
+  <code>def attack_partial(N, e, partial_dp, partial_dq, m=None, t=None, check_bounds=True):
+    alpha = log(e, N)
+    dp_bit_length = partial_dp.bit_length
+    dq_bit_length = partial_dq.bit_length
+    assert dp_bit_length == dq_bit_length, &#34;dp and dq should be of equal bit length.&#34;
+
+    beta = 0.5
+    epsilon = 0.125
+    m = ceil(max(beta ** 2 / epsilon, 7 * beta)) if m is None else m
+    t = int((1 / beta - 1) * m) if t is None else t
+
+    dpM, dpM_bit_length = partial_dp.get_known_msb()
+    dqM, dqM_bit_length = partial_dq.get_known_msb()
+    if dpM_bit_length &gt; 0 and dqM_bit_length &gt; 0:
+        # Section 3.1.
+        dp_unknown_lsb = partial_dp.get_unknown_lsb()
+        dq_unknown_lsb = partial_dq.get_unknown_lsb()
+        delta = log(max(2 ** dp_unknown_lsb, 2 ** dq_unknown_lsb), N)
+        assert not check_bounds or delta &lt; min(1 / 4 &#43; alpha, 1 / 2 - 2 * alpha), f&#34;Bounds check failed ({delta} &lt; {min(1 / 4 &#43; alpha, 1 / 2 - 2 * alpha)}).&#34;
+
+        x = Zmod(e)[&#34;x&#34;].gen()
+        A_ = ceil_div(2 ** (dp_unknown_lsb &#43; dq_unknown_lsb) * e ** 2 * dpM * dqM, N)
+
+        # First case.
+        f = x ** 2 - (1 - A_ * (N - 1)) * x &#43; A_
+        for k, _ in f.roots():
+            if k == 0:
+                continue
+
+            factors = _factor_msb(N, e, dpM, dp_unknown_lsb, int(k), m, t)
+            if factors:
+                return factors
+            factors = _factor_msb(N, e, dqM, dq_unknown_lsb, int(k), m, t)
+            if factors:
+                return factors
+
+        # Second case.
+        f = x ** 2 &#43; (1 - A_ * (N - 1) &#43; e) * x &#43; A_
+        for k, _ in f.roots():
+            if k == 0:
+                continue
+
+            factors = _factor_msb(N, e, dpM, dp_unknown_lsb, int(k), m, t)
+            if factors:
+                return factors
+            factors = _factor_msb(N, e, dqM, dq_unknown_lsb, int(k), m, t)
+            if factors:
+                return factors
+
+    dpL, dpL_bit_length = partial_dp.get_known_lsb()
+    dqL, dqL_bit_length = partial_dq.get_known_lsb()
+    if dpL_bit_length &gt; 0 and dqL_bit_length &gt; 0:
+        # Section 3.2.
+        dp_unknown_msb = partial_dp.get_unknown_msb()
+        dq_unknown_msb = partial_dq.get_unknown_msb()
+        assert dpL_bit_length == dqL_bit_length, &#34;dp and dq LSB should be of equal bit length.&#34;
+        delta = log(max(2 ** dp_unknown_msb, 2 ** dq_unknown_msb), N)
+        assert not check_bounds or delta &lt; min(1 / 4 &#43; alpha, 1 / 2 - 2 * alpha), f&#34;Bounds check failed ({delta} &lt; {min(1 / 4 &#43; alpha, 1 / 2 - 2 * alpha)}).&#34;
+
+        i = dpL_bit_length
+        pr = Zmod(2 ** i * e)[&#34;x, y&#34;]
+        x, y = pr.gens()
+        A = -e ** 2 * dpL * dqL &#43; e * dpL &#43; e * dqL - 1
+        f = (N - 1) * x * y - (e * dqL - 1) * x - (e * dpL - 1) * y &#43; A
+        g = f * pow((N - 1) // gcd(N - 1, e * 2 ** i), -1, 2 ** i * e)
+        for k, l in herrmann_may.modular_bivariate(g, 2 ** i * e, 2, 2, e, e):
+            if k == 0 or l == 0:
+                continue
+
+            factors = _factor_lsb(N, e, dpL, dpL_bit_length, dp_unknown_msb, int(k), m, t)
+            if factors:
+                return factors
+            factors = _factor_lsb(N, e, dqL, dqL_bit_length, dq_unknown_msb, int(l), m, t)
+            if factors:
+                return factors
+
+    return None
+    ```</code>
+  </pre>
+  </div>
+
     </div>
 
     
@@ -2127,8 +2792,8 @@
                 id:  59 ,
                 href: "\/cryptolearn\/docs\/rsa\/known_crt_exponents\/",
                 title: "Known CRT Exponents",
-                description: "",
-                content: ""
+                description: "Previous Next     / [pdf] View the PDF file here. Implementation link info Parameters Required: link e_start: the start value of the public exponent (inclusive) e_end: the end value of the public exponent (exclusive) N: the modulus, will be used to check the factors if not None (default: None) dp: the d exponent for p, will be used to generate possible factors for p if not None (default: None) dq: the d exponent for q, will be used to generate possible factors for q if not None (default: None) p_bit_length: the bit length of p, will be used to check possible factors for p if not None (default: None) q_bit_length: the bit length of q, will be used to check possible factors for q if not None (default: None) Return: a generator generating tuples containing possible prime factors",
+                content: " Previous Next / [pdf] View the PDF file here. Implementation link info Parameters Required: link e_start: the start value of the public exponent (inclusive) e_end: the end value of the public exponent (exclusive) N: the modulus, will be used to check the factors if not None (default: None) dp: the d exponent for p, will be used to generate possible factors for p if not None (default: None) dq: the d exponent for q, will be used to generate possible factors for q if not None (default: None) p_bit_length: the bit length of p, will be used to check possible factors for p if not None (default: None) q_bit_length: the bit length of q, will be used to check possible factors for q if not None (default: None) Return: a generator generating tuples containing possible prime factors\nimport logging import os import sys from math import ceil from math import gcd from math import log from sage.all import Zmod from sage.all import is_prime from shared import ceil_div from shared.small_roots import herrmann_may from shared.small_roots import howgrave_graham def _get_possible_primes(e, d): logging.debug(f\"Looking for possible primes for {e = }, {d = }\") mul = e * d - 1 for k in range(3, e): if mul % k == 0: p = (mul // k) + 1 if is_prime(p): yield p def attack(e_start, e_end, N=None, dp=None, dq=None, p_bit_length=None, q_bit_length=None): assert not (dp is None and dq is None), \"At least one of the CRT private exponents should be known.\" if dp is not None and dq is not None: for e in range(e_start, e_end, 2): for p in _get_possible_primes(e, dp): for q in _get_possible_primes(e, dq): if (N is None or p * q == N) and (p_bit_length is None or p.bit_length() == p_bit_length) and (q_bit_length is None or q.bit_length() == q_bit_length): yield p, q return None if dp is not None: for e in range(e_start, e_end, 2): for p in _get_possible_primes(e, dp): if p_bit_length is None or p.bit_length() == p_bit_length: if N is None: yield p elif N % p == 0: yield p, N // p return None if dq is not None: for e in range(e_start, e_end, 2): for q in _get_possible_primes(e, dq): if q_bit_length is None or q.bit_length() == q_bit_length: if N is None: yield q elif N % q == 0: yield q, N // q return None def _factor_msb(N, e, dpM, dp_unknown_lsb, k, m, t): logging.info(f\"Trying {k = }\") g = gcd(e, k * N) x = Zmod(k * N)[\"x\"].gen() f = x + (e * dpM * 2 ** dp_unknown_lsb + k - 1) * pow(e, -1, k // g * N) X = 2 ** dp_unknown_lsb logging.info(f\"Trying {m = }, {t = }...\") for x0, in howgrave_graham.modular_univariate(f, k * N, m, t, X): dp = int(f(x0)) p = gcd(dp, N) if N % p == 0: return p, N // p def _factor_lsb(N, e, dpL, dpL_bit_length, dp_unknown_msb, k, m, t): logging.info(f\"Trying {k = }\") g = gcd(2 ** dpL_bit_length * e, k * N) x = Zmod(k * N)[\"x\"].gen() f = x + (e * dpL + k - 1) * pow(2 ** dpL_bit_length * e, -1, k // g * N) X = 2 ** dp_unknown_msb logging.info(f\"Trying {m = }, {t = }...\") for x0, in howgrave_graham.modular_univariate(f, k * N, m, t, X): dp = int(f(x0)) p = gcd(dp, N) if N % p == 0: return p, N // p Previous Next / [pdf] View the PDF file here. Implementation linkRecovers the prime factors from a modulus if the most or least significant bits of dp and dq are known\ninfo Parameters Required: link N: the modulus e: the exponent partial_dp: d mod (p - 1) (PartialInteger) partial_dq: d mod (q - 1) (PartialInteger) m: the parameter m for small roots (default: automatically calculated using beta = 0.5 and epsilon = 0.125) t: the parameter t for small roots (default: automatically calculated using beta = 0.5 and epsilon = 0.125) check_bounds: perform bounds check (default: True) Return: a tuple containing the prime factors, or None if the factors were not found def attack_partial(N, e, partial_dp, partial_dq, m=None, t=None, check_bounds=True): alpha = log(e, N) dp_bit_length = partial_dp.bit_length dq_bit_length = partial_dq.bit_length assert dp_bit_length == dq_bit_length, \"dp and dq should be of equal bit length.\" beta = 0.5 epsilon = 0.125 m = ceil(max(beta ** 2 / epsilon, 7 * beta)) if m is None else m t = int((1 / beta - 1) * m) if t is None else t dpM, dpM_bit_length = partial_dp.get_known_msb() dqM, dqM_bit_length = partial_dq.get_known_msb() if dpM_bit_length \u003e 0 and dqM_bit_length \u003e 0: # Section 3.1. dp_unknown_lsb = partial_dp.get_unknown_lsb() dq_unknown_lsb = partial_dq.get_unknown_lsb() delta = log(max(2 ** dp_unknown_lsb, 2 ** dq_unknown_lsb), N) assert not check_bounds or delta \u003c min(1 / 4 + alpha, 1 / 2 - 2 * alpha), f\"Bounds check failed ({delta} \u003c {min(1 / 4 + alpha, 1 / 2 - 2 * alpha)}).\" x = Zmod(e)[\"x\"].gen() A_ = ceil_div(2 ** (dp_unknown_lsb + dq_unknown_lsb) * e ** 2 * dpM * dqM, N) # First case. f = x ** 2 - (1 - A_ * (N - 1)) * x + A_ for k, _ in f.roots(): if k == 0: continue factors = _factor_msb(N, e, dpM, dp_unknown_lsb, int(k), m, t) if factors: return factors factors = _factor_msb(N, e, dqM, dq_unknown_lsb, int(k), m, t) if factors: return factors # Second case. f = x ** 2 + (1 - A_ * (N - 1) + e) * x + A_ for k, _ in f.roots(): if k == 0: continue factors = _factor_msb(N, e, dpM, dp_unknown_lsb, int(k), m, t) if factors: return factors factors = _factor_msb(N, e, dqM, dq_unknown_lsb, int(k), m, t) if factors: return factors dpL, dpL_bit_length = partial_dp.get_known_lsb() dqL, dqL_bit_length = partial_dq.get_known_lsb() if dpL_bit_length \u003e 0 and dqL_bit_length \u003e 0: # Section 3.2. dp_unknown_msb = partial_dp.get_unknown_msb() dq_unknown_msb = partial_dq.get_unknown_msb() assert dpL_bit_length == dqL_bit_length, \"dp and dq LSB should be of equal bit length.\" delta = log(max(2 ** dp_unknown_msb, 2 ** dq_unknown_msb), N) assert not check_bounds or delta \u003c min(1 / 4 + alpha, 1 / 2 - 2 * alpha), f\"Bounds check failed ({delta} \u003c {min(1 / 4 + alpha, 1 / 2 - 2 * alpha)}).\" i = dpL_bit_length pr = Zmod(2 ** i * e)[\"x, y\"] x, y = pr.gens() A = -e ** 2 * dpL * dqL + e * dpL + e * dqL - 1 f = (N - 1) * x * y - (e * dqL - 1) * x - (e * dpL - 1) * y + A g = f * pow((N - 1) // gcd(N - 1, e * 2 ** i), -1, 2 ** i * e) for k, l in herrmann_may.modular_bivariate(g, 2 ** i * e, 2, 2, e, e): if k == 0 or l == 0: continue factors = _factor_lsb(N, e, dpL, dpL_bit_length, dp_unknown_msb, int(k), m, t) if factors: return factors factors = _factor_lsb(N, e, dqL, dqL_bit_length, dq_unknown_msb, int(l), m, t) if factors: return factors return None ``` "
             }
         );
     index.add(
