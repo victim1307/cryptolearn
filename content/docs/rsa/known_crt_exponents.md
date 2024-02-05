@@ -13,6 +13,7 @@ toc: true
 
 ### Implementation
 Generates possible prime factors for a modulus, if d_p and/or d_q are known.
+
 {{% alert icon="" context="info" %}}
 #### Parameters Required:
 1. e_start: the start value of the public exponent (inclusive)
@@ -119,6 +120,7 @@ def _factor_lsb(N, e, dpL, dpL_bit_length, dp_unknown_msb, k, m, t):
 {{< embed-pdf url="../files/known_crt_2.pdf">}}
 ### Implementation
 Recovers the prime factors from a modulus if the most or least significant bits of dp and dq are known
+
 {{% alert icon="" context="info" %}}
 #### Parameters Required:
 1. N: the modulus
