@@ -22,8 +22,8 @@ toc: true
 6. p_bit_length: the bit length of p, will be used to check possible factors for p if not None (default: None)
 7. q_bit_length: the bit length of q, will be used to check possible factors for q if not None (default: None)
 
-
 ***Return: a generator generating tuples containing possible prime factors***
+{{% /alert %}}
 
 ```python
 import logging
@@ -129,6 +129,7 @@ Recovers the prime factors from a modulus if the most or least significant bits 
 6. t: the parameter t for small roots (default: automatically calculated using beta = 0.5 and epsilon = 0.125)
 7. check_bounds: perform bounds check (default: True)
 ***Return: a tuple containing the prime factors, or None if the factors were not found***
+{{% /alert %}}
 
 ```python
 def attack_partial(N, e, partial_dp, partial_dq, m=None, t=None, check_bounds=True):

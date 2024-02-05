@@ -83,7 +83,7 @@
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/known_crt_exponents/</link>
       <pubDate>Sat, 02 Dec 2023 16:52:06 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/known_crt_exponents/</guid>
-      <description></description>
+      <description>Previous Next &amp;nbsp; &amp;nbsp; / [pdf] View the PDF file here. Implementation link info Parameters Required: link e_start: the start value of the public exponent (inclusive) e_end: the end value of the public exponent (exclusive) N: the modulus, will be used to check the factors if not None (default: None) dp: the d exponent for p, will be used to generate possible factors for p if not None (default: None) dq: the d exponent for q, will be used to generate possible factors for q if not None (default: None) p_bit_length: the bit length of p, will be used to check possible factors for p if not None (default: None) q_bit_length: the bit length of q, will be used to check possible factors for q if not None (default: None) Return: a generator generating tuples containing possible prime factors</description>
     </item>
     <item>
       <title>Hastad Attack</title>
