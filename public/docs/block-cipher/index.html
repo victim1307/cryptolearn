@@ -2129,8 +2129,8 @@
                 id:  56 ,
                 href: "\/cryptolearn\/docs\/rsa\/lsb_oracle\/",
                 title: "LSB Oracle",
-                description: "",
-                content: ""
+                description: "Implementation link info Parameters Required: link N: the modulus e: the public exponent c: the encrypted message oracle: a function which returns the last bit of a plaintext Return: the plaintext from sage.all import ZZ def attack(N, e, c, oracle): left = ZZ(0) right = ZZ(N) while right - left \u003e 1: c = (c * pow(2, e, N)) % N if oracle(c) == 0: right = (right + left) / 2 else: left = (right + left) / 2 return int(right) ",
+                content: "Implementation link info Parameters Required: link N: the modulus e: the public exponent c: the encrypted message oracle: a function which returns the last bit of a plaintext Return: the plaintext\nfrom sage.all import ZZ def attack(N, e, c, oracle): left = ZZ(0) right = ZZ(N) while right - left \u003e 1: c = (c * pow(2, e, N)) % N if oracle(c) == 0: right = (right + left) / 2 else: left = (right + left) / 2 return int(right) "
             }
         );
     index.add(
@@ -2138,8 +2138,8 @@
                 id:  57 ,
                 href: "\/cryptolearn\/docs\/rsa\/low_exponent\/",
                 title: "Low Exponent",
-                description: "",
-                content: ""
+                description: "Implementation link info Parameters Required: link e: the public exponent c: the ciphertext Return: the plaintext\nfrom sage.all import ZZ def attack(e, c): return int(ZZ(c).nth_root(e)) ",
+                content: "Implementation link info Parameters Required: link e: the public exponent c: the ciphertext Return: the plaintext\nfrom sage.all import ZZ def attack(e, c): return int(ZZ(c).nth_root(e)) "
             }
         );
     index.add(
@@ -2147,8 +2147,8 @@
                 id:  58 ,
                 href: "\/cryptolearn\/docs\/rsa\/known_d\/",
                 title: "Known D",
-                description: "",
-                content: ""
+                description: "Implementation link info Parameters Required: link N: the modulus e: the public exponent d: the private exponent Return: a tuple containing the prime factors from math import gcd from random import randrange def attack(N, e, d): k = e * d - 1 t = 0 while k % (2 ** t) == 0: t += 1 while True: g = randrange(1, N) for s in range(1, t + 1): x = pow(g, k // (2 ** s), N) p = gcd(x - 1, N) if 1 \u003c p \u003c N and N % p == 0: return p, N // p ",
+                content: "Implementation link info Parameters Required: link N: the modulus e: the public exponent d: the private exponent Return: a tuple containing the prime factors\nfrom math import gcd from random import randrange def attack(N, e, d): k = e * d - 1 t = 0 while k % (2 ** t) == 0: t += 1 while True: g = randrange(1, N) for s in range(1, t + 1): x = pow(g, k // (2 ** s), N) p = gcd(x - 1, N) if 1 \u003c p \u003c N and N % p == 0: return p, N // p "
             }
         );
     index.add(
