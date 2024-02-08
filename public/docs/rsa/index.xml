@@ -55,7 +55,7 @@
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/manger/</link>
       <pubDate>Sat, 02 Dec 2023 16:52:46 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/manger/</guid>
-      <description></description>
+      <description>import logging import os import sys path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(os.path.abspath(__file__))))) if sys.path[1] != path: sys.path.insert(1, path) from shared import ceil_div from shared import floor_div # Step 1. def _step_1(padding_oracle, n, e, c): f1 = 2 while padding_oracle((pow(f1, e, n) * c) % n): f1 *= 2 return f1 # Step 2. def _step_2(padding_oracle, n, e, c, B, f1): f2 = floor_div(n &amp;#43; B, B) * f1 // 2 while not padding_oracle((pow(f2, e, n) * c) % n): f2 &amp;#43;= f1 // 2 return f2 # Step 3.</description>
     </item>
     <item>
       <title>LSB Oracle</title>
