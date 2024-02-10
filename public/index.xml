@@ -300,7 +300,7 @@
       <link>https://victim1307.github.io/cryptolearn/docs/rsa/nitaj_crt_rsa/</link>
       <pubDate>Sat, 02 Dec 2023 16:52:53 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/rsa/nitaj_crt_rsa/</guid>
-      <description></description>
+      <description>import logging import os import sys from math import gcd from math import log from math import sqrt from sage.all import RR from sage.all import Zmod path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(os.path.abspath(__file__))))) if sys.path[1] != path: sys.path.insert(1, path) from shared.small_roots import herrmann_may_multivariate def attack(N, e, delta, m, t, check_bounds=True): &amp;#34;&amp;#34;&amp;#34; Recovers the prime factors if one of the CRT-RSA private exponents is too small. More information: Nitaj A., &amp;#34;A new attack on RSA and CRT-RSA&amp;#34; (Section 4) :param N: the modulus :param e: the public exponent :param delta: the parameter delta such that dp &amp;lt;= N^delta :param m: the parameter m for small roots :param t: the parameter t for small roots :param check_bounds: perform bounds check (default: True) :return: a tuple containing the prime factors, or None if the factors could not be found &amp;#34;&amp;#34;&amp;#34; alpha = log(e, N) assert not check_bounds or 2 * delta &amp;lt; sqrt(2) / 2 - alpha, f&amp;#34;Bounds check failed ({2 * delta} &amp;lt; {sqrt(2) / 2 - alpha}).</description>
     </item>
     <item>
       <title>Manger</title>
