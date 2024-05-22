@@ -4,7 +4,7 @@
     <title>CryptoLearn</title>
     <link>https://victim1307.github.io/cryptolearn/</link>
     <description>Recent content on CryptoLearn</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Jan 2024 12:45:39 +0530</lastBuildDate>
     <atom:link href="https://victim1307.github.io/cryptolearn/index.xml" rel="self" type="application/rss+xml" />
@@ -97,7 +97,7 @@
       <link>https://victim1307.github.io/cryptolearn/docs/stream-cipher/caesar-cipher/</link>
       <pubDate>Sat, 02 Dec 2023 14:07:13 +0530</pubDate>
       <guid>https://victim1307.github.io/cryptolearn/docs/stream-cipher/caesar-cipher/</guid>
-      <description></description>
+      <description>The Caesar cipher is one of the oldest and simplest methods of encryption. It&amp;rsquo;s a type of substitution cipher, meaning each letter in the original message (plaintext) is replaced with a different letter from the alphabet. This replacement follows a fixed rule: shifting each letter a certain number of positions down the alphabet.&#xA;How It Works link Shift (or Key): The core parameter of a Caesar cipher is the shift or key.</description>
     </item>
     <item>
       <title>Substitution Cipher</title>

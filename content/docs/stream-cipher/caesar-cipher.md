@@ -19,3 +19,27 @@ The Caesar cipher is one of the oldest and simplest methods of encryption. It's 
     * 'B' becomes 'E'
     * 'Z' becomes 'C' (wrapping around from the end)
 * Decryption: The decryption process is simply the reverse. Each letter is shifted backwards by the key value.
+
+### Implementation
+
+{{% alert icon="" context="info" %}}
+#### Parameters Required:
+1. text: The message to encrypt or decrypt.
+2. shift: The key (number of places to shift).
+3. mode: 'encrypt' or 'decrypt'.
+
+***Return: The encrypted or decrypted message.***
+{{% /alert %}}
+
+
+``````python
+def caesar_cipher(text, shift, mode='encrypt'):
+    result = ""
+    for char in text:
+        if char.isalpha():  # Only shift letters
+            base = ord('a') if char.islower() else ord('A')
+            result += chr((ord(char) - base + shift) % 26 + base)
+        else:
+            result += char  # Keep non-letters as they are
+    return result
+``````
